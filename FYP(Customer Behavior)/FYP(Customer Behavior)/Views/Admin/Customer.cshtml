@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+
+<main>
+        <div class="container" style="width:100%; height:auto; margin-top:2%;">
+           
+                <table class="display centered bordered responsive-table" style="width:100%" id="example">
+                    <thead>
+
+                        <tr>
+                            <th style="font-size:12px">ID</th>
+                            <th style="font-size:12px">Name</th>
+                            <th style="font-size:12px">Email</th>
+                            <th style="font-size:12px">Phone No</th>
+                            <th style="font-size:12px">Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.cl)
+                        {
+                            <tr>
+                                <td style="font-size:12px">@item.Id</td>
+                                <td style="font-size:12px">@item.Name</td>
+                                <td style="font-size:12px">@item.Email</td>
+                                <td style="font-size:12px">@item.contact</td>
+                                <td style="font-size:12px">@item.gender</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+           
+        </div>
+
+</main>
+
+
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $("#myInput").on("keyup", function () {
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "") {
+            }
+            else if (title === "Order Date") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function () {
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+            //fixedHeader: true
+        });
+    });
+</script>

@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "AddAddress";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <div class="container">
+        <p style="font-size:larger" class="center">Add Shipping or Billing Address</p>
+        <div class="addAddress hoverable z-depth-4 center-block">
+            <div class="row">
+                <form action="SaveAddress" method="post">
+                    <div class="col l12 s12 m12">
+                        <div class="row">
+                            <div class=" col l12 s12 m12">
+                                <select class="input-field" name="selected_Country" id="comboboxcountry">
+                                    <option value="" disabled selected>Select Country</option>
+                                    @foreach (var item in ViewBag.cc)
+                                    {
+                                        <option value="@item.Country_ID">@item.Country_Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col l12 s12 m12">
+                                <select class="input-field" id="comboboxstate" name="selected_State"></select>
+                            </div>
+                            <div class=" col l12 s12 m12">
+                                <select class="input-field" id="comboboxcity" name="selected_City"></select>
+                            </div>
+                            <div class=" col l12 s12 m12">
+                                <select class="input-field" id="comboboxarea" name="selected_Area"></select>
+                            </div>
+                            <div class="input-field col l12 s12 m12">
+                                <input id="address" name="address" type="text" value="" class="validate">
+                                <label for="address">Enter Address</label>
+                            </div>
+                            <div class="input-field col l12 s12 m12">
+                                <input id="addressName" name="addressName" type="text" value="" class="validate">
+                                <label for="addressName">Enter Address Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="getShipAddr">
+                                <button id="getShipAddr" class="col l12 m12 s12 btn btn-block waves-effect ">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('select').formSelect();
+
+             $('#comboboxcountry').on('change', function () {
+                var countryID = $('#comboboxcountry option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { countryId: countryID },
+                    url: '@Url.Action("loadstates", "Customers")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Please select a State</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].SID + '">' +
+                                result[i].Name+'</option>'
+                        }
+                        $('#comboboxstate').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+
+            $('#comboboxstate').on('change', function () {
+                var stateID = $('#comboboxstate option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { stateId:  stateID},
+                    url: '@Url.Action("loadcity", "Customers")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Please select a City</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].CID + '">' +
+                                result[i].cName+'</option>'
+                        }
+                        $('#comboboxcity').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+
+            $('#comboboxcity').on('change', function () {
+                var cityID = $('#comboboxcity option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { cityId: cityID },
+                    url: '@Url.Action("loadarea", "Customers")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Please select a Area</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].AID + '">' +
+                                result[i].aName+'</option>'
+                        }
+                        $('#comboboxarea').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+        });
+</script>

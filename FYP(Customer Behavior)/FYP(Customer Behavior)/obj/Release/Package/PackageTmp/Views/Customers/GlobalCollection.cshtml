@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "GlobalCollection";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main style="background-color:aquamarine;">
+    <section class="">
+        <div class="carousel carousel-slider">
+            @*@foreach (var item in ViewBag.slider)
+                {*@
+            <div class="carousel-item brown lighten-4  slides" style="border:0px solid #808080;" href="#one!">
+                <div class="container center-align" style=" border:0px solid #808080;">
+                    <img style="height:344px; margin-right:150px;margin-left:150px; border:1px solid #000;" src="~/Slider Images/maxresdefault.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item black slides" style="border:0px solid #808080;" href="#one!">
+                <div class="container center-align" style=" border:0px solid #808080;">
+                    <img style="height:344px; margin-right:150px;margin-left:150px; border:1px solid #000;" src="~/Slider Images/home-slider-slide-4.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item black  slides" style="border:0px solid #808080;" href="#one!">
+                <div class="container center-align" style=" border:0px solid #808080;">
+                    <img style="height:344px; margin-right:150px;margin-left:150px; border:1px solid #000;" src="~/Slider Images/HP_Slider_Longines9_des.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item black slides" style="border:0px solid #808080;" href="#one!">
+                <div class="container center-align" style=" border:0px solid #808080;">
+                    <img style="height:344px; margin-right:150px;margin-left:150px; border:1px solid #000;" src="~/Slider Images/banner_award_desktop1.jpg" />
+                </div>
+            </div>
+            @* } *@
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <ul id="tabs-swipe-demo" class="tabs grey">
+            @foreach (var item in ViewBag.ssc)
+            {
+                <li class="tab col s3"><a class="white-text" href="#test-swipe-1">@item.name</a></li>
+            }
+        </ul>
+        <div id="test-swipe-1" class="col s12">Test 1</div>
+    </div>
+</main>
+<script>
+    $(document).ready(function () {
+        $('.tabs').tabs();
+    });
+</script>

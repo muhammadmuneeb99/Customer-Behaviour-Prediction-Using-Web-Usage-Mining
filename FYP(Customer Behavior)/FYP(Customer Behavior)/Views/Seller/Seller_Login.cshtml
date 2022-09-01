@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Seller_Login";
+    Layout = "~/Views/Shared/SellerSignUpLayout.cshtml";
+}
+
+<main>
+    <center style="margin-top:100px;">
+        <h5 style="color: #292929;">Welcome! Please Login To Sell</h5>
+        <div class="container" style="width:350px">
+            <div class="z-depth-5 hoverable white lighten-4 row" style="display: inline-block; padding: 32px 30px 0px 30px; border: 1px solid #EEE;">
+                <form class="col s12" action="Seller_Login" method="post">
+
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input class='validate' type='email' name='email' id='email' title="The domain portion of the email address is invalid (the portion after the " @@")." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required />
+                            <label for='email'>Enter your Email</label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input class='validate' type='password' name='password' id='password' required />
+                            <label for='password'>Enter your Password</label>
+                        </div>
+                        <label style=''>
+                            <a class='pink-text' href='@Url.Action("Seller_SignUp","Seller")'><b>New Member ? Register here</b></a>
+                        </label>
+                    </div>
+                    <center>
+                        <div class='row'>
+                            <button style="background-color: #292929;" type='submit' name='btn_login' class='col s12 btn btn-large waves-effect '>Login</button>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <p style="font-size:medium; text-align:center"><a class="btn-flat white-text" style="background-color:#292929" href="@Url.Action("Index","Customers")">Back To emart</a></p>
+        <br />
+    </center>
+</main>
+@if (ViewBag.errorLogin != null)
+{
+    <script>
+        toastr.error("@ViewBag.errorLogin");
+    </script>
+}

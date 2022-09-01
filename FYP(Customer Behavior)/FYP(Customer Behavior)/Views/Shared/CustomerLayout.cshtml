@@ -1,0 +1,720 @@
+﻿@using MVCEncrypt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emart</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/Content/Roboto.css" rel="stylesheet">
+    <link href="~/Content/SellerImageMarquee.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/materialize.js"></script>
+    <script src="~/Scripts/slider.js"></script>
+    <link rel="stylesheet" href="~/Content/materialize.css" />
+    <link rel="stylesheet" href="~/Content/newLogin.css" />
+    <link rel="stylesheet" href="~/Content/newCart.css">
+    <link rel="stylesheet" href="~/Content/main.css" />
+    <link rel="stylesheet" href="~/Content/wishlist.css">
+    <link rel="stylesheet" href="~/Content/jquery.exzoom.css" />
+    <script src="~/Scripts/jquery.exzoom.js"></script>
+    <link href="~/Content/custOrder.css" rel="stylesheet" />
+    <link href="~/Content/summaryStatus.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/SimpleStarRating.css" rel="stylesheet" />
+    <script src="~/Scripts/SimpleStarRating.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/jquery.exzoom.css" />
+    <script src="~/Scripts/jquery.exzoom.js"></script>
+
+    <style>
+        #myDiv #a, #myDiv1 #a1 {
+            display: none;
+        }
+
+        .modal1 {
+            max-height: 100%;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        .modal3 {
+            max-height: 100%;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        .modal2 {
+            max-height: 100%;
+            width: 700px;
+            overflow: hidden;
+        }
+
+        .modal-form-row {
+            margin-bottom: 0px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        @@font-face {
+            font-family: 'Tangerine';
+            font-style: normal;
+            font-weight: 500;
+            src: local('Tangerine Regular'), local('Tangerine-Regular'), url('../../Content/IurY6Y5j_oScZZow4VOxCZZM - Copy.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        * {
+            -webkit-backface-vibisility: hidden;
+            -moz-backface-vibisility: hidden;
+            -ms-backface-vibisility: hidden;
+            backface-vibisility: hidden;
+        }
+
+        .notif {
+            position: absolute;
+            color: black;
+        }
+
+        .notification-badge {
+            position: relative;
+            padding: 5px 9px;
+            background-color: transparent;
+            color: palevioletred;
+            bottom: 14px;
+            left: 14px;
+            /*font-style: italic;*/
+            font: larger;
+            border-radius: 50%;
+        }
+
+        .breadCrumb {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .breadCrumb li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: block;
+                float: left;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: .05em;
+                line-height: 20px;
+                color: hsl(0, 0%, 30%);
+            }
+
+                .breadCrumb li a {
+                    display: block;
+                    padding: 0 40px 0 0px;
+                    color: hsl(0, 0%, 30%);
+                    text-decoration: none;
+                    height: 20px;
+                    position: relative;
+                    perspective: 700px;
+                }
+
+                    .breadCrumb li a:after {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border-color: #333;
+                        border-style: solid;
+                        border-width: 1px 1px 0 0;
+                        -webkit-backface-visibility: hidden;
+                        outline: 1px solid transparent;
+                        position: absolute;
+                        right: 20px;
+                        -webkit-transition: all .15s ease;
+                        -moz-transition: all .15s ease;
+                        -ms-transition: all .15s ease;
+                        transition: all .15s ease;
+                        -webkit-transform: rotateZ(45deg) skew(10deg, 10deg);
+                        -moz-transform: rotateZ(45deg) skew(10deg, 10deg);
+                        -ms-transform: rotateZ(45deg) skew(10deg, 10deg);
+                        transform: rotateZ(45deg) skew(10deg, 10deg);
+                    }
+
+                    .breadCrumb li a:hover:after {
+                        right: 15px;
+                        -webkit-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                        -moz-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                        -ms-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                        transform: rotateZ(45deg) skew(-10deg, -10deg);
+                    }
+    </style>
+</head>
+<body class="white">
+
+    <div class="stiky-header">
+        <ul id="user1" class="dropdown-content">
+            @if (Session["customerSession"] != null)
+            {
+                <li><a href='@Url.Action("ViewOrders", "Customers")'>View Orders</a></li>
+                <li class="divider"></li>
+                <li><a class="modal-trigger" href='#UpdateInfo'>Update Info</a></li>
+                <li class="divider"></li>
+                <li><a href='@Url.Action("Logout", "Customers")'>Sign Out</a></li>
+            }
+            else
+            {
+                <li><a class="modal-trigger" href='#login'>Sign In</a></li>
+                <li class="divider"></li>
+                <li><a class="modal-trigger" href='#SignUp'>Sign Up</a></li>
+            }
+        </ul>
+        <nav style="padding:0px 10px; background:white;">
+            <div class="nav-wrapper">
+                <div class="">
+                    @*<a href="@Url.Action("Index", "Customers")" class="brand-logo center" style=" font-family:'Tangerine'; font-size:120px; color:#292929">emart</a>*@
+                    <a href="@Url.Action("Index", "Customers")" class="brand-logo center" style="height:50px;">
+                        <img src="~/Content/LOGO4.PNG" class="responsive-img" style="margin-top:5px;" />
+                    </a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse"><i class="material-icons black-text">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li class="waves-effect waves-light"><a href='@Url.Action("Index", "Customers")'>Home</a></li>
+                        <li class="li">
+                            <a class='' href='javascript:void(0);'>Category</a>
+                            <ul class='ul menucss'></ul>
+                        </li>
+                        <li class="waves-effect waves-light"><a href='@Url.Action("Seller_Login", "Seller")'>Sell on ebuy</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="tooltipped" data-position="bottom" data-delay="200" data-tooltip="Search"><a href="javascript:void();"><i class="material-icons" id="show-search">search</i></a></li>
+                        <li class="tooltipped" data-position="bottom" data-delay="200" data-tooltip="Cart"><a href="@Url.Action("CustomerCart", "Customers")"><i class="notif material-icons ">local_grocery_store</i><small class="notification-badge" id="ntcnt"></small></a></li>
+                        <li class="tooltipped" data-position="bottom" data-delay="200" data-tooltip="Wishlist"><a href="@Url.Action("CustomerWishlist", "Customers")"><i class="notif material-icons ">favorite</i><small class="notification-badge" id="ntcntWl"></small></a></li>
+                        <li class="tooltipped" data-position="bottom" data-delay="200" data-tooltip="Track Order"><a href='@Url.Action("OrderNumber", "Customers")'><i class="material-icons">blur_on</i></a></li>
+                        @if (Session["customerSession"] != null)
+                        {
+                            <li><a class="dropdown-trigger right" href="#!" data-target="user1">@(((FYP_Customer_Behavior_.Models.Dtos.CustomerDto)Session["customerSession"]).Name)</a></li>
+                        }
+                        else
+                        {
+                            <li><a class="dropdown-trigger" href="#!" data-target="user1"><i class="material-icons">account_circle</i></a></li>
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hide" id="search-bar" style="border-bottom:1px solid #292929;">
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="search-text-input" type="search">
+                        <label class="label-icon" for="search-text-input"><i class="material-icons">search</i></label>
+                        <i class="material-icons black-text" id="hide-search">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href='@Url.Action("Index", "Customers")'>Home</a></li>
+        <li><a class="waves-effect" href='@Url.Action("Seller_Login", "Seller")'>Sell on emart</a></li>
+        <li><a class="waves-effect" href='@Url.Action("CustomerCart", "Customers")'>Cart</a></li>
+        <li><a class="waves-effect" href='@Url.Action("CustomerWishlist", "Customers")'>Wishlist</a></li>
+        <li><a class="waves-effect" href='@Url.Action("OrderNumber", "Customers")'>Track Order</a></li>
+
+        @if (Session["customerSession"] != null)
+        {
+            <li><a class="modal-trigger waves-effect" href='#UpdateInfo'>Update Info</a></li>
+            <li><a class="waves-effect" href='@Url.Action("ViewOrders", "Customers")'>View Orders</a></li>
+            <li><a class="waves-effect" href='@Url.Action("Logout","Customers")'>Sign Out</a></li>
+        }
+        else
+        {
+            <li><a class="waves-effect modal-trigger" href='#login'>Sign In</a></li>
+            <li><a class="waves-effect modal-trigger" href='#SignUp'>Sign Up</a></li>
+        }
+
+    </ul>
+
+    <div class="eLoader" id="eLoader" style="width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: none; z-index: 9999">
+        <div class="container11">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <footer style="background-color:#292929;" class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 style="color:white;" class="">Emart</h5>
+                    <p style="font-size:13px; color:whitesmoke;">
+                        Experience a convenient and hassle-free way of online shopping in Pakistan. emart.pk takes your style statement into a whole new territory by placing an extensive variety of top-class brands on its online shopping store within easy reach. Shop online at emart
+                        Pakistan, for trendy apparel & latest gadgets like you have never done before from the comfort of your home with cash on delivery.
+                    </p>
+                </div>
+
+                <div class="col l2 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="white-text text-lighten-3 modal-trigger" href="#login">Login</a></li>
+                        <li><a class="white-text text-lighten-3 modal-trigger" href="#SignUp">Sign Up</a></li>
+                        <li><a class="white-text text-lighten-3" href="@Url.Action("Seller_Login", "Seller")">Sell on emart</a></li>
+                        <li><a class="white-text text-lighten-3" href="@Url.Action("OrderNumber", "Customers")">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 offset-l2 s12">
+                    <h5 style="color:white;" class="">Follow Us</h5>
+                    <ul>
+                        <li><a class="white-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="white-text text-lighten-3" href="#!">Twitter</a></li>
+                        <li><a class="white-text text-lighten-3" href="#!">Instagram</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="background-color:white;" class="black-text footer-copyright">
+            <div class="container">
+                © Emart 2018
+                <a class="red-text right" href="#!"><img style="width:45px; height:45px;" src="~/Content/fb.png" alt="Alternate Text" /></a>
+                <a class="red-text right" href="#!"><img style="width:45px; height:45px;" src="~/Content/if_Icon-2_3064815.png" alt="Alternate Text" /></a>
+                <a class="red-text right" href="#!"><img style="width:45px; height:45px;" src="~/Content/if_Icon-3_3064816.png" alt="Alternate Text" /></a>
+                <a style="font-size:20px; padding-top:10px; padding-right:5px;" class="black-text right" href="#!">Follow Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<div id="login" class="modal modal1 white">
+    <h5 class="modal-close">&#10005;</h5>
+    <div class="modal-content center">
+        <h5>SIGN IN</h5>
+        <br>
+        <form id="signInForm" onsubmit="return false">
+            <div class="input-field">
+                <i class="material-icons prefix">person</i>
+                <input type="text" id="email" name="email" class='validate' title="The domain portion of the email address is invalid (the portion after the " @@")." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                <label for="email">Email</label>
+            </div>
+            <br>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input type="password" name='pass' id="pass" class='validate' required>
+                <label for="pass">Password</label>
+            </div>
+            <div class="center" style="margin-left:20px;">
+                <a class='pink-text ' href='#SignUp'><b>New Member? Register here</b></a>
+                <br />
+                <br />
+                <button style="background-color: #292929; color:white" type='submit' name='' class='col l12 s12 s12 btn btn-large waves-effect waves-light center signIn' id="signIn">
+                    Sign In
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div id="SignUp" class="modal modal2 white">
+    <h5 class="modal-close">&#10005;</h5>
+    <div class="modal-content center">
+        <h5>SIGN UP</h5>
+        <br>
+        <form class="col l12 m12 s12" id="signUpForm" onsubmit="return false">
+            <div class="row">
+                <div class="input-field col l6 m12 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefixN" type="text" value="" name="custName" class="validate" required>
+                    <label for="icon_prefixN">Name</label>
+                </div>
+                <div class="input-field col l6 m12 s12">
+                    <i class="material-icons prefix">contact_mail</i>
+                    <input id="icon_prefixE" type="email" name="email" value="" class="validate" title="The domain portion of the email address is invalid (the portion after the " @@")." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                    <label for="icon_prefixE">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l6 m12 s12">
+                    <i class="material-icons prefix">security</i>
+                    <input id="icon_prefix" name="password" minlength="8" type="password" class="validate" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required>
+                    <label for="icon_prefix">Password</label>
+                </div>
+                <div class="input-field col l6 m12 s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone1" name="ph1" minlength="11" value="" maxlength="11" type="tel" class="validate" placeholder="032xxxxxxxx" pattern="[0]{1}[3]{1}[0-9]{2}[0-9]{7}$" title="Please Enter valid Phone Number" required>
+                    <label for="icon_telephone1">Phone No</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col l6 m12 s12">
+                    <select id="comboboxgender" name="gender" class="gender" title="Please Select Gender" required></select>
+                </div>
+                <div class=" col l6 m12 s12">
+                    <button style="background-color: #292929;" type='submit' name='' class='col s12 btn btn-large waves-effect waves-light signUp' id="signUp">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Session["customerSession"] != null)
+{
+    <div id="UpdateInfo" class="modal modal3 white">
+        <h5 class="modal-close">&#10005;</h5>
+        <div class="modal-content center">
+            <h5 style="color:crimson">Update Info</h5>
+            <form onsubmit="return false">
+                <div class="col l12 s12 m12">
+                    <div class="row">
+                        <div class="input-field col l12 s12 m12">
+                            <input id="custName" type="text" value="@(((FYP_Customer_Behavior_.Models.Dtos.CustomerDto)Session["customerSession"]).Name)" name="custName" class="validate" required>
+                            <label for="custName">Name</label>
+                        </div>
+                        <div class="input-field col l12 s12 m12">
+                            <input id="emailU" type="email" name="email" value="@(((FYP_Customer_Behavior_.Models.Dtos.CustomerDto)Session["customerSession"]).Email)" class="validate" title="The domain portion of the email address is invalid (the portion after the " @@")." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                            <label for="emailU">Email</label>
+                        </div>
+                        <p style="font-size:12px;margin-bottom:0px;">Leave Password Empty if not changing Password.</p>
+                        <div class="input-field col l12 s12 m12">
+                            <input id="passwordU" name="password" minlength="8" type="password" class="validate" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+                            <label for="passwordU">Password</label>
+                        </div>
+                        <div class="input-field col l12 s12 m12">
+                            <input id="ph1U" name="ph1" minlength="11" value="@(((FYP_Customer_Behavior_.Models.Dtos.CustomerDto)Session["customerSession"]).contact)" maxlength="11" type="tel" class="validate" placeholder="032xxxxxxxx" pattern="[0]{1}[3]{1}[0-9]{2}[0-9]{7}$" title="Please Enter valid Phone Number" required>
+                            <label for="ph1U">Phone No</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="getShipAddr">
+                            <button id="updateInfo" type="submit" class="col l12 m12 s12 btn btn-block waves-effect ">SAVE</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+<script>
+    
+
+    $(window).on('load', function (e) {
+        //$('#eLoader').show();
+        $.ajax({
+            //async: true,
+            cache: true,
+            type: 'Get',
+            url: "/Customers/CartCount",
+            success: function (result) {
+                $('#ntcnt').html(result);
+            }
+        });
+        $.ajax({
+            //async: true,
+            cache: true,
+            type: 'Get',
+            url: "/Customers/WishlistCount",
+            success: function (result) {
+                $('#ntcntWl').html(result);
+            }
+        });
+        $.ajax({
+            cache: true,
+            async: false,
+            type: 'Get',
+            url: '/Customers/CatMenu',
+            success: function (result) {
+                $('.menucss').html(result);
+                //$('#eLoader').hide();
+            }
+        });
+        $.ajax({
+            //async: true,
+            cache: true,
+            type: 'POST',
+            url: '@Url.Action("loadgender", "Customers")',
+            success: function (result) {
+            var s = '<option Value="-1">Select Gender</option>';
+            for (var i = 0; i < result.length; i++) {
+            s += '<option value="' + result[i].AID + '">' +
+            result[i].aName + '</option>';
+            }
+            $('#comboboxgender').html(s);
+            $('select').formSelect();
+            }
+
+         });
+    });
+
+    $(document).ready(function () {
+       
+    $('input#icon_prefix').characterCounter();
+    $('#search-text-input').change(function () {
+        $.ajax({
+            type: 'POST',
+            traditional: true,
+            cache: true,
+            url: '@Url.Action("KeywordForSearch", "Customers")',
+            data: { "KeyForSearch": $('#search-text-input').val() },
+
+            success: function (response) {
+                var jsonString = JSON.stringify(response);
+                window.location.href = '/Customers/Products', window.close();
+            }
+        });
+    });
+
+    $("#search-text-input").autocomplete({
+        source: function (request, response) {
+            $.ajax({
+                url: '@Url.Action("productSearchEnter", "Customers")',
+                type: "POST",
+                cache: true,
+                dataType: "json",
+                data: { KeyForSearch: request.term },
+                success: function (data) {
+                    response($.map(data, function (item) {
+                        return { label: item.name, value: item.name };
+                    }));
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        }
+    });
+
+    $('.scrollspy').scrollSpy();
+    $('.fixed-action-btn').floatingActionButton();
+    $(".dropdown-trigger").dropdown({
+        coverTrigger: false
+    });
+    $('.tooltipped').tooltip({ delay: 1000 });
+    $('.sidenav').sidenav();
+
+    $(function () {
+        $('#show-search').click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('#nav-bar, #search-bar').toggleClass('hide');
+            $('#search-bar .input-field')[0].click();
+        });
+
+        $('#hide-search').click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            $('#nav-bar, #search-bar').toggleClass('hide');
+        });
+    });
+    toastr.options = {
+        "timeOut": "1000"
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+    });
+
+    $('.modal').modal();
+    $('#signUp').click(function () {
+        $('#eLoader').show();
+        var data = $('#signUpForm').serialize();
+        $.ajax({
+            //async: false,
+            type: 'POST',
+            data: data,
+            url: "/Customers/CustomerSignup",
+            success: function (result) {
+                if (result === "Sorry the email you entered already exist") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Something went wrong. Check Your Fields Again!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Invalid Email!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                } else if (result === "Your Email is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Your Form is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Your Password is empty or doesn't fulfill our requirements!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Please Select gender!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Your Phone Number field is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Invalid Phone Number!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Your Password is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else if (result === "Invalid Password! You must use 1 Upper Case Letter, 1 Lower case Letter and 1 Digit!") {
+                    $('#eLoader').hide();
+                    toastr.error(result);
+                }
+                else {
+                    $('#eLoader').hide();
+                    window.location = "/Customers/" + result;
+                    //document.location.href = window.location.href;
+                }
+            }
+        })
+    });
+
+    $('#signIn').click(function () {
+        $('#eLoader').show();
+        $.ajax({
+            type: 'POST',
+            data: { "email": $('#email').val(), "pass": $('#pass').val() },
+            url: "/Customers/CustomerLogin",
+            success: function (status) {
+                if (status === "Please Enter Password") {
+                    $('#eLoader').hide();
+                    toastr.error(status);
+                }
+                else if (status === "Please Enter Email") {
+                    $('#eLoader').hide();
+                    toastr.error(status);
+                }
+                else if (status === "Please Fill the Form") {
+                    $('#eLoader').hide();
+                    toastr.error(status);
+                }
+                else if (status === "Invalid Email or Password") {
+                    $('#eLoader').hide();
+                    toastr.error(status);
+                }
+                else if (status === "Success") {
+                    $('#eLoader').hide();
+                    window.location = window.location.href;
+                }
+                else {
+                    $('#eLoader').hide();
+                    window.location = status;
+                }
+            }
+        });
+    });
+
+    $('#updateInfo').click(function () {
+        $('#eLoader').show();
+        $.ajax({
+            type: 'POST',
+            data: { "name": $('#custName').val(), "email": $('#emailU').val(), "phone": $('#ph1U').val(), "pass": $('#passwordU').val() },
+            url: "/Customers/UpdateCustInfo",
+            success: function (data) {
+                if (data === "Your Email is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else if (data === "Invalid Password! You must use 1 Upper Case Letter, 1 Lower case Letter and 1 Digit!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else if (data === "Invalid Email!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                } else if (data === "Your Phone Number field is empty!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else if (data === "Your Password doesn't fulfill our requirements!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else if (data === "Invalid Phone Number!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else if (data === "Success") {
+                    $('#eLoader').hide();
+                    toastr.success("Your Info has been Updated");
+                }
+                else if (data === "Please Enter Name!") {
+                    $('#eLoader').hide();
+                    toastr.error(data);
+                }
+                else {
+                    $('#eLoader').hide();
+                    window.location = data;
+                }
+            }
+        });
+    });
+});
+
+
+</script>
+
+
+@if (Session["customerSession"] != null)
+{
+    <script>
+        var sessionTimeoutWarning = @Session.Timeout- 1;
+        var sTimeout = parseInt(sessionTimeoutWarning) * 60 * 1000;
+        setTimeout('SessionEnd()', sTimeout);
+
+    function SessionEnd() {
+        window.location = "/Customers/Logout";
+    }
+    </script>
+}
+
+@if (Session["WithoutLogin"] != null)
+{
+    <script>
+        var sessionTimeoutWarning = @Session.Timeout- 2;
+        var sTimeout = parseInt(sessionTimeoutWarning) * 60 * 1000;
+        setTimeout('SessionEnd()', sTimeout);
+
+    function SessionEnd() {
+        window.location = "/Customers/WithOutLoginSessionNull";
+    }
+    </script>
+}
+
+@if (TempData["IsVerified"] != null)
+{
+    <script>
+        toastr.success('@TempData["IsVerified"]');
+    </script>
+}

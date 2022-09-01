@@ -1,0 +1,49 @@
+.Top {
+    background-color:none;
+    font-size: 15px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    border-radius: 15px;
+    
+}
+
+
+a:hover {
+    color: crimson;
+}
+
+.Top .myButtons {
+    padding-left:100px; 
+    padding-right: 100px;
+}
+
+    .Top .myButtons button {
+        width: 200px;
+        height: 35px;
+        background-color: white;
+        border: 0px solid white;
+        border-radius: 25px;
+        font-size: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #262626;
+    }
+
+.Top .myButtons button:hover {
+   color: white ;
+   background-color:#262626;
+    
+}
+
+   
+i {
+    color: #292929;
+}
+/*span {
+    color: #1a9cb7;
+}*/
+

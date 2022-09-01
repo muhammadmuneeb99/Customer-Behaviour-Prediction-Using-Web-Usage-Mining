@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a1bdad223f24e13a47877b1d9546c7f" Name="Diagram1">
+        <EntityTypeShape EntityType="FYPModel.Address" Width="1.5" PointX="15.75" PointY="44.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Admin" Width="1.5" PointX="9" PointY="47.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Area" Width="1.5" PointX="13.5" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Brand_Images" Width="1.5" PointX="7.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Brand" Width="1.5" PointX="5.25" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.CanceledOrder" Width="1.5" PointX="12" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Cart" Width="1.5" PointX="15" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Category" Width="1.5" PointX="0.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.CategoryImage" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.City" Width="1.5" PointX="11.25" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Color" Width="1.5" PointX="9.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Country" Width="1.5" PointX="6.75" PointY="45" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Customer" Width="1.5" PointX="15" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Customer_Contact" Width="1.5" PointX="17.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.EmartProfit" Width="1.5" PointX="18" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Gender" Width="1.5" PointX="12.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Log" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Notification" Width="1.5" PointX="17.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.payment_methods" Width="1.5" PointX="13.5" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Product" Width="1.5" PointX="9.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Product_Feature" Width="1.5" PointX="12" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Product_Image" Width="1.5" PointX="12" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.ProductColor" Width="1.5" PointX="12" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.ProductPrice" Width="1.5" PointX="12" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.ProductSize" Width="1.5" PointX="15" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.ProductStorage" Width="1.5" PointX="15" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.ProductWarrenty" Width="1.5" PointX="18" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.RatingsAndReview" Width="1.5" PointX="18" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SalesOrder" Width="1.5" PointX="15.75" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SalesOrderLine" Width="1.5" PointX="18" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Seller" Width="1.5" PointX="12.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Seller_address" Width="1.5" PointX="18.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Seller_Contact" Width="1.5" PointX="15" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SellerImage" Width="1.5" PointX="15" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SellerPaymentSubscription" Width="1.5" PointX="20.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SellerProduct" Width="1.5" PointX="15" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SellerProfit" Width="1.5" PointX="20.25" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Shipment" Width="1.5" PointX="13.5" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Size" Width="1.5" PointX="12.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.State" Width="1.5" PointX="9" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Storage" Width="1.5" PointX="12.75" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.Sub_Category" Width="1.5" PointX="3" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SubCatBrand" Width="1.5" PointX="7.5" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SubCatImage" Width="1.5" PointX="5.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.SubSubCategory" Width="1.5" PointX="5.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.subsubCatImage" Width="1.5" PointX="7.5" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.WarrentyDurationType" Width="1.5" PointX="15.75" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPModel.WishList" Width="1.5" PointX="17.25" PointY="19" IsExpanded="true" />
+        <AssociationConnector Association="FYPModel.FK_Address_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Address_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SalesOrderLine_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SalesOrderLine_Address1" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Admin_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Area_City" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_seller_address_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Brand_Images_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SubSubBrand_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_CanceledOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Cart_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Cart_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_CategoryImages_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Sub_Category_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_City_State" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductColor_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_State_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Customer_Contact_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Customer_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Notification_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Ratings_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_WishList_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_EmartProfit_SalesOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Notification_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Order_payment_methods" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerPaymentSubscription_payment_methods" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Color_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_order_details_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Product_Feature_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Product_Image_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Product_SubCatBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductPrice_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductStorage_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductWarrenty_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Ratings_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Size_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductSize_Sizes" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductStorage_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_ProductWarrenty_WarrentyDurationType" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Ratings_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_order_details_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SalesOrder_Shipment" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerProfit_SalesOrderLine" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerImage_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerPaymentSubscription_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerProduct_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SellerProfit_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Vendor_address_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Vendor_Contact_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_WishList_SellerProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_Brands_Sub_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SubCatImages_Sub_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_SubSubBrand_SubSubCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPModel.FK_subsubCatImage_SubSubCategory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

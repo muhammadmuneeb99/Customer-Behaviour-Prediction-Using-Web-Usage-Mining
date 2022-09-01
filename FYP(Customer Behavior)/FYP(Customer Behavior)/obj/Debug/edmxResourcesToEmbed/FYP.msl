@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FYPModelStoreContainer" CdmEntityContainer="FYPEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="FYPModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="Area_ID" ColumnName="Area_ID" />
+          <ScalarProperty Name="Cust_ID" ColumnName="Cust_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address1" ColumnName="Address" />
+          <ScalarProperty Name="AddressName" ColumnName="AddressName" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="FYPModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Country_ID" ColumnName="Country_ID" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="FYPModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="Area_Name" ColumnName="Area_Name" />
+          <ScalarProperty Name="Area_ID" ColumnName="Area_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brand_Images">
+      <EntityTypeMapping TypeName="FYPModel.Brand_Images">
+        <MappingFragment StoreEntitySet="Brand_Images">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="FYPModel.Brand">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CanceledOrders">
+      <EntityTypeMapping TypeName="FYPModel.CanceledOrder">
+        <MappingFragment StoreEntitySet="CanceledOrder">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="FYPModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="cartId" ColumnName="cartId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="storageid" ColumnName="storageid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="FYPModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+          <ScalarProperty Name="Cat_Name" ColumnName="Cat_Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryImages">
+      <EntityTypeMapping TypeName="FYPModel.CategoryImage">
+        <MappingFragment StoreEntitySet="CategoryImages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="FYPModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colors">
+      <EntityTypeMapping TypeName="FYPModel.Color">
+        <MappingFragment StoreEntitySet="Colors">
+          <ScalarProperty Name="colorId" ColumnName="colorId" />
+          <ScalarProperty Name="colorName" ColumnName="colorName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="FYPModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Country_ID" ColumnName="Country_ID" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="FYPModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Cust_ID" ColumnName="Cust_ID" />
+          <ScalarProperty Name="Cust_Name" ColumnName="Cust_Name" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gender_ID" ColumnName="Gender_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
+          <ScalarProperty Name="PasswordForCheck" ColumnName="PasswordForCheck" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_Contact">
+      <EntityTypeMapping TypeName="FYPModel.Customer_Contact">
+        <MappingFragment StoreEntitySet="Customer_Contact">
+          <ScalarProperty Name="PhoneNo1" ColumnName="PhoneNo1" />
+          <ScalarProperty Name="PhoneNo2" ColumnName="PhoneNo2" />
+          <ScalarProperty Name="Customer_Contact_ID" ColumnName="Customer_Contact_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmartProfits">
+      <EntityTypeMapping TypeName="FYPModel.EmartProfit">
+        <MappingFragment StoreEntitySet="EmartProfit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SalesOrderID" ColumnName="SalesOrderID" />
+          <ScalarProperty Name="Amout" ColumnName="Amout" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="FYPModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="Gender_ID" ColumnName="Gender_ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="FYPModel.Log">
+        <MappingFragment StoreEntitySet="Logs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="FYPModel.Notification">
+        <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+          <ScalarProperty Name="SellerId" ColumnName="SellerId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payment_methods">
+      <EntityTypeMapping TypeName="FYPModel.payment_methods">
+        <MappingFragment StoreEntitySet="payment_methods">
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="payment_type" ColumnName="payment_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="FYPModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_Description" ColumnName="Product_Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DiscountInAmount" ColumnName="DiscountInAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="brandCategoryId" ColumnName="brandCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Feature">
+      <EntityTypeMapping TypeName="FYPModel.Product_Feature">
+        <MappingFragment StoreEntitySet="Product_Feature">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="featureName" ColumnName="featureName" />
+          <ScalarProperty Name="featureDescription" ColumnName="featureDescription" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Image">
+      <EntityTypeMapping TypeName="FYPModel.Product_Image">
+        <MappingFragment StoreEntitySet="Product_Image">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Image_1" ColumnName="Image_1" />
+          <ScalarProperty Name="Image_2" ColumnName="Image_2" />
+          <ScalarProperty Name="Image_3" ColumnName="Image_3" />
+          <ScalarProperty Name="Image_4" ColumnName="Image_4" />
+          <ScalarProperty Name="Image_5" ColumnName="Image_5" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductColors">
+      <EntityTypeMapping TypeName="FYPModel.ProductColor">
+        <MappingFragment StoreEntitySet="ProductColor">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPrices">
+      <EntityTypeMapping TypeName="FYPModel.ProductPrice">
+        <MappingFragment StoreEntitySet="ProductPrice">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSizes">
+      <EntityTypeMapping TypeName="FYPModel.ProductSize">
+        <MappingFragment StoreEntitySet="ProductSize">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStorages">
+      <EntityTypeMapping TypeName="FYPModel.ProductStorage">
+        <MappingFragment StoreEntitySet="ProductStorage">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="storageid" ColumnName="storageid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductWarrenties">
+      <EntityTypeMapping TypeName="FYPModel.ProductWarrenty">
+        <MappingFragment StoreEntitySet="ProductWarrenty">
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="warrentyCount" ColumnName="warrentyCount" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="warrentyDescription" ColumnName="warrentyDescription" />
+          <ScalarProperty Name="warrentyDuraionId" ColumnName="warrentyDuraionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatingsAndReviews">
+      <EntityTypeMapping TypeName="FYPModel.RatingsAndReview">
+        <MappingFragment StoreEntitySet="RatingsAndReviews">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sellerId" ColumnName="sellerId" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="review" ColumnName="review" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrders">
+      <EntityTypeMapping TypeName="FYPModel.SalesOrder">
+        <MappingFragment StoreEntitySet="SalesOrder">
+          <ScalarProperty Name="order_ID" ColumnName="order_ID" />
+          <ScalarProperty Name="cust_Id" ColumnName="cust_Id" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="shipmentID" ColumnName="shipmentID" />
+          <ScalarProperty Name="trackingID" ColumnName="trackingID" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+          <ScalarProperty Name="GuestEmail" ColumnName="GuestEmail" />
+          <ScalarProperty Name="GuestPhoneNumber" ColumnName="GuestPhoneNumber" />
+          <ScalarProperty Name="GuestName" ColumnName="GuestName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrderLines">
+      <EntityTypeMapping TypeName="FYPModel.SalesOrderLine">
+        <MappingFragment StoreEntitySet="SalesOrderLine">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="storageid" ColumnName="storageid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="netAmount" ColumnName="netAmount" />
+          <ScalarProperty Name="discountAmount" ColumnName="discountAmount" />
+          <ScalarProperty Name="discountPercent" ColumnName="discountPercent" />
+          <ScalarProperty Name="billingAddressId" ColumnName="billingAddressId" />
+          <ScalarProperty Name="shippingAddessId" ColumnName="shippingAddessId" />
+          <ScalarProperty Name="isConfirmed" ColumnName="isConfirmed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sellers">
+      <EntityTypeMapping TypeName="FYPModel.Seller">
+        <MappingFragment StoreEntitySet="Seller">
+          <ScalarProperty Name="sellerId" ColumnName="sellerId" />
+          <ScalarProperty Name="sellerName" ColumnName="sellerName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seller_address">
+      <EntityTypeMapping TypeName="FYPModel.Seller_address">
+        <MappingFragment StoreEntitySet="Seller_address">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="area_id" ColumnName="area_id" />
+          <ScalarProperty Name="seller_id" ColumnName="seller_id" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seller_Contact">
+      <EntityTypeMapping TypeName="FYPModel.Seller_Contact">
+        <MappingFragment StoreEntitySet="Seller_Contact">
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Seller_Contact_ID" ColumnName="Seller_Contact_ID" />
+          <ScalarProperty Name="Seller_ID" ColumnName="Seller_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellerImages">
+      <EntityTypeMapping TypeName="FYPModel.SellerImage">
+        <MappingFragment StoreEntitySet="SellerImage">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sellerID" ColumnName="sellerID" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellerPaymentSubscriptions">
+      <EntityTypeMapping TypeName="FYPModel.SellerPaymentSubscription">
+        <MappingFragment StoreEntitySet="SellerPaymentSubscription">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sellerId" ColumnName="sellerId" />
+          <ScalarProperty Name="paymentTypeId" ColumnName="paymentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellerProducts">
+      <EntityTypeMapping TypeName="FYPModel.SellerProduct">
+        <MappingFragment StoreEntitySet="SellerProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="sellerId" ColumnName="sellerId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellerProfits">
+      <EntityTypeMapping TypeName="FYPModel.SellerProfit">
+        <MappingFragment StoreEntitySet="SellerProfit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sellerId" ColumnName="sellerId" />
+          <ScalarProperty Name="salesOrderLineId" ColumnName="salesOrderLineId" />
+          <ScalarProperty Name="proId" ColumnName="proId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shipments">
+      <EntityTypeMapping TypeName="FYPModel.Shipment">
+        <MappingFragment StoreEntitySet="Shipment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="deliveryCharges" ColumnName="deliveryCharges" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sizes">
+      <EntityTypeMapping TypeName="FYPModel.Size">
+        <MappingFragment StoreEntitySet="Sizes">
+          <ScalarProperty Name="sizeId" ColumnName="sizeId" />
+          <ScalarProperty Name="sizeName" ColumnName="sizeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="FYPModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Country_ID" ColumnName="Country_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Storages">
+      <EntityTypeMapping TypeName="FYPModel.Storage">
+        <MappingFragment StoreEntitySet="Storage">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Storage1" ColumnName="Storage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sub_Category">
+      <EntityTypeMapping TypeName="FYPModel.Sub_Category">
+        <MappingFragment StoreEntitySet="Sub_Category">
+          <ScalarProperty Name="Sub_Category_ID" ColumnName="Sub_Category_ID" />
+          <ScalarProperty Name="Sub_Name" ColumnName="Sub_Name" />
+          <ScalarProperty Name="Cat_ID" ColumnName="Cat_ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCatBrands">
+      <EntityTypeMapping TypeName="FYPModel.SubCatBrand">
+        <MappingFragment StoreEntitySet="SubCatBrand">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="subSubCatId" ColumnName="subSubCatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCatImages">
+      <EntityTypeMapping TypeName="FYPModel.SubCatImage">
+        <MappingFragment StoreEntitySet="SubCatImages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SubCatId" ColumnName="SubCatId" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubSubCategories">
+      <EntityTypeMapping TypeName="FYPModel.SubSubCategory">
+        <MappingFragment StoreEntitySet="SubSubCategory">
+          <ScalarProperty Name="SubSubCategoryID" ColumnName="SubSubCategoryID" />
+          <ScalarProperty Name="SubSubCategoryName" ColumnName="SubSubCategoryName" />
+          <ScalarProperty Name="Sub_Category_ID" ColumnName="Sub_Category_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subsubCatImages">
+      <EntityTypeMapping TypeName="FYPModel.subsubCatImage">
+        <MappingFragment StoreEntitySet="subsubCatImage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="subsubCatID" ColumnName="subsubCatID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FYPModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarrentyDurationTypes">
+      <EntityTypeMapping TypeName="FYPModel.WarrentyDurationType">
+        <MappingFragment StoreEntitySet="WarrentyDurationType">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WishLists">
+      <EntityTypeMapping TypeName="FYPModel.WishList">
+        <MappingFragment StoreEntitySet="WishList">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="sellerProductId" ColumnName="sellerProductId" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="storageid" ColumnName="storageid" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AreaCityStateCountrySelect" FunctionName="FYPModel.Store.AreaCityStateCountrySelect">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FYPModel.AreaCityStateCountrySelect_Result">
+          <ScalarProperty Name="Area_ID" ColumnName="Area_ID" />
+          <ScalarProperty Name="Area_Name" ColumnName="Area_Name" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CityStateCountrySelect" FunctionName="FYPModel.Store.CityStateCountrySelect">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FYPModel.CityStateCountrySelect_Result">
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="customerLogin" FunctionName="FYPModel.Store.customerLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FYPModel.customerLogin_Result">
+          <ScalarProperty Name="Cust_ID" ColumnName="Cust_ID" />
+          <ScalarProperty Name="Cust_Name" ColumnName="Cust_Name" />
+          <ScalarProperty Name="Cust_ID1" ColumnName="Cust_ID1" />
+          <ScalarProperty Name="Cust_Name1" ColumnName="Cust_Name1" />
+          <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gender_ID" ColumnName="Gender_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
+          <ScalarProperty Name="PasswordForCheck" ColumnName="PasswordForCheck" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dayAndNightBased" FunctionName="FYPModel.Store.dayAndNightBased" />
+    <FunctionImportMapping FunctionImportName="dayBased" FunctionName="FYPModel.Store.dayBased" />
+    <FunctionImportMapping FunctionImportName="MasterAdminLogin" FunctionName="FYPModel.Store.MasterAdminLogin" />
+    <FunctionImportMapping FunctionImportName="mostViewedItemClickAndTime" FunctionName="FYPModel.Store.mostViewedItemClickAndTime" />
+    <FunctionImportMapping FunctionImportName="PagesView" FunctionName="FYPModel.Store.PagesView" />
+    <FunctionImportMapping FunctionImportName="sellerProduct_View" FunctionName="FYPModel.Store.sellerProduct_View" />
+    <FunctionImportMapping FunctionImportName="StateCountrySelect" FunctionName="FYPModel.Store.StateCountrySelect">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FYPModel.StateCountrySelect_Result">
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="timeSpendBased" FunctionName="FYPModel.Store.timeSpendBased" />
+    <FunctionImportMapping FunctionImportName="usersIDForPage" FunctionName="FYPModel.Store.usersIDForPage" />
+    <FunctionImportMapping FunctionImportName="userVisitedPages" FunctionName="FYPModel.Store.userVisitedPages" />
+    <FunctionImportMapping FunctionImportName="wishlistGet" FunctionName="FYPModel.Store.wishlistGet" />
+  </EntityContainerMapping>
+</Mapping>

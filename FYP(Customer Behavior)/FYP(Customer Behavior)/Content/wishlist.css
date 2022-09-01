@@ -1,0 +1,48 @@
+
+.tblWish {
+    width: 100%;
+}
+    .tblWish thead tr th {
+        border: 2px solid #292929;
+        font-weight:500
+    }
+.tdpName {
+    padding-left: 30px
+}
+@media only screen and (max-width: 992px) {
+    .tblWish thead .sellerPriceth0 {
+        height: 100%;
+        width: 100%;
+        padding-top: 120px;
+    }
+    .sellerPriceth1 {
+        height: 59.5px;
+        width: 60px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tblWish thead .sellerPriceth0 {
+        height: 100%;
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .sellerPriceth1 {
+        height: 59.5px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .tblWish thead .sellerPriceth0 {
+        height: 100%;
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .sellerPriceth1 {
+        height: 59.5px;
+        width: 60px;
+    }
+}

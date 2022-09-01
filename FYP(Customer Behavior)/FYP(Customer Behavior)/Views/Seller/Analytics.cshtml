@@ -1,0 +1,339 @@
+﻿
+@{
+    ViewBag.Title = "Analytics";
+    Layout = "~/Views/Shared/SellerLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col l3 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content ">
+                <div id="chartContainer4" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l9 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content ">
+                <div id="chartContainer5" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l6 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content ">
+                <div id="chartContainer2" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l6 m12 s12">
+        <div class="card grey darken-1">
+            <div class="card-content white">
+                <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l6 m12 s12">
+        <div class="card darken-1 ">
+            <div class="card-content">
+                <div id="chartContainer" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l6 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content ">
+                <div id="chartContainer3" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l12 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content ">
+                <div id="chartContainer6" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l12 m12 s12">
+        <div class="card darken-1">
+            <div class="card-content">
+                <h5 class="center">Canceled Orders</h5>
+                <table class="display" style="width:100%; height:300px;" id="example">
+                    <thead>
+                        <tr>
+                            <th style="font-size:12px;">Id</th>
+                            <th style="font-size:12px;">Name</th>
+                            <th style="font-size:12px; width:70px; height:70px;">Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.co)
+                        {
+                            <tr>
+                                <td style="font-size:12px;">@item.id</td>
+                                <td style="font-size:12px;">@item.name</td>
+                                <td style="font-size:12px; width:80px; height:80px;"><img src="@item.Image1" style="width:80px; height:80px; object-fit:scale-down" class="responsive-img" /></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload=function () {
+        var result = @Html.Raw(ViewBag.DataPoints);
+        var dataPoint = [];
+        for (var i = 0; i < result.length; i++) {
+            dataPoint.push({ label: result[i].X, y: result[i].Y });
+        }
+        var chart = new CanvasJS.Chart("chartContainer", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Sold Items",
+                fontSize: 22
+            },
+            axisX: {
+                //interval: 1,
+                labelFontSize: 12
+            },
+            axisY: {
+                labelFontSize: 12,
+                //interval: 1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint
+            }
+            ]
+        });
+        chart.render();
+        //////////////////////////////////////////////////////
+        var result1 = @Html.Raw(ViewBag.DataPoints1);
+        var dataPoint1 = [];
+        for (var i = 0; i < result1.length; i++) {
+            dataPoint1.push({ label: result1[i].X1, y: result1[i].Y1 });
+        }
+        var chart1 = new CanvasJS.Chart("chartContainer1", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Viewed Items Based on Time",
+                fontSize: 22
+            },
+            axisX: {
+                //interval: 1,
+                labelFontSize: 12
+            },
+            axisY: {
+                labelFontSize: 12,
+                //interval: 1,
+                minimum: 0
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint1
+            }
+            ]
+        });
+        chart1.render();
+        //////////////////////////////////////////////////////
+        var result2 = @Html.Raw(ViewBag.DataPoints2);
+        var dataPoint2= [];
+        for (var i = 0; i < result2.length; i++) {
+            dataPoint2.push({ label: result2[i].X2, y: result2[i].Y2 });
+        }
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Viewed Items Based on Click",
+                fontSize: 22
+            },
+            axisX: {
+                //interval: 1,
+                labelFontSize: 12
+            },
+            axisY: {
+                labelFontSize: 12,
+                //interval: 1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint2
+            }
+            ]
+        });
+        chart2.render();
+        /////////////////////////////////////////////////////////
+        var result3 = @Html.Raw(ViewBag.DataPoints3);
+        var dataPoint3= [];
+        for (var i = 0; i < result3.length; i++) {
+            dataPoint3.push({ label: result3[i].X3, y: result3[i].Y3 });
+        }
+        var chart3 = new CanvasJS.Chart("chartContainer3", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Rated Item",
+                fontSize: 22
+            },
+            axisX: {
+                //interval: 1,
+                labelFontSize: 12
+            },
+            axisY: {
+                labelFontSize: 12,
+                //interval: 1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint3
+            }
+            ]
+        });
+        chart3.render();
+        /////////////////////////////////////////////////////////
+        var result4 = @Html.Raw(ViewBag.DataPoints4);
+        var dataPoint4 = [];
+        for (var i = 0; i < result4.length; i++) {
+            dataPoint4.push({ label: result4[i].X7, y: result4[i].Y7, exploded: true });
+        }
+        var chart4 = new CanvasJS.Chart("chartContainer4", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Number Of Orders",
+                fontSize: 22
+            },
+            axisX: {
+                //interval: 1
+            },
+            axisY: {
+                //interval: 1
+            },
+            data: [{
+                innerRadius: "82%",
+                radius: "100%",
+                showInLegend: false,
+                startAngle: 220,
+                type: "doughnut",
+                dataPoints: dataPoint4
+            }
+            ]
+        });
+        chart4.render();
+         //////////////////////////////////////////////////////
+        var result5 = @Html.Raw(ViewBag.DataPoints5);
+        var dataPoint5 = [];
+        for (var i = 0; i < result5.length; i++) {
+            dataPoint5.push({ label: result5[i].X11, y: result5[i].Y11 });
+        }
+        var chart5 = new CanvasJS.Chart("chartContainer5", {
+            theme: "theme2",
+            animationEnabled: true,
+            backgroundColor: "transparent",
+            title: {
+                text: "Orders Per Day",
+                fontSize: 22
+            },
+            toolTip: {
+                //backgroundColor: "#ffffff",
+                borderThickness: 0,
+                cornerRadius: 0,
+                //fontColor: "#424242"
+            },
+            axisX: {
+                //interval: 1
+            },
+            axisY: {
+                //interval: 1
+            },
+            data: [{
+                //color: "#424242",
+                fillOpacity: 1,
+                lineColor: "#000000",
+                lineThickness: 3,
+                markerSize: 10,
+                type: "spline",
+                dataPoints: dataPoint5
+            }
+            ]
+        });
+        chart5.render();
+        //////////////////////////////////////////////////////
+        var result6 = @Html.Raw(ViewBag.ij);
+        var dataPoint6 = [];
+        for (var i = 0; i < result6.length; i++) {
+            dataPoint6.push({ label: result6[i].X13, y: result6[i].Y13 });
+        }
+        var chart1 = new CanvasJS.Chart("chartContainer6", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Revenue"
+            },
+            axisX: {
+                //interval: 3,
+            },
+            axisY: {
+                //interval:20000
+            },
+            toolTip: {
+                //backgroundColor: "#ffffff",
+                borderThickness: 0,
+                cornerRadius: 0,
+                //fontColor: "#424242"
+            },
+            data: [{
+                type: "spline",
+                fillOpacity: 1,
+                lineColor: "#292929",
+                lineThickness: 3,
+                markerSize: 10,
+                type: "spline",
+                dataPoints: dataPoint6
+            }
+            ]
+        });
+        chart1.render();
+        //////////////////////////////////////////////////////
+    }
+
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title !== "" && title !== "Image") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            $('input', this).on('keyup change', function () {
+                if (table.column(i).search() !== this.value) {
+                    table
+                        .column(i)
+                        .search(this.value)
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            scrollY: 300,
+            scroller: true,
+            responsive: true,
+            orderCellsTop: true,
+            fixedHeader: true,
+        });
+
+    });
+</script>

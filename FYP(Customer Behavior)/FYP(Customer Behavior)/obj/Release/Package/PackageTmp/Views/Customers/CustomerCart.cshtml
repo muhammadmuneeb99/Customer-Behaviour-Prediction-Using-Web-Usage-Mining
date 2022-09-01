@@ -1,0 +1,344 @@
+﻿@model List<FYP_Customer_Behavior_.Models.Dtos.CartDto>
+@using MVCEncrypt;
+@{
+    ViewBag.Title = "CustomerCart";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+
+<main>
+    <div class="maintblCart">
+        <div class="row">
+            <div class="tblCart1 col l9 m12 s12">
+                <p style="font-size:20px; color:#292929" class="center">My Cart</p>
+                <table style="margin-top:25px; margin-bottom:25px;" class="z-depth-5 hoverable">
+                    <thead style="background-color:#292929;">
+                        <tr>
+                            <th style="width:200px; padding-left:20px; font-size:14px;color:white;">
+                                @*<label for="filled-in-box">
+            <input type="checkbox" class="filled-in1" id="filled-in-box"/>
+            <span style="font-size:12px; color:white;">SELECT ITEMS</span>
+        </label>*@
+                                SELECT ITEMS
+                            </th>
+                            <th style="font-size:14px; width:120px; color:white;">Color</th>
+                            <th style="font-size:14px; width:120px; color:white;">Storage</th>
+                            <th style="font-size:14px; width:120px; color:white;">Size</th>
+                            <th style="font-size:12px; color:white;">PRICE</th>
+                            <th style="font-size:12px; color:white;">QUANTITY</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody style="background-color:white; margin-top:10px;">
+                        @{ int count = 0;}
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>
+                                    <label for="@count.ToString()filled">
+                                        <input type="checkbox" class="filled-in1" id="@count.ToString()filled" name="abcdef" target="qty1" value="@item.cartProductPriceId" />
+                                        <span class="s"><img src="@item.img1" class="responsive-img" alt=""></span>
+                                        <input id="@count.ToString()filled" name='@count.ToString()quantity' type='hidden' value='@item.qty' class='qty1' />
+                                        @if (item.colorid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                        @if (item.storageid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                        @if (item.sizeid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                    </label>
+                                    <p class="flow-text" style="width:150px;font-size:14px;">
+                                        <a href="@Url.ActionEnc("mySecret","ProductInformation",new { __proID = item.__productId })">@item.pname</a>
+                                    </p>
+                                </td>
+                                @if (item._color != null)
+                                {
+                                    <td>@item._color</td>
+                                }
+                                else
+                                {
+                                    <td>-</td>
+                                }
+                                @if (item._storage != null)
+                                {
+                                    <td>@item._storage</td>
+                                }
+                                else
+                                {
+                                    <td>-</td>
+                                }
+                                @if (item._size != null)
+                                {
+                                    <td>@item._size</td>
+                                }
+                                else
+                                {
+                                    <td>-</td>
+                                }
+                                <td>@item.price.ToString("#,###")</td>
+                                <td>
+                                    <button type='button' value='@item.cartProductPriceId' class='btn waves-effect waves-light qtyminus' field='@count.ToString()quantity'>-</button>
+                                    <input id="qty" type='text' name='@count.ToString()quantity' value='@item.qty' class='qty' />
+                                    <button type='button' value='@item.cartProductPriceId' class='btn waves-effect waves-light qtyplus' field='@count.ToString()quantity'>+</button>
+                                </td>
+                                <td><a href='@Url.ActionEnc("mySecret","RemoveFromCart", new { cartID = item.cartID })' class=" tooltipped material-icons grey-text " data-position="bottom" data-tooltip="Delete from Cart">delete</a></td>
+                            </tr>
+                            count++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="tblCart2 col l3 m12 s12">
+                <p style="font-size:20px; color:#292929;" class="center">Order Summary</p>
+                <div class="z-depth-5 hoverable" style="background-color:white; border-radius:10px;">
+                    <div class="row">
+                        <div class="col" style="padding-left:30px; color: darkgrey;"><p>Sub Total</p></div>
+                        <div class="col" style="float:right; padding-right:30px;"><p id="amount">Rs. 0</p></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col" style="padding-left:30px; color: darkgrey;"><p>Shipping Fee</p></div>
+                        <div class="col" style="float:right; padding-right:30px;"><p>Rs. @ViewBag.dc</p></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col" style="padding-left:30px; color: black;"><p>Total</p></div>
+                        <div class="col" style="float:right; padding-right:30px; color:crimson;"><p id="amount1">Rs. 0</p></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col l12 m12 s12">
+                            @*<a href='@Url.Action("SelectedProduct","Customers")' id="pId">*@
+                            <a href='javascript:void(0);' id="pId">
+                                <button style="background-color: #292929;" name='btn_login' class='col l12 m12 s12 btn btn-large waves-effect '>
+                                    PROCEED TO CHECKOUT
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@if (TempData["selectedProductQuantity"] != null)
+{
+    <script>
+        toastr.error("@TempData["selectedProductQuantity"]");
+    </script>
+}
+@if (TempData["ItemAddedToCart"] != null)
+{
+    <script>
+        toastr.success("@TempData["ItemAddedToCart"]");
+    </script>
+}
+<script>
+
+    $(document).ready(function () {
+
+        $(".colorSelect > option").each(function () {
+            alert("hhh");
+            if ($(this).text() === null) {
+                alert(hh);
+                $(".colorSelect").css("display:none;");
+            }
+        })
+
+        var PriceTotal = 0;
+        var pId = [];
+        var pq = [];
+
+        $("#filled-in-box").change(function () {
+            $(".filled-in1").prop('checked', $(this).prop("checked"));
+        });
+
+        //$('.filled-in1').change(function () {
+            
+        //});
+
+        $(".filled-in1").change(function () {
+
+            if ($(this).prop("checked") === false) {
+                $("#filled-in-box").prop('checked', $(this).prop("checked"));
+            }
+            if ($('.filled-in1').length === $('.filled-in:checked').length) {
+                $("#filled-in-box").prop('checked', true);
+
+            }
+
+            var total = 0;
+            var ProductPriceID = null;
+            pId = [];
+            pq = [];
+            $(".filled-in1:checked").each(function () {
+                ProductPriceID = $(this).val();
+                var res = ProductPriceID.split("|");
+                var tp = parseInt(res[1]) * $(this).next().next().val();
+                total += tp;
+                pId.push(parseInt(res[0]));
+                var pqStr = res[0].toString() + "|" + $(this).next().next().val() + "|" + $(this).next().next().next().val() + "|" + $(this).next().next().next().next().val() + "|" + $(this).next().next().next().next().next().val();
+                pq.push(pqStr.toString());
+            });
+
+            if (total == 0) {
+                $('#amount').html("Rs. " + total);
+                $('#amount1').html("Rs. " + total);
+                PriceTotal = total;
+            } else {
+                $('#amount').html("Rs. " + total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                $('#amount1').html("Rs. " + total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                PriceTotal = total;
+            }
+        });
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        $('.qtyplus').click(function (e) {
+            e.preventDefault();
+            fieldName = $(this).attr('field');
+            //var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+            if (parseInt($('input[name=' + fieldName + ']').val()) < 5) {
+                var _PPID = $(this).val();
+                var _newres = _PPID.split("|");
+                var _newtotal = parseInt(_newres[1]);
+                var _idpp = parseInt(_newres[0]);
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                if (!isNaN(currentVal)) {
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                    currentVal = currentVal + 1;
+                    $('#eLoader').show();
+                    $.ajax({
+                        type: 'Get',
+                        data: { proid: _idpp, qty: currentVal},
+                        url: "/Customers/addtoCartByQtyPlusMinus",
+                        success: function (result) {
+                            $('#ntcnt').html(result);
+                            $('#eLoader').hide();
+                        }
+                    });
+                } else {
+                    $('input[name=' + fieldName + ']').val(1);
+                    $('#eLoader').hide();
+                }
+                for (let k in pId) {
+                    if (pId[k] === _idpp) {
+                        PriceTotal += _newtotal;
+                        var abc = pq[k].toString();
+                        var def = abc.split('|');
+                        if (parseInt(def[0]) === pId[k]) {
+                            pq.pop(k);
+                            //var __qty = def[1]
+                            var __color = def[3];
+                            var __storage = def[4];
+                            var __size = def[5];
+                            pq.push(def[0].toString() + "|" + $('input[name=' + fieldName + ']').val() + "|" + __color + "|" + __storage + "|" + __size);
+                        }
+                        $('#amount').html("Rs. " + PriceTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                        $('#amount1').html("Rs. " + PriceTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                    }
+                }
+            }
+            
+        });
+        $(".qtyminus").click(function (e) {
+            e.preventDefault();
+            fieldName = $(this).attr('field');
+            var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+
+            var _PPID = $(this).val();
+            var _newres = _PPID.split("|");
+            var _newtotal = parseInt(_newres[1]);
+            var _idpp = parseInt(_newres[0]);
+            $('#eLoader').show();
+            if (!isNaN(currentVal) && currentVal > 1) {
+                $('input[name=' + fieldName + ']').val(currentVal - 1);
+                currentVal = currentVal - 1;
+                $.ajax({
+                    type: 'Get',
+                    data: { proid: _idpp, qty: currentVal },
+                    url: "/Customers/addtoCartByQtyPlusMinus",
+                    success: function (result) {
+                        $('#ntcnt').html(result);
+                        $('#eLoader').hide();
+                    }
+                });
+            } else {
+                $('input[name=' + fieldName + ']').val(1);
+                $('#eLoader').hide();
+            }
+            if (currentVal > 1) {
+                for (let k in pId) {
+                    if (pId[k] === _idpp) {
+                        PriceTotal -= _newtotal;
+                        var abc = pq[k].toString();
+                        var def = abc.split('|');
+                        if (parseInt(def[0]) === pId[k]) {
+                            pq.pop(k);
+                            var __color = def[3];
+                            var __storage = def[4];
+                            var __size = def[5];
+                            pq.push(def[0].toString() + "|" + $('input[name=' + fieldName + ']').val() + "|" + __color + "|" + __storage + "|" + __size);
+                            //pq.push(def[0].toString() + "|" + $('input[name=' + fieldName + ']').val());
+                        }
+                        $('#amount').html("Rs. " + PriceTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                        $('#amount1').html("Rs. " + PriceTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+                    }
+                }
+            }
+            //$('#eLoader').show();
+            //if (!isNaN(currentVal) && currentVal > 1) {
+            //    $('input[name=' + fieldName + ']').val(currentVal - 1);
+            //    currentVal = currentVal - 1;
+            //    $.ajax({
+            //        type: 'Get',
+            //        data: { proid: _idpp, qty: currentVal },
+            //        url: "/Customers/addtoCartByQtyPlusMinus",
+            //        success: function (result) {
+            //            $('#ntcnt').html(result);
+            //            $('#eLoader').hide();
+            //        }
+            //    });
+            //} else {
+            //    $('input[name=' + fieldName + ']').val(1);
+            //    $('#eLoader').hide();
+            //}
+            
+        });
+        $('#pId').click(function () {
+            $('#eLoader').show();
+            $.ajax({
+                type: 'POST',
+                traditional: true,
+                cache: false,
+                url: '@Url.Action("SelectedProduct", "Customers")',
+                data: { "pq": pq, "ProductPriceTotal": PriceTotal },
+                success: function (result) {
+                    if (result === "pq is null") {
+                        $('#eLoader').hide();
+                        toastr.info("You have not Selected any Item To Buy");
+                    }
+                    else if (result === "Session is null") {
+                        $('#eLoader').hide();
+                        toastr.info("Please Login To Buy");
+                    }
+                    else if (result === "/Customers/BuyAndCheckOut") {
+                        $('#eLoader').hide();
+                        window.location = result;
+                    }
+                    else {
+                        $('#eLoader').hide();
+                        window.location = result
+                    }
+                }
+            });
+        });
+    });
+</script>
+

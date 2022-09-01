@@ -1,0 +1,121 @@
+﻿@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.SellerSalesOrderDto>
+@{
+    ViewBag.Title = "Seller_Order";
+    Layout = "~/Views/Shared/SellerLayout.cshtml";
+}
+
+<main>
+    <div class="container" style="margin-bottom:60px; width:100%; margin-top:50px; margin-left:auto;margin-right:auto">
+        <table class="display centered responsive-table bordered" style="width:100%" id="example">
+            <thead>
+                <tr>
+                    <th style="font-size:12px">Order Id</th>
+                    @*<th style="font-size:12px">Customer Id</th>*@
+                    @*<th style="font-size:12px">Guest Id</th>*@
+                    @*<th style="font-size:12px">Product Id</th>*@
+                    <th style="font-size:12px">Product Name</th>
+                    @*<th style="background-color:#292929;color:white;border-radius:0px; font-size:13px">Product Image</th>*@
+                    <th style="font-size:12px">Customer Name</th>
+                    <th style="font-size:12px">Guest Name</th>
+                    <th style="font-size:12px">Qty</th>
+                    <th style="font-size:12px">Unit Price</th>
+                    <th style="font-size:12px">Net Price</th>
+                    <th style="font-size:12px">Tracking Id</th>
+                    <th style="font-size:12px">Order Date</th>
+
+                    <th style="font-size:12px">Shipment</th>
+                    <th style="font-size:12px">Payment Type</th>
+                    <th style="font-size:12px">Ship Address</th>
+                    <th style="font-size:12px">Bill Address</th>
+                    <th style="font-size:12px"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+
+                    foreach (var item in Model)
+                    {
+                <tr>
+                    <td style="font-size:12px;">@item.OrderId</td>
+                    @*<td style="font-size:12px">@item.custID</td>*@
+                    @*<td style="font-size:12px">@item.GuestID</td>*@
+                    @*<td style="font-size:12px">@item.productId</td>*@
+                    <td style="font-size:12px">@item.proName</td>
+                    @*<td style="font-size:13px"><img style="width:80px; height:80px; object-fit:scale-down;" src="@item.pImage" class="responsive-img" alt=""></td>*@
+                    <td style="font-size:12px">@item.custName</td>
+                    <td style="font-size:12px">@item.GuestName</td>
+                    <td style="font-size:12px">@item.qty</td>
+                    <td style="font-size:12px">@item.unitPrice.ToString("#,###")</td>
+                    <td style="font-size:12px">@item.netPrice.ToString("#,###")</td>
+                    <td style="font-size:12px">@item.trackingID</td>
+                    <td style="font-size:12px">@DateTime.Parse(item.date).ToString("dd/MM/yyyy")</td>
+                    <td style="font-size:12px">@item.shipment</td>
+                    <td style="font-size:12px">@item.paymentType</td>
+                    <td style="font-size:12px">@item.shipaddr</td>
+                    <td style="font-size:12px">@item.billaddr</td>
+                    <td style="font-size:12px;">
+                        @if (item.isConfirmed == 0)
+                        {
+                            <a style="font-size:12px;" href='@Url.Action("OrderConfirmation", "Seller", new { confirm = (int)item.id })' class="" value="@item.id" id="">Confirm</a>
+                        }
+                        else if (item.isConfirmed == 1)
+                        {
+                            <a style="font-size:12px;" href='' class="btn-flat" value="" id="">Confirmed</a>
+                        }
+                        else if (item.isConfirmed == 2)
+                        {
+                            <a style="font-size:12px;" href='' class="btn-flat" value="" id="">Delivered</a>
+                        }
+                    </td>
+                </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script type="text/javascript">
+    
+
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "") {
+            }
+            else if (title === "Order Date") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function () {
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+            fixedHeader: true
+        });
+        $('#cnfrmBtn').click(function () {
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("OrderConfirmation", "Seller")',
+            data: { 'confirm': $("#cnfrmBtn").val() },
+        });
+    });
+    });
+</script>
+
+

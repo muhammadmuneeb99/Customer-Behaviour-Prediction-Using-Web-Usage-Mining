@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "ViewOrders";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+@{ int to_ot = 1; int count = 1; string tid = "";}
+<main>
+    <br />
+    <h5 class="container center">Orders</h5>
+    <div id="vog">
+
+    </div>
+</main>
+
+<script>
+    $(window).on('load', function () {
+
+        $.ajax({
+            //async: true,
+            cache: true,
+            type: 'Get',
+            url: "/Customers/_viewOrders",
+            success: function (result) {
+                $('#vog').html(result);
+            }
+        });
+    });
+</script>

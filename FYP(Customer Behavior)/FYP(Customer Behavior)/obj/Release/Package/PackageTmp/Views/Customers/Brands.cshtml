@@ -1,0 +1,369 @@
+﻿@using MVCEncrypt;
+@model List<FYP_Customer_Behavior_.Models.Dtos.BrandsDto>
+@{
+    ViewBag.Title = "Brands";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <div>
+        <img style="width:100%; height:300px;object-fit:scale-down" src="@ViewBag.brandImage" alt="Not Available" />
+    </div>
+    <div class="submainCatCard">
+        <div class="row">
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="col l12 m12 s12 ">
+                <div class="cscName">@ViewBag.brandName</div>
+                <br />
+                <div class="row">
+                    <div class="col s12 l12 m12">
+                        @{ int count = 0;}
+                        @foreach (var item in Model)
+                        {
+                            <a href='@Url.ActionEnc("mySecret","ProductInformation", new { __proID = item.proID })'>
+                                <div class="ProCard hoverable z-depth-1-half white left">
+                                    <div class="ProImgCard">
+                                        <img src="@item.proImg" />
+                                    </div>
+                                    <div class="imgProName ">
+                                        @item.proName
+                                    </div>
+                                    @if (item.dInAmount == 0 && item.dInPercent == 0)
+                                    {
+                                        <div class="row">
+                                            <div class="col s6 m6 l6">
+                                                <div class="ProPrice">
+                                                    Rs.@item.newPrice.ToString("#,###")
+                                                </div>
+                                            </div>
+                                            <div class="col s6 m6 l6">
+                                                <div class="acw">
+                                                    @if (item.qty > 5)
+                                                    {
+                                                        if (item.cartId != null)
+                                                        {
+                                                            <a href="javascript:void(0);" id="aTc" class="aTc material-icons  red-text right @item.proID.ToString()_pid">local_grocery_store</a>
+                                                            if (item.colorid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                            if (item.storageid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                            if (item.sizeid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.cartId" class='@item.proID.ToString()atc' />
+                                                        }
+                                                        else
+                                                        {
+                                                            <a href="javascript:void(0);" id="aTc" class="aTc material-icons right @item.proID.ToString()_pid">local_grocery_store</a>
+                                                            if (item.colorid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                            if (item.storageid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                            if (item.sizeid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                            <input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atc' />
+                                                        }
+                                                    }
+                                                    @if (item.wishlistId != null)
+                                                    {
+                                                        <a class=" small material-icons red-text aTw @item.proID.ToString()pid" href="javascript:void(0);" id="aTw">favorite</a>
+                                                        if (item.colorid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                        if (item.storageid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                        if (item.sizeid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                        <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                        if (item.wishlistId != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.wishlistId" class='@item.proID.ToString()atw' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atw' />}
+                                                    }
+                                                    else
+                                                    {
+                                                        <a href="javascript:void(0);" id="aTw" class="aTw material-icons @item.proID.ToString()pid">favorite_border</a>
+                                                        if (item.colorid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                        if (item.storageid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                        if (item.sizeid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                        <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                        if (item.wishlistId != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.wishlistId" class='@item.proID.ToString()atw' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atw' />}
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                    }
+                                    else
+                                    {
+                                        <div class="row">
+                                            <div class="col s6 m6 l6">
+                                                <div class="ProPrice">
+                                                    Rs.@item.newPrice.ToString("#,###")
+                                                </div>
+                                                <div class="dPA">
+                                                    <p>Rs.<strike>@item.price.ToString("#,###")</strike></p>
+                                                </div>
+                                                @if (item.rating > 0)
+                                                {
+                                                    <div>
+                                                        <span id="stars" class="ratingI" data-default-rating="@item.rating" disabled></span>
+                                                    </div>
+                                                }
+                                            </div>
+                                            <div class="col s6 m6 l6">
+                                                <div class="acw">
+                                                    @if (item.qty > 5)
+                                                    {
+                                                        if (item.cartId != null)
+                                                        {
+                                                            <a href="javascript:void(0);" id="aTc" class="aTc material-icons  red-text right @item.proID.ToString()_pid">local_grocery_store</a>
+                                                            if (item.colorid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                            if (item.storageid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                            if (item.sizeid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.cartId" class='@item.proID.ToString()atc' />
+                                                        }
+                                                        else
+                                                        {
+                                                            <a href="javascript:void(0);" id="aTc" class="aTc material-icons right @item.proID.ToString()_pid">local_grocery_store</a>
+                                                            if (item.colorid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                            if (item.storageid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                            if (item.sizeid != null)
+                                                            {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                            else
+                                                            {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                            <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                            <input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atc' />
+                                                        }
+                                                    }
+                                                    @if (item.wishlistId != null)
+                                                    {
+                                                        <a class=" small material-icons red-text aTw @item.proID.ToString()pid" href="javascript:void(0);" id="aTw">favorite</a>
+                                                        if (item.colorid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                        if (item.storageid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                        if (item.sizeid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                        <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                        if (item.wishlistId != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.wishlistId" class='@item.proID.ToString()atw' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atw' />}
+                                                    }
+                                                    else
+                                                    {
+                                                        <a href="javascript:void(0);" id="aTw" class="aTw material-icons @item.proID.ToString()pid">favorite_border</a>
+                                                        if (item.colorid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                                        if (item.storageid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                                        if (item.sizeid != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                                        <input id="@count.ToString()filled" type='hidden' value="@item.proID" class='pid' />
+                                                        if (item.wishlistId != null)
+                                                        {<input id="@count.ToString()filled" type='hidden' value="@item.wishlistId" class='@item.proID.ToString()atw' />}
+                                                        else
+                                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='@item.proID.ToString()atw' />}
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    $(document).ready(function () {
+        $('.aTc').click(function () {
+            var cCheck = $(this).next().next().next().next().next().val();
+            var id = $(this).next().next().next().next().val();
+            if (cCheck === "undefined") {
+                var itemtoadd = [];
+                var qty = parseInt(1);
+                var p = (id).toString() + "|" + qty.toString() + "|" + $(this).next().val() + "|" + $(this).next().next().val() + "|" + $(this).next().next().next().val();
+                itemtoadd.push(p);
+                $('#eLoader').show();
+                $.ajax({
+                    type: "POST",
+                    data: { "itemToAdd": itemtoadd },
+                    url: "@Url.Action("addtoCartByPiWi", "Customers")",
+                    success: function (result) {
+                        var r = result.split("+");
+                        if (r[0] === "Item Added to the Cart Succesfully!") {
+                            $('.' + id + '_pid').addClass("red-text");
+                            $('.' + id + 'pid').removeClass("red-text");
+                            $('.' + id + 'pid').html("favorite_border");
+                            $('#ntcnt').html(r[1]);
+                            $('#ntcntWl').html(r[3]);
+                            $('.' + id + 'atc').val(r[2]);
+                            $('.' + id + 'atw').val("undefined");
+                            $('#eLoader').hide();
+                            toastr.success(r[0]);
+                        }
+                        else if (r[0] === "Item already exist in the Cart!") {
+                            $('#eLoader').hide();
+                            toastr.info(r[0]);
+                        }
+                        else if (r[0] === "Please Login to Add Item in Your Cart!") {
+                            $('#eLoader').hide();
+                            toastr.info(r[0]);
+                        }
+                        else {
+                            $('#eLoader').hide();
+                            toastr.success(r[0]);
+                        }
+                    }
+                });
+            }
+            else {
+                $(this).removeClass("red-text");
+                $.ajax({
+                    type: "POST",
+                    data: { "cartId": cCheck },
+                    url: "@Url.Action("_RemovefromCart", "Customers")",
+                    success: function (result) {
+                        var a = result.split('+');
+                        $('.' + id + 'atc').val("undefined");
+                        $('#ntcnt').html(a[1]);
+                        toastr.success(a[0]);
+                    }
+
+                });
+            }
+        });
+
+        $('.aTw').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var id = $(this).next().next().next().next().val();
+            var wCheck = $(this).next().next().next().next().next().val();
+            if (wCheck.toString() === "undefined") {
+            var itemtoadd = [];
+            var qty = parseInt(1);
+            var p = (id).toString() + "|" + qty.toString() + "|" + $(this).next().val() + "|" + $(this).next().next().val() + "|" + $(this).next().next().next().val();
+            itemtoadd.push(p);
+            $('#eLoader').show();
+            $.ajax({
+                type: "POST",
+                data: { "_itemToAdd": itemtoadd },
+                url: "@Url.Action("addtoWishlistByPi", "Customers")",
+                success: function (result) {
+                    var r = result.split("+");
+                    if (r[0] === "Item Added to the Wishlist Succesfully") {
+                        $('#ntcntWl').html(r[1]);
+                        $('#eLoader').hide();
+                        $('.' + id + 'atw').val(r[2]);
+                        $('.' + id + 'pid').html("favorite");
+                        $('.' + id + 'pid').addClass("red-text");
+                        toastr.success(r[0]);
+                    }
+                    else if (r[0] === "Item already exist in Cart") {
+                        $('#eLoader').hide();
+                        toastr.info(r[0]);
+                    }
+                    else if (r[0] === "Item already exist in Wishlist") {
+                        $('#eLoader').hide();
+                        toastr.info(r[0]);
+                    }
+                    else if (r[0] === "Please Login to Add Item in Your Wishlist") {
+                        $('#eLoader').hide();
+                        toastr.info(r[0]);
+                    }
+                    else {
+                        $('#eLoader').hide();
+                        toastr.success(r[0]);
+                    }
+                }
+                });
+            }
+            else {
+                $(this).html("favorite_border");
+                $(this).removeClass("red-text");
+                $.ajax({
+                    type: "POST",
+                    data: { "wishlistId": wCheck },
+                    url: "@Url.Action("_RemovefromWishlist", "Customers")",
+                    success: function (result) {
+                        var a = result.split('+');
+                        $('.' + id + 'atw').val("undefined");
+                        $('#ntcntWl').html(a[1]);
+                        toastr.success(a[0]);
+                    }
+
+                });
+            }
+        });
+    });
+
+    var ratings = document.getElementsByClassName('ratingI');
+    for (var i = 0; i < ratings.length; i++) {
+        var r = new SimpleStarRating(ratings[i]);
+    }
+</script>

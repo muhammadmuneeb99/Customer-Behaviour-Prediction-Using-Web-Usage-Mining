@@ -1,0 +1,112 @@
+﻿@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.SellerSalesOrderDto>
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+<main>
+
+    <div class="container" style="width:100%; height:auto; margin-top:2%;">
+
+        <table class="centered display bordered responsive-table" style="width:100%" id="example">
+            <thead>
+                <tr>
+                    <th style="font-size:12px">Order ID</th>
+                    <th style="font-size:12px">Product</th>
+                    @*<th style="font-size:12px">Guest ID</th>*@
+                    <th style="font-size:12px">Customer Name</th>
+                    <th style="font-size:12px">Guest Name</th>
+                    <th style="font-size:12px">Qty</th>
+                    <th style="font-size:12px">Unit Price</th>
+                    <th style="font-size:12px">Net Price</th>
+                    <th style="font-size:12px">Tracking ID</th>
+                    <th style="font-size:12px">Order Date</th>
+                    <th style="font-size:12px">Shipment</th>
+                    <th style="font-size:12px">Payment Type</th>
+                    <th style="font-size:12px">Shipping Address</th>
+                    <th style="font-size:12px">Billing Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var value in Model)
+                {
+                    <tr>
+                        <td style="font-size:12px">@value.OrderId</td>
+                        <td style="font-size:12px">@value.proName</td>
+                        @*<td style="font-size:12px">@value.guestId</td>*@
+                        <td style="font-size:12px">@value.custName</td>
+                        <td style="font-size:12px">@value.GuestName</td>
+                        <td style="font-size:12px">@value.qty</td>
+                        <td style="font-size:12px">@value.unitPrice.ToString("#,###")</td>
+                        <td style="font-size:12px">@value.netPrice.ToString("#,###")</td>
+                        <td style="font-size:12px">@value.trackingID</td>
+                        <td style="font-size:12px">@value.date</td>
+                        <td style="font-size:12px">@value.shipment</td>
+                        <td style="font-size:12px">@value.paymentType</td>
+                        <td style="font-size:12px">@value.shipaddr</td>
+                        <td style="font-size:12px">@value.billaddr</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</main>
+
+
+
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $("#myInput").on("keyup", function () {
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    //$(document).ready(function () {
+    //    $("#date").on("change", function (event) {
+    //        event.preventDefault();
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    //$('.datepicker').on('mousedown', function (event) {
+    //    event.preventDefault();
+    //})
+    //$(".datepicker").pickadate({
+    //    format : "d/mm/yyyy"
+    //});
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "") {
+            }
+            else if (title === "Order Date") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function (e) {
+                e.preventDefault();
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+            //fixedHeader: true
+        });
+
+    });
+</script>

@@ -1,0 +1,312 @@
+﻿@using MVCEncrypt;
+@model FYP_Customer_Behavior_.Models.ViewModels.IndexViews
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <section class="">
+        <div class="carousel carousel-slider">
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/samsung-galaxy-gear-smartwatch-cover.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/smartwatch-HC-10-10-218.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/78N_LAST_VIKING_MAINSCREEN.png" />
+                </div>
+            </div>
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/Huawei-top-global-phone-brand.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/maxresdefault.jpg" />
+                </div>
+            </div>
+            <div class="carousel-item center-align slides" style="border:0px solid #808080;" href="#one!">
+                <div class="black" style=" border:0px solid #808080;">
+                    <img class="imgSliderResponsive" src="~/Slider Images/slider-7-presentation.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="container ">
+        <div class="CateName  black-text">Categories</div>
+        <div class="scrollspy" id="Categories">
+            <div class="mainCatCard">
+                <div class="row">
+                    <div class="col l12 m12 s12">
+
+                        @foreach (var item in Model.catNameImages)
+                        {
+                            <a href='@Url.ActionEnc("mySecret","CatSubCat", new { catid = item.id })'>
+                                <div class="CatCard z-depth-1-half hoverable left">
+                                    <div class="imgCard">
+                                        <img class="responsive-img" src="@item.Image1" alt="">
+                                    </div>
+                                    <div class="imgCateName">
+                                        @item.name
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top:2px;" class="divider"></div>
+    <div class="container ProName scrollspy" id="Brands">Brands</div>
+    <div class="container mainProCard" id="abc">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                @foreach (var item in Model.brandsDtos)
+                {
+                    <a href='@Url.ActionEnc("mySecret","Brands",new { brandID = item.brandID } )'>
+                        <div class="BrandCard white z-depth-1-half hoverable left">
+                            <div class="BrandProImgCard">
+                                @if (item.proImg1 != null)
+                                {
+                                    <img class="responsive-img" src="@item.proImg1" />
+                                }
+                                else
+                                {
+                                    <img class="responsive-img" src="@item.proImg" />
+                                }
+                            </div>
+                            <div class="row">
+                                <div class="col l6 m6 s6">
+                                    <p style="text-align:center">@item.brandName</p>
+                                </div>
+                                <div class="col l6 m6 s6">
+                                    <div class="BrandImgCard">
+                                        <img class="responsive-img" src="@item.brandImage" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top:2px;" class="divider"></div>
+    @*@if (Model.productPriceImageDtoMultiR.Count != 0)
+    {*@
+        <div class="container ProName scrollspy" id="Recommended">Get The One You Like</div>
+        <div class="container mainProCard" id="abc">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                    <div id="myDiv">
+                        @if (ViewBag.TimeSpendProduct != null)
+                        {
+                            foreach (var item in ViewBag.TimeSpendProduct)
+                            {
+                                <a id="a" href='@Url.ActionEnc("mySecret","ProductInformation", new { __proID = item.id })'>
+                                    <div class="ProCard hoverable z-depth-1-half white left">
+                                        <div class="ProImgCard">
+                                            <img class="responsive-img" src="@item.Image1" />
+                                        </div>
+                                        <div class="imgProName">
+                                            <p>@item.name</p>
+                                        </div>
+                                        @if (item.dAmount == 0 && item.dPercent == 0)
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <br />
+                                        }
+                                        else
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <div class="dPA">
+                                                <p>Rs.<strike>@item.price.ToString("#,###")</strike></p>
+                                            </div>
+                                        }
+                                        @if (item.rating > 0)
+                                        {
+                                            <div class="row">
+                                                <div class="col l5 m5 s5">
+                                                    <span id="stars" class="ratingI" data-default-rating="@item.rating" disabled></span>
+                                                </div>
+                                                <div class="col l6 m6 s6">
+                                                    <p style="font-size:12px;font-weight:600">(@item.rating/5)</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </a>
+                            }
+                        }
+                        @if (Model.productPriceImageDtoMultiR.Count != 0)
+                        {
+                            foreach (var item in Model.productPriceImageDtoMultiR)
+                            {
+                                <a id="a" href='@Url.ActionEnc("mySecret","ProductInformation", new { __proID = item.id })'>
+                                    <div class="ProCard hoverable z-depth-1-half white left">
+                                        <div class="ProImgCard">
+                                            <img class="responsive-img" src="@item.Image1" />
+                                        </div>
+                                        <div class="imgProName">
+                                            <p>@item.name</p>
+                                        </div>
+                                        @if (item.dAmount == 0 && item.dPercent == 0)
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <br />
+                                        }
+                                        else
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <div class="dPA">
+                                                <p>Rs.<strike>@item.price.ToString("#,###")</strike></p>
+                                            </div>
+                                        }
+                                        @if (item.rating > 0)
+                                        {
+                                            <div class="row">
+                                                <div class="col l5 m5 s5">
+                                                    <span id="stars" class="ratingI" data-default-rating="@item.rating" disabled></span>
+                                                </div>
+                                                <div class="col l6 m6 s6">
+                                                    <p style="font-size:12px;font-weight:600">(@item.rating/5)</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </a>
+                            }
+                        }
+                        @if (Model.productPriceImageDto.Count != 0)
+                        {
+                            foreach (var item in Model.productPriceImageDto)
+                            {
+                                <a id="a" href='@Url.ActionEnc("mySecret","ProductInformation", new { __proID = item.id })'>
+                                    <div class="ProCard hoverable z-depth-1-half white left">
+                                        <div class="ProImgCard">
+                                            <img class="responsive-img" src="@item.Image1" />
+                                        </div>
+                                        <div class="imgProName ">
+                                            <p>@item.name</p>
+                                        </div>
+                                        @if (item.dAmount == 0 && item.dPercent == 0)
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <br />
+                                        }
+                                        else
+                                        {
+                                            <div class="ProPrice">
+                                                Rs.@item.newPrice.ToString("#,###")
+                                            </div>
+                                            <div class="dPA">
+                                                <p>Rs.<strike>@item.price.ToString("#,###")</strike></p>
+                                            </div>
+                                        }
+                                        @if (item.rating > 0)
+                                        {
+                                            <div class="row">
+                                                <div class="col l5 s5 m5">
+                                                    <span id="stars" class="ratingI" data-default-rating="@item.rating" disabled></span>
+                                                </div>
+                                                <div class="col l6 s6 m6">
+                                                    <p style="font-size:12px;font-weight:600">(@item.rating/5)</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </a>
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    @*}*@
+
+    <div class="row">
+        <div class=" center">
+            <a class="moreless-button csc_a btn-large waves-effect waves-light" style="color:#292929;background-color:white;border:1px solid #292929; width:200px;" id="loadMore" href="javascript:void();">VIEW MORE</a>
+        </div>
+    </div>
+    <br />
+
+    <!--Marquee-->
+    <div class="">
+        <div class="container mrq1">
+            <marquee class="marquee1" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
+                @foreach (var item in ViewBag.sImg)
+                {
+                    <a href="@Url.ActionEnc("mySecret","SellersProductsView", new { sellerId = item.sellerID })"><img class="marqueImage" src='@item.image'></a>
+                }
+            </marquee>
+        </div>
+    </div>
+    <!--Marquee-->
+    <div class="fixed-action-btn col hide-on-small-only m3 ll2 hide-on-med-and-down left">
+        <a class="btn-floating btn-large grey darken-4">
+            <i class="large material-icons">add</i>
+        </a>
+        <ul>
+            <li class="tooltipped" data-position="left" data-tooltip="Categories"><a class="btn-floating green large material-icons" href="#Categories">apps</a></li>
+            <li class="tooltipped" data-position="left" data-tooltip="Brands"><a class="btn-floating red large material-icons" href="#Brands">favorite</a></li>
+            <li class="tooltipped" data-position="left" data-tooltip="Get The One You Like"><a class="btn-floating yellow darken-2 large material-icons" href="#Recommended">thumb_up</a></li>
+        </ul>
+    </div>
+</main>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.your-class').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+    });
+
+    $(function () {
+        $("#myDiv #a").slice(0, 12).show();
+        $("#loadMore").on('click', function (e) {
+            e.preventDefault();
+            $("#myDiv #a:hidden").slice(0, 12).slideDown();
+            if ($("#myDiv #a:hidden").length == 0) {
+                $("#load").fadeOut('slow');
+            }
+        });
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+
+    var ratings = document.getElementsByClassName('ratingI');
+    for (var i = 0; i < ratings.length; i++) {
+        var r = new SimpleStarRating(ratings[i]);
+    }
+</script>

@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "CustOrder";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <div class="mps">
+        <div class="row ">
+            <p class="pmName">Select Payment Method</p>
+            <div class="col l8 m8 s8 pSelect">
+                <form action="CustOrder" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <span>
+                                    <input class="with-gap" id="chkYes1" name="cp" value="2" type="radio" />
+                                    <img class="hoverable" src="~/paymentMethodImages/1533654621189.png" alt="Alternate Text" />
+                                </span>
+                            </label>
+                            <label>
+                                <span>
+                                    <input class="with-gap" id="chkYes2" name="cp" value="1" type="radio" />
+                                    <img class="hoverable" src="~/paymentMethodImages/Cash_on_delivery-512.png" alt="Alternate Text" />
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!---->
+                        <div class="col _content z-depth-5 hoverable" id="_content1">
+                            <div class="row">
+                                <form id="show" class="col s11">
+                                    <div  style="margin-left:60px; margin-top:15px;" class="row">
+                                        <div class="input-field col s5">
+                                            <input id="cardnumber" type="text" class="validate">
+                                            <label for="cardnumber">Card Number</label>
+                                        </div>
+                                        <div class="input-field col s5">
+                                            <input id="namecard" type="text" class="validate">
+                                            <label for="namecard">Name On Card</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-left:60px;">
+                                        <div class="input-field col s3">
+                                            <input id="date" type="date" class="validate">
+                                            <label for="date">Expiration date</label>
+                                        </div>
+                                        <div class="input-field col s2">
+                                            <input id="cvv" type="text" class="validate">
+                                            <label for="cvv">CVV</label>
+                                        </div>
+                                        <br />
+                                        <div class="col l5 m12 s12">
+                                            <a href='#'>
+                                                <button style="background-color: #262626;" type='submit' name='btn_login' class='hoverable col l12 m12 s12 btn waves-effect '>
+                                                    PLACE ORDER
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col _content z-depth-5 hoverable" id="_content2">
+                            <div class="row ">
+
+                                <div id="show" class="col s11">
+                                    <div class="row">
+                                        <p>You can pay in cash to our courier when you receive the goods at your doorstep.</p>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <br />
+                                        <div class="col l5 m12 s12">
+                                            <a href='#'>
+                                                <button style="background-color: #262626;" type='submit' name='btn_login' class='hoverable col l12 m12 s12 btn btn-large waves-effect '>
+                                                    PLACE ORDER
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </form>
+            </div>
+            <div class="col l4 m4 s4">
+                <div class="tblCart1">
+                    <p style="font-size:20px; color:#292929;">Order Summary</p>
+                    <div class="z-depth-5 hoverable" style="background-color:white; border-radius:10px;">
+
+                        <div class="row">
+                            <div class="col" style="padding-left:30px; color:darkgrey;"><p>Sub Total(Shipping Fee Included)</p></div>
+                            <div class="col" style="float:right; padding-right:30px;"><p>Rs. @ViewBag.Tot.ToString("#,###")</p></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col" style="padding-left:30px; color:black;"><p>Total</p></div>
+                            <div class="col" style="float:right; padding-right:30px; color:crimson;"><p id="amount1">Rs. @ViewBag.Tot.ToString("#,###")</p></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('input[type="radio"]').click(function () {
+            if ($(this).attr('id') == 'chkYes1') {
+                $('#_content1').show();
+            }
+            else {
+                $('#_content1').hide();
+            }
+        });
+
+        $('input[type="radio"]').click(function () {
+            if ($(this).attr('id') == 'chkYes2') {
+                $('#_content2').show();
+            }
+            else {
+                $('#_content2').hide();
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,41 @@
+.myProfile {
+    height: 450px;
+    width: 900px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:25px;
+    margin-top:25px;
+    border-radius:10px;
+}
+
+.form-pad1 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .form-pad1 input[type=text]:focus {
+        border-bottom: 2px solid #f57c00 !important;
+        box-shadow: none !important;
+    }
+
+    .form-pad1 input[type=text]:active {
+        border-bottom: 2px solid #f57c00 !important;
+        box-shadow: none !important;
+    }
+
+label {
+    color: #1a9cb7;
+}
+
+.form-pad2 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .form-pad2 input[type=date]:focus {
+        border-bottom: 2px solid #f57c00 !important;
+        box-shadow: none !important;
+    }

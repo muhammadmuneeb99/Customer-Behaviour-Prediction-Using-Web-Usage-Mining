@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "AdminLogin";
+    Layout = "~/Views/Shared/AdminLoginLayout.cshtml";
+}
+
+<div class="wrapper">
+    <form class="form-signin" action="Home/AdminLogin" method="post">
+        <h2 class="form-signin-heading">Admin Login</h2>
+        <input type="text" class="form-control" name="email1" id="email" placeholder="Email Address" required="" autofocus="" /><br />
+        <input type="password" class="form-control" name="pass1" id="pass" placeholder="Password" required="" />
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login" name="login"/>
+        @if (ViewBag.m != null)
+        {
+            <p class="text-success">@ViewBag.m</p>
+        }
+    </form>
+</div>
+
+

@@ -1,0 +1,4213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\MySite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Address.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Admin.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Advertisement.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="AdvertisementRate.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="AdvertisementType.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="AdvertisementTypeRelation.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/09/2018 23:16:34</publishTime>
+    </File>
+    <File Include="App_Start/BundleConfig.cs">
+      <publishTime>05/14/2019 20:44:26</publishTime>
+    </File>
+    <File Include="App_Start/FilterConfig.cs">
+      <publishTime>09/09/2018 23:13:18</publishTime>
+    </File>
+    <File Include="App_Start/RouteConfig.cs">
+      <publishTime>01/28/2019 02:21:29</publishTime>
+    </File>
+    <File Include="App_Start/Startup.Auth.cs">
+      <publishTime>03/16/2019 21:19:55</publishTime>
+    </File>
+    <File Include="Area.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="AreaCityStateCountrySelect_Result.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Behavior.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="BehaviorOnType.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/09/2018 23:16:34</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/Facebook.dll">
+      <publishTime>04/13/2015 15:48:00</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/FYP%28Customer Behavior%29.dll">
+      <publishTime>05/06/2020 03:14:54</publishTime>
+    </File>
+    <File Include="bin/FYP%28Customer Behavior%29.pdb">
+      <publishTime>05/06/2020 03:14:54</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/jose-jwt.dll">
+      <publishTime>04/20/2017 18:01:22</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/27/2017 12:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/22/2018 16:25:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/22/2018 16:36:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/22/2018 14:39:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/22/2018 16:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/22/2018 16:36:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/22/2018 14:36:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/24/2018 12:47:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/24/2018 12:47:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/24/2018 12:47:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>05/04/2017 02:25:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>05/04/2017 02:25:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 15:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Antiforgery.dll">
+      <publishTime>09/08/2017 22:02:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Authorization.dll">
+      <publishTime>09/08/2017 22:02:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Cors.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.DataProtection.Abstractions.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.DataProtection.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Diagnostics.Abstractions.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Hosting.Abstractions.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Html.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Http.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Http.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Http.Extensions.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Http.Features.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.JsonPatch.dll">
+      <publishTime>04/27/2017 18:53:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Localization.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Abstractions.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.ApiExplorer.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Core.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Cors.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.DataAnnotations.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Formatters.Json.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Localization.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Razor.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.Razor.Host.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.TagHelpers.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Mvc.ViewFeatures.dll">
+      <publishTime>06/21/2018 07:54:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Razor.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Razor.Runtime.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll">
+      <publishTime>02/15/2018 18:13:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Routing.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.Routing.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNetCore.WebUtilities.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/13/2016 05:31:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/13/2016 05:31:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.DotNet.PlatformAbstractions.dll">
+      <publishTime>06/26/2018 15:47:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Configuration.dll">
+      <publishTime>02/17/2017 13:40:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Configuration.FileExtensions.dll">
+      <publishTime>02/17/2017 13:40:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Configuration.Json.dll">
+      <publishTime>02/17/2017 13:40:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>06/26/2018 15:47:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.FileProviders.Composite.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.FileProviders.Physical.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.FileSystemGlobbing.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Globalization.CultureInfoCache.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Localization.Abstractions.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Localization.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.ObjectPool.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Options.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.PlatformAbstractions.dll">
+      <publishTime>11/14/2016 20:41:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Primitives.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.WebEncoders.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Net.Http.Headers.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2018 16:28:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2018 16:28:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2018 16:28:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2018 16:28:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2018 16:28:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2018 16:28:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2018 16:28:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2018 16:28:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2018 16:28:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>12/10/2016 15:26:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 04:55:32</publishTime>
+    </File>
+    <File Include="bin/MVCEncrypt.dll">
+      <publishTime>03/19/2017 07:24:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="bin/System.AppContext.dll">
+      <publishTime>11/05/2016 04:55:34</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>11/05/2016 04:55:30</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Immutable.dll">
+      <publishTime>06/11/2016 23:13:16</publishTime>
+    </File>
+    <File Include="bin/System.Console.dll">
+      <publishTime>11/05/2016 04:55:48</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>06/11/2016 23:13:32</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/11/2016 23:13:36</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 04:56:02</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 04:56:04</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/05/2016 04:56:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/01/2018 12:17:18</publishTime>
+    </File>
+    <File Include="bin/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 04:56:34</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Metadata.dll">
+      <publishTime>06/11/2016 23:14:14</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/05/2016 04:56:46</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 04:57:00</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 04:57:14</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 04:57:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encoding.CodePages.dll">
+      <publishTime>06/11/2016 23:14:46</publishTime>
+    </File>
+    <File Include="bin/System.Text.Encodings.Web.dll">
+      <publishTime>04/19/2017 16:58:54</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Thread.dll">
+      <publishTime>06/11/2016 23:14:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/01/2018 12:17:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/01/2018 12:19:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 12:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/01/2018 12:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 04:57:36</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XmlDocument.dll">
+      <publishTime>06/11/2016 23:15:02</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XPath.dll">
+      <publishTime>06/11/2016 23:15:06</publishTime>
+    </File>
+    <File Include="bin/System.Xml.XPath.XDocument.dll">
+      <publishTime>06/11/2016 23:15:02</publishTime>
+    </File>
+    <File Include="bin/VaderSharp.dll">
+      <publishTime>06/16/2017 15:07:46</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>06/14/2019 12:01:58</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>06/14/2019 12:01:56</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>06/14/2019 12:01:54</publishTime>
+    </File>
+    <File Include="Brand.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Brand_Images.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Brand_Images/1024px-Dell_Logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/1213cdf454.png">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/128a1ac9-85d8-4f07-80a1-1414dd8332e0.png">
+      <publishTime>01/18/2019 22:25:27</publishTime>
+    </File>
+    <File Include="Brand_Images/15e4d4e9-992c-4981-b78c-165f012d88d2.png">
+      <publishTime>01/14/2019 10:14:41</publishTime>
+    </File>
+    <File Include="Brand_Images/2000px-Google__G__Logo.svg.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/3eb01292-2d24-44e3-bde7-b86bfb942f3e.png">
+      <publishTime>01/13/2019 18:18:08</publishTime>
+    </File>
+    <File Include="Brand_Images/4654f6d54v564546.jpg">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/56ds1c56xxxx5555.png">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/56i5uy6556ds1c56xxxx.png">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/5cf488c7-7532-4878-b5af-d8051f08a2f7.png">
+      <publishTime>01/13/2019 18:20:06</publishTime>
+    </File>
+    <File Include="Brand_Images/654654654fffffdff.jpg">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/86afa45c-e45c-427f-956a-c989e3faacbb.png">
+      <publishTime>01/18/2019 22:24:16</publishTime>
+    </File>
+    <File Include="Brand_Images/91a460a426a552681c1ae8e2997902e5294c4795.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/a0c3618f-a102-4abc-a133-ffe10e72d532.png">
+      <publishTime>01/18/2019 22:26:01</publishTime>
+    </File>
+    <File Include="Brand_Images/a3c481d2-c37d-416c-9563-df8f399c5e6f.png">
+      <publishTime>01/13/2019 18:19:05</publishTime>
+    </File>
+    <File Include="Brand_Images/a4-tech.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/ajmal_logo.ai_.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/al_karam_textiles-300x300.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Ammunition_Work_Beats_LogoTile-wpcf_1024x576.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/anex.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Apple-Logo-black-copie.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/asus_logoai_.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/audionic-logo-250x250.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/b87ba8d9-d834-4885-827e-827af4a39c48.png">
+      <publishTime>01/18/2019 22:23:53</publishTime>
+    </File>
+    <File Include="Brand_Images/bata-big-logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/bleu-de-chanel-logo-1BF2881976-seeklogo.com.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/BO7d1qui_400x400.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/bonanza-clothing-brand-logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/c1f9d82b-9b3e-4865-ab11-d78b2a43bc1a.png">
+      <publishTime>01/18/2019 22:24:43</publishTime>
+    </File>
+    <File Include="Brand_Images/c577c03a-7244-4b4b-84cf-2e36c5b0605e.png">
+      <publishTime>01/18/2019 22:25:02</publishTime>
+    </File>
+    <File Include="Brand_Images/Casio-vector-logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/ceac347d-e686-4e1c-a163-b5e7c7f40619.png">
+      <publishTime>01/13/2019 18:08:03</publishTime>
+    </File>
+    <File Include="Brand_Images/dfd546df460.jpg">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/download %281%29.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download %281%29.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download %282%29.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download %283%29.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download %284%29.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/download.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/dunhill-1-logo-png-transparent.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/EA_logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/f54v546ds57f465.jpg">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/fb38cadb-286b-4349-8faa-843f76633a1e.png">
+      <publishTime>01/14/2019 09:48:51</publishTime>
+    </File>
+    <File Include="Brand_Images/Generation-300x300.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Gul-Ahmed-Clothing-723x469.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/HJ-Global-Enterprises-Logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/huawei_logo.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/iphone_brand-300x273.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/kisspng-hewlett-packard-brand-logo-product-design-hp-historique-présentation-chiffres-clés-n-5b62d46f26bbb4.8507135815332035671587.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/kisspng-logo-brand-power-bank-re-max-llc-company--5b82dffa9562f0.1951510015353036746119.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/KWC.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Levi_s_Authorised_Dealer_Taiwan-logo-1CEC88B276-seeklogo.com.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/LOGO-YAZOLE.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/maxresdefault.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/msft_logo_print.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/NikonldihisssudshiuogoBE7BD3C0F2seeklogo.png">
+      <publishTime>01/13/2019 15:45:25</publishTime>
+    </File>
+    <File Include="Brand_Images/orient-logo-2BBED86096-seeklogo.com.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/public-news-174840-Nokia--2x1--940.jpg">
+      <publishTime>11/05/2018 11:23:22</publishTime>
+    </File>
+    <File Include="Brand_Images/p_57d256e58ea8d.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/quartz-og.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Rado_logos.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/razer-logo.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Samsung-Logo-353.jpg">
+      <publishTime>11/05/2018 11:23:22</publishTime>
+    </File>
+    <File Include="Brand_Images/SCJ_logo.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/sigma.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/smart-logo-200x200.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Sony-logo-brand-tld-400x200.png">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/sony-og.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/Timex-logo.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/tissot-watches-1-638.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="Brand_Images/unnamed.jpg">
+      <publishTime>11/05/2018 11:23:23</publishTime>
+    </File>
+    <File Include="CanceledOrder.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="CancelReason.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="Cart.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Category.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="CategoryImage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Cat_Images/147696_1.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/23887-hd-home-theater.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/3845f7c7-810e-4da9-a108-9e6c2b438450.png">
+      <publishTime>01/15/2019 01:53:03</publishTime>
+    </File>
+    <File Include="Cat_Images/accessories_bracelets_ambiance_1600x900.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/dvr506-accessories-700x700.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/images %281%29.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/images.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/img-01.png">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/petfood-aisle-1506PETpackaging.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/sports-HD.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/Test_095d1bd5-0422-46e1-aa7a-bd0b44860168.png">
+      <publishTime>11/04/2018 01:11:55</publishTime>
+    </File>
+    <File Include="Cat_Images/Toyota-Fortuner-Front-Grille-99708.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="Cat_Images/wedding.jpg">
+      <publishTime>11/04/2018 01:39:43</publishTime>
+    </File>
+    <File Include="City.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="CityStateCountrySelect_Result.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Color.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Common/SessionTimeoutAttribute.cs">
+      <publishTime>06/01/2019 04:41:33</publishTime>
+    </File>
+    <File Include="Common/TrackExecution.cs">
+      <publishTime>07/21/2019 23:57:19</publishTime>
+    </File>
+    <File Include="Content/AdminPanel.css">
+      <publishTime>05/09/2019 02:29:49</publishTime>
+    </File>
+    <File Include="Content/CustomerLayout.css">
+      <publishTime>05/06/2019 01:03:26</publishTime>
+    </File>
+    <File Include="Content/custOrder.css">
+      <publishTime>12/01/2018 16:37:29</publishTime>
+    </File>
+    <File Include="Content/fb.png">
+      <publishTime>10/19/2018 02:43:43</publishTime>
+    </File>
+    <File Include="Content/fixedHeader.dataTables.min.css">
+      <publishTime>05/09/2019 17:50:19</publishTime>
+    </File>
+    <File Include="Content/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2">
+      <publishTime>11/10/2018 18:23:47</publishTime>
+    </File>
+    <File Include="Content/if_Icon-2_3064815.png">
+      <publishTime>10/19/2018 02:43:43</publishTime>
+    </File>
+    <File Include="Content/if_Icon-3_3064816.png">
+      <publishTime>10/19/2018 02:43:43</publishTime>
+    </File>
+    <File Include="Content/IurY6Y5j_oScZZow4VOxCZZM - Copy.woff2">
+      <publishTime>01/21/2019 13:08:47</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.min.css">
+      <publishTime>12/21/2018 00:43:22</publishTime>
+    </File>
+    <File Include="Content/jquery.dataTables.min.css">
+      <publishTime>06/19/2019 00:25:55</publishTime>
+    </File>
+    <File Include="Content/jquery.exzoom.css">
+      <publishTime>01/20/2019 23:36:49</publishTime>
+    </File>
+    <File Include="Content/l222.png">
+      <publishTime>03/25/2019 15:01:20</publishTime>
+    </File>
+    <File Include="Content/LOGO.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/LOGO4.PNG">
+      <publishTime>03/26/2019 22:28:11</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>06/17/2019 01:17:24</publishTime>
+    </File>
+    <File Include="Content/manageMyAccount.css">
+      <publishTime>10/22/2018 12:13:01</publishTime>
+    </File>
+    <File Include="Content/MaterialForAdmin.css">
+      <publishTime>05/09/2019 16:45:22</publishTime>
+    </File>
+    <File Include="Content/materialize.css">
+      <publishTime>06/02/2019 20:48:23</publishTime>
+    </File>
+    <File Include="Content/myProfile.css">
+      <publishTime>10/23/2018 15:27:06</publishTime>
+    </File>
+    <File Include="Content/newCart.css">
+      <publishTime>02/27/2019 20:38:10</publishTime>
+    </File>
+    <File Include="Content/newLogin.css">
+      <publishTime>01/20/2019 23:53:48</publishTime>
+    </File>
+    <File Include="Content/newSellerPanel.css">
+      <publishTime>05/08/2019 18:02:03</publishTime>
+    </File>
+    <File Include="Content/nouislider.css">
+      <publishTime>05/17/2019 03:46:27</publishTime>
+    </File>
+    <File Include="Content/Raleway-Medium.ttf">
+      <publishTime>01/21/2019 14:22:39</publishTime>
+    </File>
+    <File Include="Content/Roboto.css">
+      <publishTime>12/31/2018 19:44:14</publishTime>
+    </File>
+    <File Include="Content/SellerImageMarquee.css">
+      <publishTime>04/12/2019 19:48:59</publishTime>
+    </File>
+    <File Include="Content/sellerProductView.css">
+      <publishTime>11/22/2018 01:27:32</publishTime>
+    </File>
+    <File Include="Content/sellerSignUp.css">
+      <publishTime>01/05/2019 18:17:42</publishTime>
+    </File>
+    <File Include="Content/sideMenuNav.css">
+      <publishTime>10/27/2018 18:03:58</publishTime>
+    </File>
+    <File Include="Content/SimpleStarRating.css">
+      <publishTime>02/02/2019 02:17:33</publishTime>
+    </File>
+    <File Include="Content/summaryStatus.css">
+      <publishTime>01/13/2019 22:46:48</publishTime>
+    </File>
+    <File Include="Content/toastr.css">
+      <publishTime>01/09/2019 00:59:01</publishTime>
+    </File>
+    <File Include="Content/toastr.less">
+      <publishTime>01/09/2019 00:59:01</publishTime>
+    </File>
+    <File Include="Content/toastr.min.css">
+      <publishTime>04/14/2019 03:16:59</publishTime>
+    </File>
+    <File Include="Content/toastr.scss">
+      <publishTime>01/09/2019 00:59:01</publishTime>
+    </File>
+    <File Include="Content/wishlist.css">
+      <publishTime>01/03/2019 02:49:23</publishTime>
+    </File>
+    <File Include="Controllers/AdminController.cs">
+      <publishTime>06/21/2019 16:36:14</publishTime>
+    </File>
+    <File Include="Controllers/AppController.cs">
+      <publishTime>03/16/2019 21:16:11</publishTime>
+    </File>
+    <File Include="Controllers/CustomersController.cs">
+      <publishTime>08/30/2019 20:20:56</publishTime>
+    </File>
+    <File Include="Controllers/MasterAdminController.cs">
+      <publishTime>10/13/2018 17:06:03</publishTime>
+    </File>
+    <File Include="Controllers/SellerController.cs">
+      <publishTime>06/22/2019 18:32:13</publishTime>
+    </File>
+    <File Include="Controllers/ShippingClerkController.cs">
+      <publishTime>05/30/2019 07:08:27</publishTime>
+    </File>
+    <File Include="Country.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Customer.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="customerLogin_Result.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Customer_Contact.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="dayAndNightBased_Result.cs">
+      <publishTime>03/14/2019 17:18:43</publishTime>
+    </File>
+    <File Include="EmartProfit.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/09/2018 23:13:14</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/css/font-awesome.css">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/fonts/FontAwesome.otf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/HELP-US-OUT.txt">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/animated.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/bordered-pulled.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/core.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/fixed-width.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/font-awesome.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/icons.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/larger.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/list.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/mixins.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/path.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/rotated-flipped.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/screen-reader.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/stacked.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/less/variables.less">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/font-awesome.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_animated.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_core.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_fixed-width.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_icons.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_larger.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_list.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_mixins.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_path.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_screen-reader.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_stacked.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/font-awesome-4.7.0/scss/_variables.scss">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/09/2018 23:15:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/09/2018 23:15:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/09/2018 23:15:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/09/2018 23:15:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/09/2018 23:15:39</publishTime>
+    </File>
+    <File Include="fonts/iconic/css/material-design-iconic-font.css">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/css/material-design-iconic-font.min.css">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/iconic/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Black.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-BlackItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Bold.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-BoldItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-ExtraBold.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-ExtraBoldItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-ExtraLight.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-ExtraLightItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Italic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Light.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-LightItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Medium.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-MediumItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Regular.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-SemiBold.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-SemiBoldItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-Thin.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="fonts/poppins/Poppins-ThinItalic.ttf">
+      <publishTime>09/10/2018 22:00:59</publishTime>
+    </File>
+    <File Include="FYP%28Customer Behavior%29.csproj">
+      <publishTime>05/04/2020 04:50:52</publishTime>
+    </File>
+    <File Include="FYP%28Customer Behavior%29.csproj.user">
+      <publishTime>05/06/2020 03:14:31</publishTime>
+    </File>
+    <File Include="FYP.Context.cs">
+      <publishTime>05/04/2020 04:50:12</publishTime>
+    </File>
+    <File Include="FYP.Context.tt">
+      <publishTime>05/04/2020 04:49:51</publishTime>
+    </File>
+    <File Include="FYP.cs">
+      <publishTime>05/04/2020 04:50:41</publishTime>
+    </File>
+    <File Include="FYP.Designer.cs">
+      <publishTime>05/04/2020 04:50:41</publishTime>
+    </File>
+    <File Include="FYP.edmx.diagram">
+      <publishTime>05/04/2020 04:49:53</publishTime>
+    </File>
+    <File Include="FYP.tt">
+      <publishTime>05/04/2020 04:49:51</publishTime>
+    </File>
+    <File Include="FYPDataSet.Designer.cs">
+      <publishTime>07/09/2019 00:38:09</publishTime>
+    </File>
+    <File Include="FYPDataSet.xsc">
+      <publishTime>07/09/2019 00:38:13</publishTime>
+    </File>
+    <File Include="FYPDataSet.xsd">
+      <publishTime>07/09/2019 00:35:32</publishTime>
+    </File>
+    <File Include="FYPDataSet.xss">
+      <publishTime>07/09/2019 00:38:13</publishTime>
+    </File>
+    <File Include="Gender.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/09/2018 23:13:14</publishTime>
+    </File>
+    <File Include="Global.asax.cs">
+      <publishTime>06/13/2019 12:39:25</publishTime>
+    </File>
+    <File Include="Hubs/MyHub.cs">
+      <publishTime>01/26/2019 16:17:17</publishTime>
+    </File>
+    <File Include="Log.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="MasterAdminLogin_Result.cs">
+      <publishTime>06/21/2019 00:31:41</publishTime>
+    </File>
+    <File Include="Master_Admin.cs">
+      <publishTime>06/21/2019 00:31:42</publishTime>
+    </File>
+    <File Include="Models/Analytics/AnalyticsAdminSeller.cs">
+      <publishTime>06/22/2019 18:31:38</publishTime>
+    </File>
+    <File Include="Models/Analytics/DataPoint.cs">
+      <publishTime>06/22/2019 02:43:51</publishTime>
+    </File>
+    <File Include="Models/Analytics/MostViewProducts.cs">
+      <publishTime>05/29/2019 01:53:00</publishTime>
+    </File>
+    <File Include="Models/Dtos/AddressNameDto.cs">
+      <publishTime>11/28/2018 11:00:17</publishTime>
+    </File>
+    <File Include="Models/Dtos/AdminDto.cs">
+      <publishTime>11/20/2018 21:55:51</publishTime>
+    </File>
+    <File Include="Models/Dtos/AdminOrderDetailsDto.cs">
+      <publishTime>05/30/2019 05:40:15</publishTime>
+    </File>
+    <File Include="Models/Dtos/AdminProductDetailDto.cs">
+      <publishTime>12/02/2018 02:03:35</publishTime>
+    </File>
+    <File Include="Models/Dtos/autocomplete.cs">
+      <publishTime>12/05/2018 03:12:39</publishTime>
+    </File>
+    <File Include="Models/Dtos/BrandDto.cs">
+      <publishTime>01/20/2019 03:58:11</publishTime>
+    </File>
+    <File Include="Models/Dtos/BrandsDto.cs">
+      <publishTime>06/18/2019 00:35:47</publishTime>
+    </File>
+    <File Include="Models/Dtos/CartDto.cs">
+      <publishTime>02/28/2019 02:13:13</publishTime>
+    </File>
+    <File Include="Models/Dtos/Cat.cs">
+      <publishTime>11/12/2018 10:40:40</publishTime>
+    </File>
+    <File Include="Models/Dtos/CatNameImage.cs">
+      <publishTime>11/04/2018 00:47:23</publishTime>
+    </File>
+    <File Include="Models/Dtos/CountryStateCityAreaBind.cs">
+      <publishTime>10/28/2018 03:08:15</publishTime>
+    </File>
+    <File Include="Models/Dtos/CustomerDto.cs">
+      <publishTime>03/18/2019 01:56:20</publishTime>
+    </File>
+    <File Include="Models/Dtos/customerSignInDto.cs">
+      <publishTime>03/02/2019 03:08:45</publishTime>
+    </File>
+    <File Include="Models/Dtos/customerSignUpDto.cs">
+      <publishTime>02/01/2019 21:09:18</publishTime>
+    </File>
+    <File Include="Models/Dtos/CustTokenDetailsDto.cs">
+      <publishTime>12/09/2018 10:18:21</publishTime>
+    </File>
+    <File Include="Models/Dtos/ImageSlider.cs">
+      <publishTime>10/27/2018 16:06:30</publishTime>
+    </File>
+    <File Include="Models/Dtos/NumberOfUsers.cs">
+      <publishTime>05/28/2019 20:34:43</publishTime>
+    </File>
+    <File Include="Models/Dtos/ProductDetailDto.cs">
+      <publishTime>06/18/2019 00:05:51</publishTime>
+    </File>
+    <File Include="Models/Dtos/ProductFeatureDes.cs">
+      <publishTime>11/14/2018 12:44:12</publishTime>
+    </File>
+    <File Include="Models/Dtos/ProductModelDto.cs">
+      <publishTime>03/29/2019 18:08:53</publishTime>
+    </File>
+    <File Include="Models/Dtos/ProductPriceImageDto.cs">
+      <publishTime>01/14/2019 20:29:45</publishTime>
+    </File>
+    <File Include="Models/Dtos/ProductPriceUpdateDto.cs">
+      <publishTime>01/04/2019 20:03:26</publishTime>
+    </File>
+    <File Include="Models/Dtos/RatingsAndReviewsDto.cs">
+      <publishTime>06/08/2019 03:13:27</publishTime>
+    </File>
+    <File Include="Models/Dtos/RecommentedProducts.cs">
+      <publishTime>01/14/2019 21:15:10</publishTime>
+    </File>
+    <File Include="Models/Dtos/RelatedProductsDto.cs">
+      <publishTime>06/07/2019 17:07:28</publishTime>
+    </File>
+    <File Include="Models/Dtos/Reviews.cs">
+      <publishTime>01/08/2019 16:18:55</publishTime>
+    </File>
+    <File Include="Models/Dtos/SalesOrderLineDto.cs">
+      <publishTime>06/22/2019 16:28:51</publishTime>
+    </File>
+    <File Include="Models/Dtos/SelectedProductDto.cs">
+      <publishTime>06/18/2019 17:12:59</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerDto.cs">
+      <publishTime>11/21/2018 12:22:40</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerProductAdvertisementDto.cs">
+      <publishTime>11/23/2018 02:50:19</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerProductPriceImage.cs">
+      <publishTime>10/26/2018 23:15:34</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerProductsDto.cs">
+      <publishTime>11/29/2018 13:24:14</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerProductViewToCustomerDto.cs">
+      <publishTime>01/27/2019 23:45:17</publishTime>
+    </File>
+    <File Include="Models/Dtos/SellerSalesOrderDto.cs">
+      <publishTime>05/30/2019 06:07:45</publishTime>
+    </File>
+    <File Include="Models/Dtos/ShippingClerkLogin.cs">
+      <publishTime>12/29/2018 19:02:35</publishTime>
+    </File>
+    <File Include="Models/Dtos/SizeColorStorageDto.cs">
+      <publishTime>02/27/2019 03:45:53</publishTime>
+    </File>
+    <File Include="Models/Dtos/subCatDto.cs">
+      <publishTime>01/13/2019 15:32:06</publishTime>
+    </File>
+    <File Include="Models/Dtos/subcatimage.cs">
+      <publishTime>06/18/2019 00:25:36</publishTime>
+    </File>
+    <File Include="Models/Dtos/SubSubCatBrandsDto.cs">
+      <publishTime>06/18/2019 00:08:57</publishTime>
+    </File>
+    <File Include="Models/Dtos/subsubcatimage.cs">
+      <publishTime>06/18/2019 13:11:17</publishTime>
+    </File>
+    <File Include="Models/Dtos/WishListDto.cs">
+      <publishTime>03/18/2019 22:02:51</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/DayBasedRecommendation.cs">
+      <publishTime>06/20/2019 13:49:26</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/DayNightAndTimeBasedRecommendation.cs">
+      <publishTime>06/20/2019 18:01:18</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/HighestDiscountBasedRecommendation.cs">
+      <publishTime>06/22/2019 13:20:49</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/LowestPriceBasedRecommendation.cs">
+      <publishTime>06/22/2019 13:25:32</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/OrderHistoryBasedRecommendation.cs">
+      <publishTime>06/10/2019 02:08:56</publishTime>
+    </File>
+    <File Include="Models/DtosForMining/SementicAnalysisBasedRecommendation.cs">
+      <publishTime>03/14/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Models/EncryptionClass.cs">
+      <publishTime>04/27/2019 03:03:54</publishTime>
+    </File>
+    <File Include="Models/Menu.cs">
+      <publishTime>01/10/2019 04:10:13</publishTime>
+    </File>
+    <File Include="Models/MenuModel/CategoryMenu.cs">
+      <publishTime>01/09/2019 20:34:21</publishTime>
+    </File>
+    <File Include="Models/MenuModel/SubCategoryMenu.cs">
+      <publishTime>01/09/2019 20:34:59</publishTime>
+    </File>
+    <File Include="Models/MenuModel/SubSubCategoryMenu.cs">
+      <publishTime>01/09/2019 20:35:33</publishTime>
+    </File>
+    <File Include="Models/NotificationServices.cs">
+      <publishTime>01/09/2019 20:09:40</publishTime>
+    </File>
+    <File Include="Models/RecommendationClass.cs">
+      <publishTime>01/15/2019 23:40:11</publishTime>
+    </File>
+    <File Include="Models/ViewModels/IndexViews.cs">
+      <publishTime>04/06/2019 23:47:38</publishTime>
+    </File>
+    <File Include="Notification.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/09/2019 00:54:07</publishTime>
+    </File>
+    <File Include="paymentMethodImages/1533654621189.png">
+      <publishTime>11/30/2018 17:39:29</publishTime>
+    </File>
+    <File Include="paymentMethodImages/Cash_on_delivery-512.png">
+      <publishTime>11/30/2018 17:29:53</publishTime>
+    </File>
+    <File Include="payment_methods.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Product.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="ProductColor.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="ProductPrice.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="ProductSize.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="ProductStorage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="ProductWarrenty.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Product_Feature.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Product_Image.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Product_Images/0200ecae-a262-41e4-a86b-2199dadda97e.JPEG">
+      <publishTime>03/29/2019 20:28:57</publishTime>
+    </File>
+    <File Include="Product_Images/021b99e9-5a99-414e-9ced-83b459fd80d0.JPEG">
+      <publishTime>01/22/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/02aab072-200e-4eca-8f2f-9a140f078f83.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/02abeae5-9646-4f0f-a625-1c671b5a122a.JPEG">
+      <publishTime>01/13/2019 19:53:42</publishTime>
+    </File>
+    <File Include="Product_Images/044c3344-a749-4f12-8ad6-c00d92751fd2.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/049326c0-b59a-4f55-a6c9-d2abb49db416.JPEG">
+      <publishTime>01/13/2019 19:44:49</publishTime>
+    </File>
+    <File Include="Product_Images/04bf1b36-d83b-4508-9251-7345ddde3ef6.JPEG">
+      <publishTime>01/13/2019 19:44:49</publishTime>
+    </File>
+    <File Include="Product_Images/04c07c4d-06b0-41a2-bd84-751e31ae0fad.JPEG">
+      <publishTime>03/29/2019 21:52:49</publishTime>
+    </File>
+    <File Include="Product_Images/05ad2ec2-53ed-4f0c-9dba-d3f6c5ea5dcc.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/05b9767b-a6ca-4a27-ac7e-2df1933aa6d5.JPEG">
+      <publishTime>02/22/2019 19:16:45</publishTime>
+    </File>
+    <File Include="Product_Images/066a5e3f-6ffa-4b02-ac49-56e68ac4688e.JPEG">
+      <publishTime>01/11/2019 01:05:58</publishTime>
+    </File>
+    <File Include="Product_Images/066e2fc0-e8f4-45bc-ace3-0516f85760bb.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/06d9b10d-d816-45c9-8413-ba5e36410ac1.JPEG">
+      <publishTime>03/29/2019 20:28:57</publishTime>
+    </File>
+    <File Include="Product_Images/0710ab58-8061-48e2-976e-7b6a709a1138.JPEG">
+      <publishTime>03/29/2019 20:09:36</publishTime>
+    </File>
+    <File Include="Product_Images/0782e4f3-96a4-4c6a-a280-b637f6231643.JPEG">
+      <publishTime>03/29/2019 21:52:49</publishTime>
+    </File>
+    <File Include="Product_Images/08c46f86-b862-4f18-9546-8dbbe77a1f61.JPEG">
+      <publishTime>01/11/2019 01:06:01</publishTime>
+    </File>
+    <File Include="Product_Images/0954b59e-2fc3-4655-a7db-0a31fbb20aec.JPEG">
+      <publishTime>03/29/2019 20:28:57</publishTime>
+    </File>
+    <File Include="Product_Images/095f2d79-2515-4743-b3ae-4baaa7f3e01e.JPEG">
+      <publishTime>01/31/2019 14:52:44</publishTime>
+    </File>
+    <File Include="Product_Images/098a24a8-a092-4367-93f3-c6f3a41b7017.JPEG">
+      <publishTime>01/14/2019 10:20:32</publishTime>
+    </File>
+    <File Include="Product_Images/0ab80aa3-d77b-4b02-a132-a988116e4138.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/0d396552-3c91-46df-8448-4b92f7896fd6.JPEG">
+      <publishTime>03/29/2019 21:46:28</publishTime>
+    </File>
+    <File Include="Product_Images/0e256da3-c691-4035-a605-b2d0cd3edc46.JPEG">
+      <publishTime>01/18/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/0eeb745940d453a4662ec0f2415e2721.jpg">
+      <publishTime>10/31/2018 01:39:09</publishTime>
+    </File>
+    <File Include="Product_Images/0efdf472-434b-492a-99be-bf72a88d8685.JPEG">
+      <publishTime>01/13/2019 19:53:42</publishTime>
+    </File>
+    <File Include="Product_Images/1.jpg">
+      <publishTime>11/16/2018 20:53:16</publishTime>
+    </File>
+    <File Include="Product_Images/10044.jpg">
+      <publishTime>10/30/2018 19:27:58</publishTime>
+    </File>
+    <File Include="Product_Images/10335031-samsung-rm40d-40-inch-full-hd-smart-led-tv-picture-large.jpg">
+      <publishTime>10/30/2018 23:53:39</publishTime>
+    </File>
+    <File Include="Product_Images/10335032-zoom.jpg">
+      <publishTime>10/30/2018 23:53:39</publishTime>
+    </File>
+    <File Include="Product_Images/10335033-zoom.jpg">
+      <publishTime>10/30/2018 23:53:39</publishTime>
+    </File>
+    <File Include="Product_Images/10335034-zoom.jpg">
+      <publishTime>10/30/2018 23:53:39</publishTime>
+    </File>
+    <File Include="Product_Images/10335035-zoom.jpg">
+      <publishTime>10/30/2018 23:53:39</publishTime>
+    </File>
+    <File Include="Product_Images/107976ed-ea99-4890-8db3-a49087f84c51.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/11d0e79a022c600c73774e.jpg">
+      <publishTime>01/10/2019 22:54:58</publishTime>
+    </File>
+    <File Include="Product_Images/1277779269_w640_h640_telewizor_samsung_ue32n5002_fhd_325576f1.jpg">
+      <publishTime>10/31/2018 00:06:43</publishTime>
+    </File>
+    <File Include="Product_Images/1290.970.jpg">
+      <publishTime>11/16/2018 00:15:48</publishTime>
+    </File>
+    <File Include="Product_Images/1320aac6-283a-49d4-9f35-ab4f086f35cb.JPEG">
+      <publishTime>02/22/2019 19:42:25</publishTime>
+    </File>
+    <File Include="Product_Images/1321s32d3lllL.jpg">
+      <publishTime>10/30/2018 20:22:49</publishTime>
+    </File>
+    <File Include="Product_Images/13355854-65c1-421d-aa74-03e9456980f7.JPEG">
+      <publishTime>01/31/2019 14:58:10</publishTime>
+    </File>
+    <File Include="Product_Images/1474484902000_img_671282_1result.jpg">
+      <publishTime>01/10/2019 20:22:31</publishTime>
+    </File>
+    <File Include="Product_Images/1479894893B-777-Blue-Beats_1.png">
+      <publishTime>10/30/2018 22:59:57</publishTime>
+    </File>
+    <File Include="Product_Images/1479895418B-777-Blue-Beats_2.png">
+      <publishTime>10/30/2018 22:59:57</publishTime>
+    </File>
+    <File Include="Product_Images/1479895670Banner_1_011.jpg">
+      <publishTime>10/30/2018 22:59:57</publishTime>
+    </File>
+    <File Include="Product_Images/152773e2-f09c-4adf-95e1-a69fe71fa2d9.JPEG">
+      <publishTime>01/13/2019 19:24:11</publishTime>
+    </File>
+    <File Include="Product_Images/1554_D7200_front.png">
+      <publishTime>01/10/2019 23:01:29</publishTime>
+    </File>
+    <File Include="Product_Images/16v5dfv465fds4vvnfdkjvisd-vfdv5465vfv-vdv.jpg">
+      <publishTime>04/06/2019 04:10:16</publishTime>
+    </File>
+    <File Include="Product_Images/173a6ba5-f710-4c01-a61a-14b50082848c.JPEG">
+      <publishTime>03/29/2019 21:47:28</publishTime>
+    </File>
+    <File Include="Product_Images/18-19-20-22-24-inch-China.jpg_350x350.jpg">
+      <publishTime>10/31/2018 00:10:52</publishTime>
+    </File>
+    <File Include="Product_Images/180668f9-70bc-4e0e-a72b-f325cd6d5580.JPEG">
+      <publishTime>01/11/2019 01:11:26</publishTime>
+    </File>
+    <File Include="Product_Images/180972-nikon-d7500-body-1.png">
+      <publishTime>01/10/2019 23:01:29</publishTime>
+    </File>
+    <File Include="Product_Images/19c456b7-b8fd-4c9c-abc4-3abe14de7181.JPEG">
+      <publishTime>01/31/2019 14:22:05</publishTime>
+    </File>
+    <File Include="Product_Images/1b96cb55-0c4e-4ee3-99d8-add232c4f51a.JPEG">
+      <publishTime>01/22/2019 19:39:27</publishTime>
+    </File>
+    <File Include="Product_Images/1bde5683-521b-4fd3-a9fd-81a2aa6d6c26.JPEG">
+      <publishTime>01/13/2019 19:53:42</publishTime>
+    </File>
+    <File Include="Product_Images/1d263e0e-9d03-4836-8daf-376f2e368188.JPEG">
+      <publishTime>01/31/2019 14:41:23</publishTime>
+    </File>
+    <File Include="Product_Images/1e31e43f-b9c3-4670-a7d1-134e7c5cfdbe.JPEG">
+      <publishTime>01/11/2019 00:17:28</publishTime>
+    </File>
+    <File Include="Product_Images/1f3e9564-0a61-4548-b65c-b65c50f46c2c.JPEG">
+      <publishTime>01/14/2019 10:06:21</publishTime>
+    </File>
+    <File Include="Product_Images/1fb8e053-cca1-4059-a1fa-41b355da2a6d.JPEG">
+      <publishTime>01/18/2019 22:58:53</publishTime>
+    </File>
+    <File Include="Product_Images/1ghfjjhfjfjhfgh.jpg">
+      <publishTime>10/31/2018 01:39:09</publishTime>
+    </File>
+    <File Include="Product_Images/2.jpg">
+      <publishTime>11/16/2018 20:53:16</publishTime>
+    </File>
+    <File Include="Product_Images/20050320-d04e-4b55-bc90-76c353cf61e1.JPEG">
+      <publishTime>01/13/2019 19:30:38</publishTime>
+    </File>
+    <File Include="Product_Images/2017-Vencedor-Luxo-Autom-tico-Esqueleto-Mens-Rel-gios-Top-Marca-de-Luxo-Da-Moda-Rel.jpg_640x640.jpg">
+      <publishTime>10/31/2018 01:28:51</publishTime>
+    </File>
+    <File Include="Product_Images/2018-new-winner-chronograph-clock-automatic.jpg">
+      <publishTime>11/17/2018 01:36:44</publishTime>
+    </File>
+    <File Include="Product_Images/2018-Winner-Mens-Watches-Top-Brand-Luxury-Full-Steel-Skeleton-Automatic-Mechanical-Watch-Wrist-relojes-clock.jpg_640x640.jpg">
+      <publishTime>11/17/2018 01:36:44</publishTime>
+    </File>
+    <File Include="Product_Images/208225.jpg">
+      <publishTime>01/10/2019 23:01:29</publishTime>
+    </File>
+    <File Include="Product_Images/20c72fd1-60f6-485d-b520-7edafce184c9.jpg">
+      <publishTime>01/10/2019 20:22:31</publishTime>
+    </File>
+    <File Include="Product_Images/20ff1a73-4958-4229-a88e-cdde163ffe8c.JPEG">
+      <publishTime>03/29/2019 18:40:45</publishTime>
+    </File>
+    <File Include="Product_Images/21b7502b-cd65-44a7-819a-2066232a9a70.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/223f879a-be94-4089-8a5d-e7d338315036.jpg">
+      <publishTime>01/10/2019 23:51:18</publishTime>
+    </File>
+    <File Include="Product_Images/229cf0bf-9cb3-4de6-bd70-6d6ac11e3f42.JPEG">
+      <publishTime>03/29/2019 17:22:12</publishTime>
+    </File>
+    <File Include="Product_Images/23d88f76-470e-4db5-9fd8-3235f8019292.JPEG">
+      <publishTime>02/22/2019 19:19:03</publishTime>
+    </File>
+    <File Include="Product_Images/24_1_ff9fdf0d-854d-4f93-bd6f-755820b83e14_480x480.jpg">
+      <publishTime>10/31/2018 00:56:14</publishTime>
+    </File>
+    <File Include="Product_Images/25966ce9-1d63-4ab0-9f21-7d00e6bb168c.JPEG">
+      <publishTime>01/13/2019 19:24:11</publishTime>
+    </File>
+    <File Include="Product_Images/26152dfb-8c04-4b25-9e52-9e65ec526d91.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/26dee5aeb9e1b44e187885502e884904.jpg">
+      <publishTime>10/30/2018 22:55:38</publishTime>
+    </File>
+    <File Include="Product_Images/2746c4d0-84d4-4a8f-bef0-fbec6b0a28b2.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/2755320d-4f94-43ec-87f1-94a618d6d5e7.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/282eccc2-014b-4971-b87c-5eb51c7d7160.JPEG">
+      <publishTime>02/22/2019 19:21:18</publishTime>
+    </File>
+    <File Include="Product_Images/2842316dcb1ffb091a32551e3086d901.jpg">
+      <publishTime>11/16/2018 00:23:29</publishTime>
+    </File>
+    <File Include="Product_Images/28b434e4-535a-4bfc-bca6-94ed343f269f.JPEG">
+      <publishTime>01/13/2019 19:53:42</publishTime>
+    </File>
+    <File Include="Product_Images/2acd53db-fff2-4ae6-95db-7de3c4f024ab.JPEG">
+      <publishTime>01/22/2019 19:41:19</publishTime>
+    </File>
+    <File Include="Product_Images/2c189714-7034-44ea-be2b-33e9063cd37f.JPEG">
+      <publishTime>01/11/2019 01:02:39</publishTime>
+    </File>
+    <File Include="Product_Images/2c3024d3-133b-4ad8-87fa-b563aa293b16.JPEG">
+      <publishTime>01/18/2019 22:45:30</publishTime>
+    </File>
+    <File Include="Product_Images/2ca68687-9168-47d8-8a26-6b1603c81107.JPEG">
+      <publishTime>01/22/2019 19:39:02</publishTime>
+    </File>
+    <File Include="Product_Images/2d63b23e-46d9-4051-939d-18b36eefe28d.JPEG">
+      <publishTime>01/11/2019 01:17:21</publishTime>
+    </File>
+    <File Include="Product_Images/2dbd8cf6-e252-45d3-aa71-50c4ee5a7351.JPEG">
+      <publishTime>01/18/2019 22:45:30</publishTime>
+    </File>
+    <File Include="Product_Images/2fccb3fb-69cb-492c-9af3-f58b46b66bcb.JPEG">
+      <publishTime>01/11/2019 00:17:28</publishTime>
+    </File>
+    <File Include="Product_Images/2fdb8180-8d59-45f3-84a5-035049aaeafb.JPEG">
+      <publishTime>01/22/2019 19:38:52</publishTime>
+    </File>
+    <File Include="Product_Images/3-samsung-galaxy-note-9-dual-sim-midnight-black.jpg">
+      <publishTime>10/30/2018 19:34:47</publishTime>
+    </File>
+    <File Include="Product_Images/3.jpg">
+      <publishTime>10/30/2018 19:57:36</publishTime>
+    </File>
+    <File Include="Product_Images/307cd7f2-0a4c-49b9-874b-b9802f2be737.JPEG">
+      <publishTime>01/13/2019 19:24:11</publishTime>
+    </File>
+    <File Include="Product_Images/30a4016f-f3a4-48f3-9ef4-6d859bc28001.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/3582d1d4-3971-460a-b718-f4e38cda1bc5.JPEG">
+      <publishTime>01/14/2019 09:56:24</publishTime>
+    </File>
+    <File Include="Product_Images/3664bfe3-9a41-43cf-a4f8-d69d13c9255e.JPEG">
+      <publishTime>01/13/2019 19:19:44</publishTime>
+    </File>
+    <File Include="Product_Images/37426bea-4828-491f-8f40-d303060d819c.JPEG">
+      <publishTime>01/13/2019 19:19:44</publishTime>
+    </File>
+    <File Include="Product_Images/375x500.17184.jpg">
+      <publishTime>10/31/2018 00:45:39</publishTime>
+    </File>
+    <File Include="Product_Images/38924213-d50c-4a63-b51e-fe5c789fc7a1.jpg">
+      <publishTime>01/10/2019 23:51:18</publishTime>
+    </File>
+    <File Include="Product_Images/3949-a2498ce0cec810137540f15e9aa2cc41.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/3a4450c0-7da3-43d6-b182-7981007997ae.jpg">
+      <publishTime>10/30/2018 21:28:29</publishTime>
+    </File>
+    <File Include="Product_Images/3aecd608-edf3-4392-ba09-b2cc789cb700.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/3b2c881e-436a-4dd7-aa9e-7a5c2664eaff.JPEG">
+      <publishTime>01/11/2019 01:18:13</publishTime>
+    </File>
+    <File Include="Product_Images/3b64315e-7e40-4748-aa56-4ff3bed5c6b0.JPEG">
+      <publishTime>01/11/2019 01:14:13</publishTime>
+    </File>
+    <File Include="Product_Images/3b83b7f4-bef6-4752-b3e7-f4fe3586bb64.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/3da8ebd2-e2e0-4396-88a2-64b9966dc8da.jpg">
+      <publishTime>01/10/2019 23:41:26</publishTime>
+    </File>
+    <File Include="Product_Images/3dcf1f13-a202-426a-a8d7-263d5927ff5b.JPEG">
+      <publishTime>01/11/2019 00:55:34</publishTime>
+    </File>
+    <File Include="Product_Images/3e4490fd-84d2-43bd-90e3-96494419098d.JPEG">
+      <publishTime>03/29/2019 20:09:36</publishTime>
+    </File>
+    <File Include="Product_Images/3f628c64-0401-457f-a549-bb45afc463ac.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/4.jpg">
+      <publishTime>10/30/2018 19:57:36</publishTime>
+    </File>
+    <File Include="Product_Images/41d+tN3H9GL._UY445_.jpg">
+      <publishTime>11/16/2018 22:41:44</publishTime>
+    </File>
+    <File Include="Product_Images/42091493-c13d-4e60-a99d-07c60091ad18.JPEG">
+      <publishTime>01/11/2019 01:10:09</publishTime>
+    </File>
+    <File Include="Product_Images/434213d3-5714-4fed-850d-fd6e5149e5ba.JPEG">
+      <publishTime>03/29/2019 21:46:28</publishTime>
+    </File>
+    <File Include="Product_Images/43d1_15000.jpg">
+      <publishTime>10/31/2018 00:10:52</publishTime>
+    </File>
+    <File Include="Product_Images/43e42db1-7f9b-4795-8c50-4dc9fe01594b.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/45b42570-4db5-4630-99b0-cb72bf9460bd.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/45f3167d-c11b-42ff-8e64-1da5283f17a8.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/465deab8-51b2-47ba-9d1e-6f63a3440823.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/46c546ec-9db5-43a5-8e90-f16df2eb0936.JPEG">
+      <publishTime>03/29/2019 21:46:28</publishTime>
+    </File>
+    <File Include="Product_Images/47d17030-aaa5-44dd-9c71-ffc397adc7c0.JPEG">
+      <publishTime>01/11/2019 01:15:06</publishTime>
+    </File>
+    <File Include="Product_Images/480846e6-6686-494b-a075-e7689eadd635.JPEG">
+      <publishTime>03/29/2019 21:47:28</publishTime>
+    </File>
+    <File Include="Product_Images/4863fef7-e35a-4825-add9-3272fa635dc6.JPEG">
+      <publishTime>02/22/2019 19:28:58</publishTime>
+    </File>
+    <File Include="Product_Images/488d7e97-071e-4724-aa6f-0133e94dc46f.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/48ddb146-b621-4a8f-b842-121ba2b6ea30.JPEG">
+      <publishTime>01/22/2019 19:39:27</publishTime>
+    </File>
+    <File Include="Product_Images/496f1ed8-c458-44df-9d41-9e02e7d763ff.JPEG">
+      <publishTime>03/29/2019 18:40:45</publishTime>
+    </File>
+    <File Include="Product_Images/4a64e6bf-558d-4187-bcba-1255cf48c868.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/4b2d0cf3-678e-4b3f-92b0-63fc316dfacd.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/4c65sd465f.jpg">
+      <publishTime>11/16/2018 22:49:28</publishTime>
+    </File>
+    <File Include="Product_Images/4c80907e-c045-475d-bf34-777f23e8c918.JPEG">
+      <publishTime>03/29/2019 21:46:28</publishTime>
+    </File>
+    <File Include="Product_Images/4d0bf8819fdba7df85a2cfeb84c8c305.jpg_600x600q90.jpg">
+      <publishTime>11/16/2018 20:42:38</publishTime>
+    </File>
+    <File Include="Product_Images/4e4b0d2e-41bb-4022-bba6-684d336b623c.JPEG">
+      <publishTime>01/14/2019 09:56:24</publishTime>
+    </File>
+    <File Include="Product_Images/4ed74e96-2c8b-47cb-8299-0b5648233e38.JPEG">
+      <publishTime>03/29/2019 17:22:13</publishTime>
+    </File>
+    <File Include="Product_Images/4fe3980e-f14c-4c05-ac0f-b6e1913b5e18.JPEG">
+      <publishTime>01/18/2019 22:58:53</publishTime>
+    </File>
+    <File Include="Product_Images/5.jpg">
+      <publishTime>10/28/2018 01:32:48</publishTime>
+    </File>
+    <File Include="Product_Images/501f4be0-f890-4f56-9cce-9d9697951776.JPEG">
+      <publishTime>02/22/2019 19:21:18</publishTime>
+    </File>
+    <File Include="Product_Images/50402ca4-48a6-45b0-a00e-67cf0c55a3f3.JPEG">
+      <publishTime>01/18/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/507c2add-0eb5-476f-902f-f7e76e121bd4.JPEG">
+      <publishTime>03/29/2019 21:52:49</publishTime>
+    </File>
+    <File Include="Product_Images/518e41c4-2c81-4f47-94eb-ec1ea52752a3.JPEG">
+      <publishTime>01/11/2019 01:16:11</publishTime>
+    </File>
+    <File Include="Product_Images/51aNxUWcvuL._SX466_.jpg">
+      <publishTime>10/30/2018 21:32:38</publishTime>
+    </File>
+    <File Include="Product_Images/51HbVOvk53L._SL350_.jpg">
+      <publishTime>10/31/2018 01:39:09</publishTime>
+    </File>
+    <File Include="Product_Images/51SAWOLfupL.jpg">
+      <publishTime>10/30/2018 21:32:38</publishTime>
+    </File>
+    <File Include="Product_Images/51wlj1GXYPL._SX425_.jpg">
+      <publishTime>10/30/2018 22:55:38</publishTime>
+    </File>
+    <File Include="Product_Images/51wrcikRDcL._SY550_.jpg">
+      <publishTime>10/30/2018 20:22:49</publishTime>
+    </File>
+    <File Include="Product_Images/520925b2-6e89-4e3f-bd95-e201c70d7369.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/522919.jpg">
+      <publishTime>01/10/2019 20:09:42</publishTime>
+    </File>
+    <File Include="Product_Images/524c667a-270f-474e-a4f5-8de1c57197e9.JPEG">
+      <publishTime>03/29/2019 18:40:45</publishTime>
+    </File>
+    <File Include="Product_Images/5450c4a4170d02a50f557af085b4c577.jpg">
+      <publishTime>10/30/2018 22:52:14</publishTime>
+    </File>
+    <File Include="Product_Images/546456465iuhbbubh%27.jpg">
+      <publishTime>11/17/2018 01:28:47</publishTime>
+    </File>
+    <File Include="Product_Images/55a5b9a5-d6be-4bf8-b7ae-863f2dca6b09.JPEG">
+      <publishTime>01/13/2019 19:14:01</publishTime>
+    </File>
+    <File Include="Product_Images/571202c0-a6d7-4061-bb52-327ce32a343d.JPEG">
+      <publishTime>02/22/2019 19:16:45</publishTime>
+    </File>
+    <File Include="Product_Images/5756dec1-0936-4f1e-b19a-902f11913981.JPEG">
+      <publishTime>01/22/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/589bb646-3868-4f46-959d-04c4e25a6386.JPEG">
+      <publishTime>01/11/2019 00:51:26</publishTime>
+    </File>
+    <File Include="Product_Images/58cdbe42-919c-4cfc-8943-f41e80b3b62e.JPEG">
+      <publishTime>01/11/2019 00:55:22</publishTime>
+    </File>
+    <File Include="Product_Images/59532058-610d-480b-85c0-b401e542613b.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/5b5690fc-3150-47ba-9e8d-5022d3338492.JPEG">
+      <publishTime>03/29/2019 20:09:36</publishTime>
+    </File>
+    <File Include="Product_Images/5b69269b-65e9-4757-b155-683082f76595.JPEG">
+      <publishTime>01/11/2019 01:09:52</publishTime>
+    </File>
+    <File Include="Product_Images/5c272215-c324-4cba-bc7d-2c17faa628eb.jpg">
+      <publishTime>01/10/2019 23:51:18</publishTime>
+    </File>
+    <File Include="Product_Images/5e2e921a-dc7e-466f-8d9b-8c6bf73b99a0.JPEG">
+      <publishTime>02/22/2019 19:19:03</publishTime>
+    </File>
+    <File Include="Product_Images/5ec1bb0f-1d68-4258-aab2-6b40aefd2fe4.JPEG">
+      <publishTime>02/22/2019 19:28:55</publishTime>
+    </File>
+    <File Include="Product_Images/5ecfe559-567e-475a-b091-7546c4659a0d.JPEG">
+      <publishTime>01/11/2019 00:51:26</publishTime>
+    </File>
+    <File Include="Product_Images/5f0a5be4-3894-4246-a8c0-613959b178ad.JPEG">
+      <publishTime>01/22/2019 19:38:52</publishTime>
+    </File>
+    <File Include="Product_Images/5f8582f7-bb03-43d8-a84e-c75bac533496.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/5f8e073a-386a-4a34-9cf9-deecb31e92e1.jpg">
+      <publishTime>01/10/2019 23:51:18</publishTime>
+    </File>
+    <File Include="Product_Images/5ffea1a0-7d49-4f8b-92da-4047e060e98b.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/602a282a-7bd4-45da-96a7-a84fa4a473a1.JPEG">
+      <publishTime>01/18/2019 22:45:30</publishTime>
+    </File>
+    <File Include="Product_Images/61201731542PM_635_nokia_3310_front.jpeg">
+      <publishTime>01/06/2019 22:28:17</publishTime>
+    </File>
+    <File Include="Product_Images/618wheifENL._SY355_.jpg">
+      <publishTime>11/16/2018 00:10:25</publishTime>
+    </File>
+    <File Include="Product_Images/61b85c2e-7138-4dbb-ac97-ae824c476f3c.JPEG">
+      <publishTime>01/18/2019 22:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/61dAI9abRwL._UX522_.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/61GAp9YGKwL._SX425_.jpg">
+      <publishTime>11/16/2018 00:15:48</publishTime>
+    </File>
+    <File Include="Product_Images/61lUsmuUeUL._SX450_.jpg">
+      <publishTime>10/30/2018 23:37:33</publishTime>
+    </File>
+    <File Include="Product_Images/61voh4WfEML._SX425_.jpg">
+      <publishTime>10/30/2018 22:19:27</publishTime>
+    </File>
+    <File Include="Product_Images/622efff0-49c2-4c39-85dc-a05f4bdd93dc.JPEG">
+      <publishTime>01/11/2019 01:14:13</publishTime>
+    </File>
+    <File Include="Product_Images/633d55c8293145d818036050ce2c3a55.jpg">
+      <publishTime>10/30/2018 23:46:16</publishTime>
+    </File>
+    <File Include="Product_Images/634c176cba9ea2e2e6d2f304e851f4ae.jpg">
+      <publishTime>10/30/2018 22:55:38</publishTime>
+    </File>
+    <File Include="Product_Images/6422097e-da4f-478a-bd4e-0245555223a9.JPEG">
+      <publishTime>01/18/2019 22:45:30</publishTime>
+    </File>
+    <File Include="Product_Images/66edcd68-f17d-4397-8a46-c38d1c0f9405.JPEG">
+      <publishTime>01/18/2019 22:45:30</publishTime>
+    </File>
+    <File Include="Product_Images/6a316dab-5122-4e2f-9763-f38e56255ad1.JPEG">
+      <publishTime>01/22/2019 19:41:19</publishTime>
+    </File>
+    <File Include="Product_Images/6a5cd3c2-19e1-425f-93ae-627c8aae73ba.JPEG">
+      <publishTime>01/31/2019 14:47:59</publishTime>
+    </File>
+    <File Include="Product_Images/6a909d12-cc31-4cb6-af1f-227a6951219d.JPEG">
+      <publishTime>03/29/2019 18:50:20</publishTime>
+    </File>
+    <File Include="Product_Images/6b2fd617c1b14f30adee7202ef582b36.jpg">
+      <publishTime>11/16/2018 22:41:44</publishTime>
+    </File>
+    <File Include="Product_Images/6c651771-125f-4343-9752-c667e8483e15.JPEG">
+      <publishTime>01/31/2019 15:19:28</publishTime>
+    </File>
+    <File Include="Product_Images/6c6f14d2-8b50-45b1-a755-fee9d24ab8cf.JPEG">
+      <publishTime>01/11/2019 01:16:22</publishTime>
+    </File>
+    <File Include="Product_Images/6ca7ba69-ed32-4bac-9a08-6959aa266a89.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/6d8e4304-34c4-4b81-8805-fa2e7c0638c7.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/6f0a7a8a-f72e-4602-acaf-1a3efbfebb45.JPEG">
+      <publishTime>01/11/2019 01:16:22</publishTime>
+    </File>
+    <File Include="Product_Images/71401fbd-eee6-4a9e-bd76-10812d692d82.JPEG">
+      <publishTime>01/22/2019 19:39:27</publishTime>
+    </File>
+    <File Include="Product_Images/71qNF3G1YuL._SY550_.jpg">
+      <publishTime>10/31/2018 01:19:54</publishTime>
+    </File>
+    <File Include="Product_Images/7290bef2-a786-42fc-9230-34c9e9bf0b2d.JPEG">
+      <publishTime>01/13/2019 19:44:49</publishTime>
+    </File>
+    <File Include="Product_Images/72996b6f-90fb-4dac-bd1a-f4e48d19eae3.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/740141a9-30f7-4c5e-a4a3-cf4366bd00ab.JPEG">
+      <publishTime>01/13/2019 19:19:44</publishTime>
+    </File>
+    <File Include="Product_Images/7521025_sd.jpg">
+      <publishTime>01/10/2019 22:54:58</publishTime>
+    </File>
+    <File Include="Product_Images/757-10001-R30929712_M.jpg">
+      <publishTime>10/31/2018 01:25:44</publishTime>
+    </File>
+    <File Include="Product_Images/76b0181a-3540-4e0d-a1a4-687acb81e6d9.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/76be77d9-7fe6-45a2-9ba7-82b7483bbf2e.JPEG">
+      <publishTime>01/14/2019 10:06:21</publishTime>
+    </File>
+    <File Include="Product_Images/78552cd2-7f60-4ceb-9926-3682c7a17ea1.JPEG">
+      <publishTime>02/22/2019 19:16:45</publishTime>
+    </File>
+    <File Include="Product_Images/791490-1web.jpg">
+      <publishTime>01/10/2019 20:22:31</publishTime>
+    </File>
+    <File Include="Product_Images/7ca8a0d6-5313-490a-bf69-9dc93c1b04a5.JPEG">
+      <publishTime>03/29/2019 17:22:13</publishTime>
+    </File>
+    <File Include="Product_Images/7e5b0541-c5c9-4a4d-919e-84e1700ae117.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/7ea6f981-8804-4372-b5c3-7a6186119868.JPEG">
+      <publishTime>01/22/2019 22:03:52</publishTime>
+    </File>
+    <File Include="Product_Images/7f556a0d-7984-4212-9139-c1a3e2407906.JPEG">
+      <publishTime>01/13/2019 19:30:38</publishTime>
+    </File>
+    <File Include="Product_Images/7_3_20.jpg">
+      <publishTime>10/31/2018 00:45:39</publishTime>
+    </File>
+    <File Include="Product_Images/8006dfc1-447a-4da5-aa92-9841024b4b72.JPEG">
+      <publishTime>01/22/2019 22:03:52</publishTime>
+    </File>
+    <File Include="Product_Images/80987c0860476527a5fd016ff9b910b5.jpg">
+      <publishTime>11/16/2018 22:49:28</publishTime>
+    </File>
+    <File Include="Product_Images/80b7c7ea-a0f8-430d-84c0-454c05dff02f.jpg">
+      <publishTime>01/10/2019 23:41:26</publishTime>
+    </File>
+    <File Include="Product_Images/80d-500x500.jpg">
+      <publishTime>01/10/2019 20:22:31</publishTime>
+    </File>
+    <File Include="Product_Images/81+h9mpyQmL._SX522_.jpg">
+      <publishTime>10/30/2018 19:48:47</publishTime>
+    </File>
+    <File Include="Product_Images/81niDUKFjFL._SX425_.jpg">
+      <publishTime>01/10/2019 23:07:52</publishTime>
+    </File>
+    <File Include="Product_Images/81vB-Irbk9L._SX355_.jpg">
+      <publishTime>10/30/2018 19:34:47</publishTime>
+    </File>
+    <File Include="Product_Images/81wVxh3G2oL._UY445_.jpg">
+      <publishTime>10/31/2018 01:25:44</publishTime>
+    </File>
+    <File Include="Product_Images/81ZYMcLh2GL._SX425_.jpg">
+      <publishTime>01/10/2019 20:09:42</publishTime>
+    </File>
+    <File Include="Product_Images/832-Rado-Sintra-R13691172-Men-s-Watch-3.jpg">
+      <publishTime>11/16/2018 22:41:44</publishTime>
+    </File>
+    <File Include="Product_Images/832d8f03-95fe-4dfc-a654-90661738a627.JPEG">
+      <publishTime>03/29/2019 17:22:13</publishTime>
+    </File>
+    <File Include="Product_Images/848d8417-7638-42f2-bae8-15dcb2a4d4ef.JPEG">
+      <publishTime>01/11/2019 17:14:28</publishTime>
+    </File>
+    <File Include="Product_Images/84c97485-9b50-45de-ab70-05c680878473.JPEG">
+      <publishTime>01/14/2019 10:20:32</publishTime>
+    </File>
+    <File Include="Product_Images/86708dc3-4708-4872-9187-f7cb6f7c187e.JPEG">
+      <publishTime>01/11/2019 01:18:13</publishTime>
+    </File>
+    <File Include="Product_Images/86f4b32f-8444-44e8-9a2b-0e083f366d59.JPEG">
+      <publishTime>01/22/2019 19:38:52</publishTime>
+    </File>
+    <File Include="Product_Images/877b9752-da60-44c5-8cc2-51ee4fc8849d.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/87b0e30a-ef1f-4d39-b65f-5b5a1537f6f9.JPEG">
+      <publishTime>01/18/2019 22:58:53</publishTime>
+    </File>
+    <File Include="Product_Images/88549625_w640_h640_stn_13.jpg">
+      <publishTime>10/30/2018 22:19:27</publishTime>
+    </File>
+    <File Include="Product_Images/89c279c7-6ccd-429b-bdff-092dccc95a5e.JPEG">
+      <publishTime>01/11/2019 01:33:38</publishTime>
+    </File>
+    <File Include="Product_Images/8b8f75c3-c322-4839-aa67-0d5b3e0eab29.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/8b954eff-eb05-40f0-a929-5f43c1d99cb6.JPEG">
+      <publishTime>01/22/2019 19:38:52</publishTime>
+    </File>
+    <File Include="Product_Images/8c0fa3d1-a813-41ef-a8ca-9d8620f028fa.JPEG">
+      <publishTime>01/13/2019 19:30:38</publishTime>
+    </File>
+    <File Include="Product_Images/8d5ac865-f447-4921-80bb-c059f169d683.JPEG">
+      <publishTime>01/11/2019 01:31:45</publishTime>
+    </File>
+    <File Include="Product_Images/8d9cfcf0-0af2-4ebf-895d-6905bae73c6a.JPEG">
+      <publishTime>01/11/2019 01:18:13</publishTime>
+    </File>
+    <File Include="Product_Images/8efc1169-434e-4506-a9a2-f0fd976088fa.JPEG">
+      <publishTime>01/11/2019 01:31:48</publishTime>
+    </File>
+    <File Include="Product_Images/8f1a0e17-d505-4696-a12d-4b3462e89aff.JPEG">
+      <publishTime>01/11/2019 01:33:38</publishTime>
+    </File>
+    <File Include="Product_Images/8f3a3015-1df1-4c97-a914-d05c42db8631.JPEG">
+      <publishTime>03/29/2019 21:52:49</publishTime>
+    </File>
+    <File Include="Product_Images/8f5637ba-1e5c-480d-9dcb-24b31235d68e.JPEG">
+      <publishTime>01/18/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/8faf822e-aa44-40f1-bee0-5b9b19b4f0b4.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/90ae4958f97f0171bf805266b5879a54.jpg">
+      <publishTime>10/31/2018 01:39:09</publishTime>
+    </File>
+    <File Include="Product_Images/915364a3-1802-428c-9220-9a9553a40bfc.jpg">
+      <publishTime>01/10/2019 23:41:26</publishTime>
+    </File>
+    <File Include="Product_Images/91DK0S6RvhL._SX679_.jpg">
+      <publishTime>11/16/2018 20:42:38</publishTime>
+    </File>
+    <File Include="Product_Images/9209222004766.jpg">
+      <publishTime>01/10/2019 20:09:42</publishTime>
+    </File>
+    <File Include="Product_Images/93ab3af1-c3f8-4f0d-a225-e13e5b25e89d.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/93b35bd9-e8b2-40b9-89f5-2529368de24f.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/93d0bd90-3ca7-4d25-8772-d01604d1d562.JPEG">
+      <publishTime>01/13/2019 19:53:42</publishTime>
+    </File>
+    <File Include="Product_Images/9c158bd0-ad76-432a-89f2-35f91fec6827.JPEG">
+      <publishTime>01/31/2019 15:23:25</publishTime>
+    </File>
+    <File Include="Product_Images/9d7a59e5-2d1f-4a08-907f-c136ae8f4418.JPEG">
+      <publishTime>01/13/2019 19:30:38</publishTime>
+    </File>
+    <File Include="Product_Images/9db7e6b5-9b60-412e-bce6-5f062597b795.jpg">
+      <publishTime>01/10/2019 23:41:26</publishTime>
+    </File>
+    <File Include="Product_Images/9dba7464-a169-4648-bcf9-7fd1b2254ed8.JPEG">
+      <publishTime>01/18/2019 22:58:53</publishTime>
+    </File>
+    <File Include="Product_Images/9f9dea8b-bd1f-4ea7-8a6c-9aed5bb9b9d5.JPEG">
+      <publishTime>01/11/2019 00:17:28</publishTime>
+    </File>
+    <File Include="Product_Images/a08710c3e32443fef0dec82bd1eadfd0.jpg">
+      <publishTime>11/16/2018 00:23:29</publishTime>
+    </File>
+    <File Include="Product_Images/a2444775-3561-4405-8a80-b6d12ad7eedc.JPEG">
+      <publishTime>01/11/2019 01:14:32</publishTime>
+    </File>
+    <File Include="Product_Images/a443d5a7-3496-4a34-8db2-1966520b1556.JPEG">
+      <publishTime>01/11/2019 17:14:28</publishTime>
+    </File>
+    <File Include="Product_Images/a45c703c-ea6b-4424-ae59-4dd834966f6e.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/a59efc8d-fb12-471d-9810-7e96dfce7acb.JPEG">
+      <publishTime>01/18/2019 22:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/a5a6db0c-0c76-438c-a653-a8e902604aff.JPEG">
+      <publishTime>01/18/2019 22:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/a6fcf8cc-8063-4cc7-8701-667d45cddc55.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/a6fcfc8b-fe9d-4e79-9a27-fe1d5b2ebb17.JPEG">
+      <publishTime>01/13/2019 19:19:44</publishTime>
+    </File>
+    <File Include="Product_Images/a870f294-1298-45df-8fff-256de35e1a4d.JPEG">
+      <publishTime>01/14/2019 09:56:24</publishTime>
+    </File>
+    <File Include="Product_Images/a8929d1e34de34bef8e043626a2c21a8_15.jpg">
+      <publishTime>10/31/2018 00:48:08</publishTime>
+    </File>
+    <File Include="Product_Images/a92a3b44-58c0-476d-a16e-6e5086dd6db5.JPEG">
+      <publishTime>03/29/2019 20:28:57</publishTime>
+    </File>
+    <File Include="Product_Images/ac0bbe49-0e8f-477e-ab8d-91d8dcf07949.JPEG">
+      <publishTime>03/29/2019 20:09:36</publishTime>
+    </File>
+    <File Include="Product_Images/ac4e5cbe-49f8-4891-a664-c2b4d3cd24bc.JPEG">
+      <publishTime>01/11/2019 01:29:40</publishTime>
+    </File>
+    <File Include="Product_Images/adb6c873-2dad-48b4-b7ac-a84ba038613e.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/ae-uhd-mu7350-ua55mu7350kxzn-rperspectiveblack-68987769.jpg">
+      <publishTime>10/31/2018 00:14:53</publishTime>
+    </File>
+    <File Include="Product_Images/Akira 55MU007 4K Ultra LED TV Price in Pakistan 2_CB-thumb_320x320.jpg">
+      <publishTime>10/30/2018 23:46:16</publishTime>
+    </File>
+    <File Include="Product_Images/B-777__52181.png">
+      <publishTime>10/30/2018 22:59:57</publishTime>
+    </File>
+    <File Include="Product_Images/b3f9a9b4-90b1-4f11-b8e8-ef80cfea8641.JPEG">
+      <publishTime>01/14/2019 09:56:24</publishTime>
+    </File>
+    <File Include="Product_Images/b55173a5-9d11-4d06-aef1-61df04a192d6.JPEG">
+      <publishTime>01/11/2019 01:18:13</publishTime>
+    </File>
+    <File Include="Product_Images/b62f03d7-d004-43e2-8a6e-2f8905d0fd04.JPEG">
+      <publishTime>01/18/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/b6bd4758-241b-42a1-80f5-86f95f9cccfc.JPEG">
+      <publishTime>01/11/2019 00:17:28</publishTime>
+    </File>
+    <File Include="Product_Images/b6fc0155-62c4-4db5-8ca4-0acf37e769e6.JPEG">
+      <publishTime>01/14/2019 10:06:21</publishTime>
+    </File>
+    <File Include="Product_Images/b77fdc4e-2fa6-4f02-b8df-3fb3b5168e41.JPEG">
+      <publishTime>01/11/2019 01:11:45</publishTime>
+    </File>
+    <File Include="Product_Images/ba0f3dce-3c2b-4b22-99c5-a63a5cb5a1bc.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/badff30e-7182-458d-9068-8a81021fc4a8.JPEG">
+      <publishTime>01/13/2019 19:24:11</publishTime>
+    </File>
+    <File Include="Product_Images/bbb36000-630a-4588-9df7-dcca267ca58a.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/bf00560a-5fbf-4b76-a214-47b139e5d6bd.JPEG">
+      <publishTime>01/14/2019 10:20:32</publishTime>
+    </File>
+    <File Include="Product_Images/bf516d17-3f91-4406-9a93-7b058e6c1b08.JPEG">
+      <publishTime>02/22/2019 19:19:03</publishTime>
+    </File>
+    <File Include="Product_Images/bfdf0d10-ea61-4604-8149-5baf1af188cd.JPEG">
+      <publishTime>03/29/2019 20:09:36</publishTime>
+    </File>
+    <File Include="Product_Images/c02211c19e2806fc295500faa6274a2f6454e1c7.jpg">
+      <publishTime>10/31/2018 01:03:16</publishTime>
+    </File>
+    <File Include="Product_Images/c0564220-15b4-497d-a757-17ace2db8c03.JPEG">
+      <publishTime>01/14/2019 09:56:24</publishTime>
+    </File>
+    <File Include="Product_Images/c36da7de-ef22-46d0-b9a7-c032afde970f.JPEG">
+      <publishTime>01/11/2019 01:02:46</publishTime>
+    </File>
+    <File Include="Product_Images/c384a533-9fe5-4f4d-8cb0-490a50d555ac.JPEG">
+      <publishTime>01/18/2019 22:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/c3aae5db-adec-483a-9bf1-33db27c76fb6.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/c3b934fb-2e21-4760-86d4-de04e2b40c8b.JPEG">
+      <publishTime>01/14/2019 10:06:21</publishTime>
+    </File>
+    <File Include="Product_Images/c497433a-4b78-46a3-ade1-803cb80a68c1.JPEG">
+      <publishTime>01/18/2019 22:39:10</publishTime>
+    </File>
+    <File Include="Product_Images/c709a5aa-be0b-4110-8327-d3df3604f93b.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/c7e67f80-ab30-4a01-a8c4-56180dd39c10.JPEG">
+      <publishTime>02/22/2019 19:21:18</publishTime>
+    </File>
+    <File Include="Product_Images/c8225a7b-4dc6-46e4-88ee-546827e3eea0.JPEG">
+      <publishTime>03/29/2019 18:46:40</publishTime>
+    </File>
+    <File Include="Product_Images/c9854f44-b51c-4fb3-a789-a715640accfd.JPEG">
+      <publishTime>03/29/2019 21:47:28</publishTime>
+    </File>
+    <File Include="Product_Images/camera_01.png">
+      <publishTime>10/30/2018 19:27:58</publishTime>
+    </File>
+    <File Include="Product_Images/canon-eos-200d-kit-with-ef-s-18-55mm-f-uhoxqq.jpg">
+      <publishTime>01/10/2019 23:07:52</publishTime>
+    </File>
+    <File Include="Product_Images/canon_200D_4.jpg">
+      <publishTime>01/10/2019 23:07:52</publishTime>
+    </File>
+    <File Include="Product_Images/canon_clothes.jpg.optimal.jpg">
+      <publishTime>10/28/2018 01:32:48</publishTime>
+    </File>
+    <File Include="Product_Images/cb0d1a72-44d2-40d1-bb77-bb1d6fa20a49.JPEG">
+      <publishTime>01/13/2019 19:44:49</publishTime>
+    </File>
+    <File Include="Product_Images/cd0aba9bfb7b8912907eccd9cc4cc98c_3.png">
+      <publishTime>10/30/2018 23:46:16</publishTime>
+    </File>
+    <File Include="Product_Images/cd2e9d66-526e-47aa-9f91-67b994e054aa.JPEG">
+      <publishTime>01/14/2019 10:20:32</publishTime>
+    </File>
+    <File Include="Product_Images/cdf781a7-a93b-48d8-97cb-ef19e5ee43cf.JPEG">
+      <publishTime>03/29/2019 20:05:30</publishTime>
+    </File>
+    <File Include="Product_Images/chanel_bleu_de_edt_perfume_for_men_100ml.jpg">
+      <publishTime>10/31/2018 00:53:08</publishTime>
+    </File>
+    <File Include="Product_Images/cool-luxury-brand-forsining-wrist-watch-men-stainless-still-mechanical-watch-mens-dress-watch-gift-for-male-w154001-2.jpg">
+      <publishTime>11/17/2018 01:36:44</publishTime>
+    </File>
+    <File Include="Product_Images/cvui59.jpg">
+      <publishTime>11/17/2018 01:28:47</publishTime>
+    </File>
+    <File Include="Product_Images/d099b0c9-e3f3-463f-b4aa-dfd7f3b8abe2.JPEG">
+      <publishTime>01/11/2019 01:14:22</publishTime>
+    </File>
+    <File Include="Product_Images/d0d8ce5a-8e73-46d1-953e-a1854247d349.JPEG">
+      <publishTime>01/22/2019 19:39:27</publishTime>
+    </File>
+    <File Include="Product_Images/d17b5052-2bf5-445c-b9d8-6a5701372468.JPEG">
+      <publishTime>01/22/2019 19:39:27</publishTime>
+    </File>
+    <File Include="Product_Images/d200ef16-4bb2-43c3-8bcb-c38ff32b74fe_1.15aee5b54931005424110ea2aa82e6d0.jpg">
+      <publishTime>11/16/2018 20:53:16</publishTime>
+    </File>
+    <File Include="Product_Images/d2ab5fa5-864e-4d29-ac2f-401392bb9052.JPEG">
+      <publishTime>01/11/2019 01:29:40</publishTime>
+    </File>
+    <File Include="Product_Images/d2ec824e-da2b-4252-8cd4-fefd3e2e4523.JPEG">
+      <publishTime>02/22/2019 19:42:25</publishTime>
+    </File>
+    <File Include="Product_Images/d3f91d19-84d8-4ee5-b0c0-2fb70f74de62.JPEG">
+      <publishTime>01/13/2019 19:44:49</publishTime>
+    </File>
+    <File Include="Product_Images/d5600_afp_18_55_vr_front_big--original.png">
+      <publishTime>01/10/2019 23:01:29</publishTime>
+    </File>
+    <File Include="Product_Images/d584cd77-5fcf-4a9c-9bbf-647c5a2f2249.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/d5c7fd85-3252-46a7-91f5-575dd8d80fc5.JPEG">
+      <publishTime>03/29/2019 18:40:45</publishTime>
+    </File>
+    <File Include="Product_Images/d6555254-c264-4b1a-bf69-b6538acd2eaa.JPEG">
+      <publishTime>03/29/2019 21:52:49</publishTime>
+    </File>
+    <File Include="Product_Images/d75d760b-888e-48a8-a5e2-0030114d8972.JPEG">
+      <publishTime>01/22/2019 19:38:52</publishTime>
+    </File>
+    <File Include="Product_Images/d7b2f3fb-d2a6-4ac3-b20b-804f09517558.JPEG">
+      <publishTime>01/11/2019 01:16:11</publishTime>
+    </File>
+    <File Include="Product_Images/d878f443-fc3e-4c31-a234-05e6cc0f5a1f.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/d8e4135d-6090-48b9-8a62-3eb7a966ef19.JPEG">
+      <publishTime>01/11/2019 01:14:32</publishTime>
+    </File>
+    <File Include="Product_Images/dc3c42a0-8618-4418-87e1-ff4b21399a07.JPEG">
+      <publishTime>01/11/2019 00:17:28</publishTime>
+    </File>
+    <File Include="Product_Images/ddf7fe42-b8cb-4a12-b13a-856cf9027f14.JPEG">
+      <publishTime>03/29/2019 20:23:48</publishTime>
+    </File>
+    <File Include="Product_Images/dea6bf9d-ec57-439e-9758-96b4366f99b8.JPEG">
+      <publishTime>03/29/2019 18:52:04</publishTime>
+    </File>
+    <File Include="Product_Images/dfa0264a-3929-4d5c-9470-953369f80c73.JPEG">
+      <publishTime>01/11/2019 01:17:21</publishTime>
+    </File>
+    <File Include="Product_Images/diastar-rado-wrist-watches-for-men-.jpg">
+      <publishTime>11/16/2018 22:49:28</publishTime>
+    </File>
+    <File Include="Product_Images/download %281%29.jpg">
+      <publishTime>10/30/2018 19:48:47</publishTime>
+    </File>
+    <File Include="Product_Images/e28fd05f-b32d-4c63-91a1-fba88a56d186.JPEG">
+      <publishTime>01/22/2019 19:37:51</publishTime>
+    </File>
+    <File Include="Product_Images/e2e46ccd-a387-46cc-9f16-d2b409b02b6c.JPEG">
+      <publishTime>01/18/2019 22:58:53</publishTime>
+    </File>
+    <File Include="Product_Images/e3232e70-7942-44cd-afc9-32032e3fa5e0.JPEG">
+      <publishTime>01/14/2019 10:20:32</publishTime>
+    </File>
+    <File Include="Product_Images/e36f9ac6-d4d8-4e64-aa9f-e13bd026170c.JPEG">
+      <publishTime>01/14/2019 10:06:21</publishTime>
+    </File>
+    <File Include="Product_Images/e4dbbe34-1e71-4444-99e4-80427c51b382.JPEG">
+      <publishTime>01/13/2019 19:30:38</publishTime>
+    </File>
+    <File Include="Product_Images/e5eef309-8b9a-46fe-ad4f-9518fc4cda68.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/e6d1a390-07f5-446a-a716-f601db45ddf8.JPEG">
+      <publishTime>01/11/2019 01:02:21</publishTime>
+    </File>
+    <File Include="Product_Images/e80087dd-10f2-40ef-8287-679c3d8130b5.JPEG">
+      <publishTime>01/13/2019 19:24:11</publishTime>
+    </File>
+    <File Include="Product_Images/e8291e57-52ac-4997-bfd0-68d76dbea12b.JPEG">
+      <publishTime>03/29/2019 21:47:28</publishTime>
+    </File>
+    <File Include="Product_Images/e9c33db9-6906-4f18-95a3-76a1a6bfab7a.JPEG">
+      <publishTime>02/22/2019 19:29:01</publishTime>
+    </File>
+    <File Include="Product_Images/ecb25ed0-6c2f-4287-9c18-699a67440a1c.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/eg-fhdtv-n5000-ua49n5000asxeg-rperspectiveblack-112989340.jpg">
+      <publishTime>10/31/2018 00:06:43</publishTime>
+    </File>
+    <File Include="Product_Images/EL_SAMUE32N4005-01.jpg">
+      <publishTime>11/16/2018 20:42:38</publishTime>
+    </File>
+    <File Include="Product_Images/eos_200d_ii.jpg">
+      <publishTime>01/10/2019 23:07:52</publishTime>
+    </File>
+    <File Include="Product_Images/evaflor-whisky-silver.jpg">
+      <publishTime>10/31/2018 00:56:14</publishTime>
+    </File>
+    <File Include="Product_Images/f-nokia-105-2017-dual-sim-czarny.jpg">
+      <publishTime>10/30/2018 20:22:49</publishTime>
+    </File>
+    <File Include="Product_Images/f1daef88-fef8-42bc-af22-2d4ab1aaa8bb.JPEG">
+      <publishTime>03/29/2019 18:40:45</publishTime>
+    </File>
+    <File Include="Product_Images/f2122b21-0995-444a-bfe9-bb43f67ababc.JPEG">
+      <publishTime>01/31/2019 14:27:17</publishTime>
+    </File>
+    <File Include="Product_Images/f2961eb2-f90c-460f-8125-b2bd502944a4.jpg">
+      <publishTime>01/10/2019 23:51:18</publishTime>
+    </File>
+    <File Include="Product_Images/f3d22ba7-3bd2-446c-8798-bb39a6a08342.JPEG">
+      <publishTime>03/29/2019 20:01:26</publishTime>
+    </File>
+    <File Include="Product_Images/f40a40a0-2939-4b2f-97f7-48d9c26ce32c.JPEG">
+      <publishTime>03/29/2019 21:46:28</publishTime>
+    </File>
+    <File Include="Product_Images/f45472e5-c469-4aa3-95ff-36b5a3f7b1da.JPEG">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/f4d1c1c8-4901-43e7-aa11-23534262366b.JPEG">
+      <publishTime>01/11/2019 01:15:06</publishTime>
+    </File>
+    <File Include="Product_Images/f4db8c5c-48a8-45d8-853d-0863e8d02595.JPEG">
+      <publishTime>02/22/2019 19:42:25</publishTime>
+    </File>
+    <File Include="Product_Images/f4f4537de442f9eaefcadefcfb3d2f13.jpg">
+      <publishTime>10/30/2018 22:52:15</publishTime>
+    </File>
+    <File Include="Product_Images/f5cd15f8-452b-4273-b959-9228ab58ee7a.JPEG">
+      <publishTime>03/29/2019 21:51:50</publishTime>
+    </File>
+    <File Include="Product_Images/f7c547d7-4299-4369-a8c8-a6a69fbc165f.JPEG">
+      <publishTime>03/29/2019 17:22:13</publishTime>
+    </File>
+    <File Include="Product_Images/f82c12c71d72bf7162c4779ac434ed15.jpg">
+      <publishTime>11/16/2018 20:53:16</publishTime>
+    </File>
+    <File Include="Product_Images/f868b18a-bf5b-4a34-95ff-f316ca0190e8.JPEG">
+      <publishTime>03/29/2019 20:28:57</publishTime>
+    </File>
+    <File Include="Product_Images/f8bc9457-f120-4d2b-98a4-e1a02d464ff1.JPEG">
+      <publishTime>03/29/2019 21:47:28</publishTime>
+    </File>
+    <File Include="Product_Images/f8f619f8-feca-45fd-9493-88342424714f.JPEG">
+      <publishTime>03/29/2019 18:55:02</publishTime>
+    </File>
+    <File Include="Product_Images/f928b8a2-976a-41ac-96f4-f772bcd3d5aa.jpg">
+      <publishTime>01/10/2019 23:41:26</publishTime>
+    </File>
+    <File Include="Product_Images/f9d7b39e-0c08-4424-8e98-71a6cc5e7c5b.JPEG">
+      <publishTime>01/18/2019 22:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/fc692d11-4d36-456b-a791-920758598e17.JPEG">
+      <publishTime>01/11/2019 01:14:22</publishTime>
+    </File>
+    <File Include="Product_Images/fdfdfdfd85858.jpg">
+      <publishTime>11/16/2018 22:49:28</publishTime>
+    </File>
+    <File Include="Product_Images/fe277e66-6484-4ed7-a6d8-6415b9b4f8e7.JPEG">
+      <publishTime>01/13/2019 19:19:44</publishTime>
+    </File>
+    <File Include="Product_Images/ff6fad33-d305-48ff-93e0-ef1d77e62ecb.JPEG">
+      <publishTime>01/11/2019 01:18:13</publishTime>
+    </File>
+    <File Include="Product_Images/gjhgjhghjgj.jpg">
+      <publishTime>10/31/2018 01:55:14</publishTime>
+    </File>
+    <File Include="Product_Images/h059_beats_studio_wireless_stn_13_b_2500_f.jpg">
+      <publishTime>10/30/2018 22:19:27</publishTime>
+    </File>
+    <File Include="Product_Images/hbqi7_tws_twins_true_wireless_airpods__earbuds_v42edr_1509309959_f83557ab_grande.jpg">
+      <publishTime>10/30/2018 22:52:15</publishTime>
+    </File>
+    <File Include="Product_Images/hjkhjklkhj.jpg">
+      <publishTime>10/31/2018 01:55:14</publishTime>
+    </File>
+    <File Include="Product_Images/hqdefault.jpg">
+      <publishTime>10/30/2018 21:32:38</publishTime>
+    </File>
+    <File Include="Product_Images/huawei-nova-3i.jpg">
+      <publishTime>10/30/2018 20:30:07</publishTime>
+    </File>
+    <File Include="Product_Images/i74512_1_.jpg">
+      <publishTime>01/10/2019 23:07:52</publishTime>
+    </File>
+    <File Include="Product_Images/i7s-tws-air-pods-bluetooth-earphone-twins.jpg">
+      <publishTime>10/30/2018 22:52:15</publishTime>
+    </File>
+    <File Include="Product_Images/images %281%29.jpg">
+      <publishTime>10/31/2018 00:56:14</publishTime>
+    </File>
+    <File Include="Product_Images/images %282%29.jpg">
+      <publishTime>10/31/2018 00:53:08</publishTime>
+    </File>
+    <File Include="Product_Images/images %283%29.jpg">
+      <publishTime>10/31/2018 00:53:08</publishTime>
+    </File>
+    <File Include="Product_Images/images.jpg">
+      <publishTime>01/10/2019 23:01:29</publishTime>
+    </File>
+    <File Include="Product_Images/insten-mini-microphone-micro-universel-jack-3-5mm-avec-clip-chemise-vetement-cravate-pour-pc-ordinateur-conversation-noir-1041767147_L.jpg">
+      <publishTime>11/16/2018 00:10:25</publishTime>
+    </File>
+    <File Include="Product_Images/item_XL_36481267_143165590.jpg">
+      <publishTime>10/30/2018 20:30:07</publishTime>
+    </File>
+    <File Include="Product_Images/item_XL_4498777_12028855.jpg">
+      <publishTime>10/31/2018 00:50:38</publishTime>
+    </File>
+    <File Include="Product_Images/item_XL_6448600_3845511.jpg">
+      <publishTime>10/31/2018 00:45:39</publishTime>
+    </File>
+    <File Include="Product_Images/item_XL_7451821_5981901.jpg">
+      <publishTime>10/30/2018 22:19:27</publishTime>
+    </File>
+    <File Include="Product_Images/item_XL_9174404_9771978.jpg">
+      <publishTime>10/31/2018 01:03:16</publishTime>
+    </File>
+    <File Include="Product_Images/j.mark.jpg">
+      <publishTime>10/31/2018 00:48:08</publishTime>
+    </File>
+    <File Include="Product_Images/jdgfghs1.png">
+      <publishTime>10/31/2018 00:45:39</publishTime>
+    </File>
+    <File Include="Product_Images/jhgyv.jpg">
+      <publishTime>11/17/2018 01:28:47</publishTime>
+    </File>
+    <File Include="Product_Images/jnij182.jpg">
+      <publishTime>11/17/2018 01:28:47</publishTime>
+    </File>
+    <File Include="Product_Images/JVC-LT-32C660-Smart-32-inch-LED-TV-Review-300x266.jpg">
+      <publishTime>10/30/2018 23:37:33</publishTime>
+    </File>
+    <File Include="Product_Images/jvc-lt-32da930-led-plana-32-pulgadas_200x200-PU8fb36_1.jpg">
+      <publishTime>10/30/2018 23:37:33</publishTime>
+    </File>
+    <File Include="Product_Images/kdckjasdhchkjdshclkjsadbckjlsbldck45646c5456465.jpg">
+      <publishTime>04/06/2019 04:10:18</publishTime>
+    </File>
+    <File Include="Product_Images/kjklgsiucnkjdcds-dcsdc54-dcsvunjnludlu8794568994165.jpg">
+      <publishTime>04/06/2019 04:10:17</publishTime>
+    </File>
+    <File Include="Product_Images/kz-ru-uhdtv-mu6300-ue49mu6300uxce-frontblack-thumb-63025901.jpg">
+      <publishTime>10/31/2018 00:14:53</publishTime>
+    </File>
+    <File Include="Product_Images/Lavalier-Microphone-Omnidirectional-Lapel-Microphone-for-iPhone-Android-and-Smartphones-Clip-On-Mic-Condenser-for-Recording.jpg_640x640.jpg">
+      <publishTime>11/16/2018 00:10:25</publishTime>
+    </File>
+    <File Include="Product_Images/l_10024756_004.jpg">
+      <publishTime>01/10/2019 22:54:58</publishTime>
+    </File>
+    <File Include="Product_Images/maxresdefault.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/mechanizm-zegarka-przeszklony-dekiel.jpg">
+      <publishTime>11/17/2018 01:36:44</publishTime>
+    </File>
+    <File Include="Product_Images/microfone-lapela-neewer-D_NQ_NP_22732-MLB20234770513_012015-F.jpg">
+      <publishTime>11/16/2018 00:10:25</publishTime>
+    </File>
+    <File Include="Product_Images/nikon-d3400-kit-black-af-s-18-105-vr.jpg">
+      <publishTime>01/10/2019 20:22:31</publishTime>
+    </File>
+    <File Include="Product_Images/nikon-d5300-dslr-original-imaempj8b5vjegfp.jpeg">
+      <publishTime>01/10/2019 20:09:42</publishTime>
+    </File>
+    <File Include="Product_Images/nikon_1519_d5300_dslr_camera_black_1010022.jpg">
+      <publishTime>01/10/2019 20:09:42</publishTime>
+    </File>
+    <File Include="Product_Images/nikon_d810_dslr_camera_body_only__7238.jpg">
+      <publishTime>01/10/2019 22:54:58</publishTime>
+    </File>
+    <File Include="Product_Images/Nobel-32-Inch-HD-Ready-LED-TV-1-1.jpg">
+      <publishTime>10/31/2018 00:10:52</publishTime>
+    </File>
+    <File Include="Product_Images/nobel_32_hd_led_tv_black_140.jpg">
+      <publishTime>10/31/2018 00:10:52</publishTime>
+    </File>
+    <File Include="Product_Images/Nokia 3310_04.webp">
+      <publishTime>01/06/2019 22:28:17</publishTime>
+    </File>
+    <File Include="Product_Images/Nokia-1.jpg">
+      <publishTime>01/06/2019 22:28:17</publishTime>
+    </File>
+    <File Include="Product_Images/nokia-2-1-1.png">
+      <publishTime>10/30/2018 20:19:06</publishTime>
+    </File>
+    <File Include="Product_Images/nokia-7-front.jpg">
+      <publishTime>01/06/2019 22:28:17</publishTime>
+    </File>
+    <File Include="Product_Images/nokia_2.1_a1_356_697.jpg">
+      <publishTime>10/30/2018 20:19:06</publishTime>
+    </File>
+    <File Include="Product_Images/nvnjdkvn7498--.jpg">
+      <publishTime>11/17/2018 01:28:47</publishTime>
+    </File>
+    <File Include="Product_Images/NWOT-Mens-Rado-Sintra-XL-Jubile-R13724702-Black-Ceramic-Diamond-Accent-Watch-352016596742.jpg">
+      <publishTime>11/16/2018 22:41:44</publishTime>
+    </File>
+    <File Include="Product_Images/product-image-169287776_grande.jpg">
+      <publishTime>11/17/2018 01:36:44</publishTime>
+    </File>
+    <File Include="Product_Images/product-image-433694827_1024x1024.jpg">
+      <publishTime>10/31/2018 01:19:54</publishTime>
+    </File>
+    <File Include="Product_Images/PV20USB-large.jpg">
+      <publishTime>11/16/2018 00:23:29</publishTime>
+    </File>
+    <File Include="Product_Images/pvm_qcy-q26-mini-bluetooth-headset-black-03_15896_1510669984.jpg">
+      <publishTime>10/30/2018 21:28:29</publishTime>
+    </File>
+    <File Include="Product_Images/Q7-Handheld-Karaoke-Mic-Wireless-Microphone-Bluetooth-USB-20180419044619.8518130015.jpg">
+      <publishTime>11/16/2018 00:15:48</publishTime>
+    </File>
+    <File Include="Product_Images/R30929712.jpg">
+      <publishTime>10/31/2018 01:25:44</publishTime>
+    </File>
+    <File Include="Product_Images/Rado-Black-Stainless-Steel-Sintra-Watch-for-Men.jpg">
+      <publishTime>11/16/2018 22:41:44</publishTime>
+    </File>
+    <File Include="Product_Images/rado-diastar-automatic-watches-available-in-pakistan.jpg">
+      <publishTime>11/16/2018 22:49:28</publishTime>
+    </File>
+    <File Include="Product_Images/Reloj-Hombre-YAZOLE-Top-Brand-Luxury-Simple-Fashion-Casual-Business-Watches-Men-Quartz-Mens-Watch-Male.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/res_5f860d43d36b4d102558f8afceab972d_full.jpg">
+      <publishTime>11/16/2018 00:15:48</publishTime>
+    </File>
+    <File Include="Product_Images/res_84000369412c4d50d0458ff85d5299ba_full.jpg">
+      <publishTime>11/16/2018 00:15:48</publishTime>
+    </File>
+    <File Include="Product_Images/s-l300.jpg">
+      <publishTime>11/16/2018 00:10:25</publishTime>
+    </File>
+    <File Include="Product_Images/sa-en-hdtv-n5000-global-ua32n5000arxum-frontblack-107186795.jpg">
+      <publishTime>11/16/2018 20:42:38</publishTime>
+    </File>
+    <File Include="Product_Images/samsung-43n5100-43-inch-full-hd-led-tv-price-india-xxl.jpg">
+      <publishTime>10/31/2018 00:06:43</publishTime>
+    </File>
+    <File Include="Product_Images/samsung-galaxy-j7-max.jpg">
+      <publishTime>11/17/2018 01:51:11</publishTime>
+    </File>
+    <File Include="Product_Images/samsung-galaxy-on6-01.jpg">
+      <publishTime>10/30/2018 19:27:58</publishTime>
+    </File>
+    <File Include="Product_Images/samsung-mu6202-specs1.jpg">
+      <publishTime>10/31/2018 00:14:53</publishTime>
+    </File>
+    <File Include="Product_Images/samsung-ue32n4005ak-led-tv-80-cm-32-zoll-eek-a-dvb-c-dvb-t2-hd-ready-schwarz.jpg">
+      <publishTime>11/16/2018 20:42:38</publishTime>
+    </File>
+    <File Include="Product_Images/samsung_galaxy_on6.jpg">
+      <publishTime>10/30/2018 19:27:58</publishTime>
+    </File>
+    <File Include="Product_Images/samsung_un43nu7100fxza_nu7100_series_43_4k_1395976.jpg">
+      <publishTime>11/16/2018 20:53:16</publishTime>
+    </File>
+    <File Include="Product_Images/shckjsgdckjgasdhc89797cdsacds7c987dc9a8s2c13sdcZZZ.jpg">
+      <publishTime>04/06/2019 04:10:19</publishTime>
+    </File>
+    <File Include="Product_Images/Sig-16-overhead-2_original.jpg">
+      <publishTime>11/16/2018 00:23:29</publishTime>
+    </File>
+    <File Include="Product_Images/SINOBI-Brand-New-Creative-Rotation-Men-Watches-2018-Stainless-Steel-Mesh-Strap-Quartz-Sport-Watch-Men.jpg_640x640.jpg">
+      <publishTime>10/31/2018 01:19:54</publishTime>
+    </File>
+    <File Include="Product_Images/SINOBI-Sports-Watches-for-Men-Stainless-Steel-Mesh-Strap-New-Arrival-Awesome-Geneva-Wristwatches-for-guys.jpg">
+      <publishTime>10/31/2018 01:19:54</publishTime>
+    </File>
+    <File Include="Product_Images/televiseur-samsung-n5000-series-5-32-fhd-flat.jpg">
+      <publishTime>10/31/2018 00:06:43</publishTime>
+    </File>
+    <File Include="Product_Images/Unknown_2__28568.1403791326.jpg">
+      <publishTime>01/10/2019 22:54:58</publishTime>
+    </File>
+    <File Include="Product_Images/Vencedor-Marca-Homens-Completa-de-A-o-Inoxid-vel-Assista-Men-Skeleton-Auto-Mec-nica-Rel.jpg">
+      <publishTime>10/31/2018 01:28:51</publishTime>
+    </File>
+    <File Include="Product_Images/whiskysilver-600x800-0.jpg">
+      <publishTime>10/31/2018 00:56:14</publishTime>
+    </File>
+    <File Include="Product_Images/Winner-Watch-Men-Skeleton-Automatic-Mechanical-Watch-gold-skeleton-vintage-skeleton-man-watch-Mens-Watch-Top.jpeg_640x640.jpeg">
+      <publishTime>10/31/2018 01:28:51</publishTime>
+    </File>
+    <File Include="Product_Images/Yazole-Men-Luxury-Stainless-Steel-Quartz-Military-Sport-Leather-Band-Dial-Wrist-Watch_1718896_f0447d8d3b3412d96155134f9b5ae199_t.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Product_Images/Z7443.jpg">
+      <publishTime>10/31/2018 01:28:51</publishTime>
+    </File>
+    <File Include="Product_Images/ziiiro-mercury-watch-black-ocean-blue-side-1000x1150.jpg">
+      <publishTime>10/31/2018 01:19:54</publishTime>
+    </File>
+    <File Include="Product_Images/z__29616_zoom.jpg">
+      <publishTime>10/31/2018 00:10:52</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>09/09/2018 23:13:18</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml">
+      <publishTime>03/09/2019 17:41:24</publishTime>
+    </File>
+    <File Include="Properties/Settings.Designer.cs">
+      <publishTime>03/01/2019 00:00:01</publishTime>
+    </File>
+    <File Include="Properties/Settings.settings">
+      <publishTime>02/28/2019 23:59:59</publishTime>
+    </File>
+    <File Include="RatingsAndReview.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Report.aspx">
+      <publishTime>07/09/2019 02:06:37</publishTime>
+    </File>
+    <File Include="Report.aspx.cs">
+      <publishTime>07/09/2019 01:45:44</publishTime>
+    </File>
+    <File Include="Report.aspx.designer.cs">
+      <publishTime>07/09/2019 02:06:37</publishTime>
+    </File>
+    <File Include="Report.rdlc">
+      <publishTime>07/09/2019 02:17:12</publishTime>
+    </File>
+    <File Include="RuleAssociationMining%28FP-Growth%29/FPTree.cs">
+      <publishTime>04/20/2019 02:54:12</publishTime>
+    </File>
+    <File Include="RuleAssociationMining%28FP-Growth%29/Node.cs">
+      <publishTime>03/02/2019 14:05:00</publishTime>
+    </File>
+    <File Include="RuleAssociationMining%28FP-Growth%29/Result.cs">
+      <publishTime>06/28/2019 01:43:24</publishTime>
+    </File>
+    <File Include="SalesOrder.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SalesOrderLine.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Scripts/canvasjs.min.js">
+      <publishTime>04/12/2019 23:34:47</publishTime>
+    </File>
+    <File Include="Scripts/dataTables.fixedHeader.min.js">
+      <publishTime>05/09/2019 17:57:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.intellisense.js">
+      <publishTime>09/09/2018 23:15:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>09/09/2018 23:15:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>12/20/2018 19:30:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>09/09/2018 23:15:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>09/09/2018 23:15:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>09/09/2018 23:15:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>09/09/2018 23:15:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>12/04/2018 02:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.canvasjs.min.js">
+      <publishTime>04/12/2019 23:39:21</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dataTables.min.js">
+      <publishTime>05/09/2019 17:58:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery.exzoom.js">
+      <publishTime>12/29/2018 16:13:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.2.2.js">
+      <publishTime>12/09/2018 13:54:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.2.2.min.js">
+      <publishTime>12/09/2018 13:54:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.0.js">
+      <publishTime>12/09/2018 16:13:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>09/09/2018 23:16:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>09/09/2018 23:16:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>09/09/2018 23:16:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>09/09/2018 23:16:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/09/2018 23:16:09</publishTime>
+    </File>
+    <File Include="Scripts/materialize.js">
+      <publishTime>10/22/2018 00:21:48</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>09/09/2018 23:16:03</publishTime>
+    </File>
+    <File Include="Scripts/nouislider.js">
+      <publishTime>05/17/2019 03:46:53</publishTime>
+    </File>
+    <File Include="Scripts/SimpleStarRating.js">
+      <publishTime>01/13/2019 20:50:36</publishTime>
+    </File>
+    <File Include="Scripts/slider.js">
+      <publishTime>06/05/2019 03:25:42</publishTime>
+    </File>
+    <File Include="Scripts/toastr.js">
+      <publishTime>01/09/2019 00:59:01</publishTime>
+    </File>
+    <File Include="Scripts/toastr.min.js">
+      <publishTime>01/09/2019 00:59:01</publishTime>
+    </File>
+    <File Include="Seller.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SellerImage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SellerPaymentSubscription.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SellerProduct.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SellerProfit.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Seller_address.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Seller_Contact.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Seller_Image/191bda96-8d27-49d9-b301-ef89596c5a42.png">
+      <publishTime>01/18/2019 22:33:00</publishTime>
+    </File>
+    <File Include="Seller_Image/78d90543-68cd-42a0-8928-92d711fbf99c.png">
+      <publishTime>01/05/2019 02:08:26</publishTime>
+    </File>
+    <File Include="Seller_Image/9be501f5-7f7b-4e14-864a-95e9d96720d5.png">
+      <publishTime>01/14/2019 09:46:09</publishTime>
+    </File>
+    <File Include="Seller_Image/a23dc2d5-6d3c-4898-a56d-80036df05512.png">
+      <publishTime>01/05/2019 02:32:57</publishTime>
+    </File>
+    <File Include="Seller_Image/afc60f77-6ee8-4b08-b853-47c7116ce721.png">
+      <publishTime>01/13/2019 18:33:04</publishTime>
+    </File>
+    <File Include="Seller_Image/bag-it-today-logo-7A825ABA3F-bjkdf65df465sseeklogo.com.png">
+      <publishTime>04/06/2019 16:21:48</publishTime>
+    </File>
+    <File Include="Seller_Image/e2944411-37b4-48b6-823c-d483ad33db1f.png">
+      <publishTime>01/10/2019 19:54:16</publishTime>
+    </File>
+    <File Include="Seller_Image/haroon.png">
+      <publishTime>12/28/2018 13:35:17</publishTime>
+    </File>
+    <File Include="Seller_Image/Jillani.JPG">
+      <publishTime>12/28/2018 13:49:16</publishTime>
+    </File>
+    <File Include="Seller_Image/saima.png">
+      <publishTime>12/28/2018 13:36:59</publishTime>
+    </File>
+    <File Include="Seller_Image/sam.jpg">
+      <publishTime>12/28/2018 13:37:45</publishTime>
+    </File>
+    <File Include="Seller_Image/watchesStore.jpg">
+      <publishTime>12/28/2018 13:50:17</publishTime>
+    </File>
+    <File Include="Shipment.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Size.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Slider Images/78N_LAST_VIKING_MAINSCREEN.png">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/Cover-Homage-Watches-1.png">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/Huawei-top-global-phone-brand.jpg">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/levi.png">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/maxresdefault.jpg">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/o.30129.jpg">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/samsung-galaxy-gear-smartwatch-cover.jpg">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/slider-7-presentation.jpg">
+      <publishTime>11/14/2018 03:02:04</publishTime>
+    </File>
+    <File Include="Slider Images/smartwatch-HC-10-10-218.jpg">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="Slider Images/Untitled-design-4-1-1-1.png">
+      <publishTime>12/19/2018 16:08:38</publishTime>
+    </File>
+    <File Include="sp_helpdiagramdefinition_Result.cs">
+      <publishTime>07/06/2019 03:09:18</publishTime>
+    </File>
+    <File Include="sp_helpdiagrams_Result.cs">
+      <publishTime>07/06/2019 03:09:18</publishTime>
+    </File>
+    <File Include="SqlServerTypes/Loader.cs">
+      <publishTime>07/09/2019 00:44:48</publishTime>
+    </File>
+    <File Include="SqlServerTypes/readme.htm">
+      <publishTime>07/09/2019 00:44:47</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>07/09/2019 00:44:49</publishTime>
+    </File>
+    <File Include="Startup.cs">
+      <publishTime>02/04/2019 23:34:26</publishTime>
+    </File>
+    <File Include="State.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="StateCountrySelect_Result.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Storage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SubCatBrand.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SubCatImage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SubCatImages/%24_35.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/0398620hero.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/1.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/2-261.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/2018-new-car-stunts-climbing-models-morphing.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/2018-New-Coming-Alike-Trending-Products-Dropshipping-Men-s-Watch-Military-Digital-Date-Display-Sports-Watches.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/2231d85d-3089-4d85-bcdf-d12931727aac.png">
+      <publishTime>01/06/2019 02:21:37</publishTime>
+    </File>
+    <File Include="SubCatImages/3b19a4add49551b80e17aa84b219a6b9.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/4d988e63-3db9-4afa-8289-4f5ab38635c9.png">
+      <publishTime>01/10/2019 19:28:32</publishTime>
+    </File>
+    <File Include="SubCatImages/50ab3e9a-bcdb-4c8d-9e8f-b19c46ed240b.png">
+      <publishTime>01/10/2019 19:26:25</publishTime>
+    </File>
+    <File Include="SubCatImages/5212001_1.png">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/56545547-bébé-sur-fond-blanc-avec-des-vêtements-des-articles-de-toilette-jouets-et-accessoires-de-soins-de-santé-li.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/5a4e1f054c20d32bc183a106_m.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/5b637709-5d27-4fac-907e-9ab18f679c10.png">
+      <publishTime>01/10/2019 19:30:31</publishTime>
+    </File>
+    <File Include="SubCatImages/60406038-df1a-410e-8731-5cf11edb2389.png">
+      <publishTime>01/10/2019 19:34:06</publishTime>
+    </File>
+    <File Include="SubCatImages/61rqlNBWLvL._UL1500_.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/6b063c0d-a949-48dc-ad1d-460c0ea8424c._SL300__.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/6cdcdc5d8af70b7ed0ed94c962ff9ccb.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/7-in-1-mobile-accessories-in-just-rs999-.jpg">
+      <publishTime>11/04/2018 16:47:00</publishTime>
+    </File>
+    <File Include="SubCatImages/706a4942-7c8f-4d34-b116-881b89445101.png">
+      <publishTime>01/10/2019 19:31:49</publishTime>
+    </File>
+    <File Include="SubCatImages/71hxnEOpYaL._SY450_.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/71KIkuqPz+L._UL1500_.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/71rtQ+8DTQL._SX425_.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/72301819b710f5ba925fe56cc0f388fe.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/800px_COLOURBOX18130629.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/80ffb4e4-bea5-4e14-a689-e6418b7e1e3f.png">
+      <publishTime>01/06/2019 02:27:01</publishTime>
+    </File>
+    <File Include="SubCatImages/87906.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/91ab2e7a-a20b-4156-b127-fbd527920d0e.png">
+      <publishTime>01/10/2019 19:27:18</publishTime>
+    </File>
+    <File Include="SubCatImages/9934d1518a73a9a6eab50c4bb49d823c.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/9a016ac3-0e8d-4361-ba63-5d2a7384b237.png">
+      <publishTime>01/06/2019 02:23:49</publishTime>
+    </File>
+    <File Include="SubCatImages/a2f63c03-ba31-4866-bbcf-5ea1a40f2cdd.png">
+      <publishTime>01/06/2019 02:32:03</publishTime>
+    </File>
+    <File Include="SubCatImages/aa-amazon-echo-best-smart-bulb.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/ace84568-0ff1-4d6f-affd-8b93e99013f9.png">
+      <publishTime>01/10/2019 19:29:40</publishTime>
+    </File>
+    <File Include="SubCatImages/acessórios-casa-decoração.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/andy.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/archer-vr400.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/b29ff787-3629-4caf-827e-4f6ee3e8e6c2.JPG">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/bbw_16.02.17.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Best-Womans-Watches-for-Daily-Wear.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/bigstock-Spoon-With-Dietary-Supplements-70069831.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/BNi-personal-care-appliances.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/btn-microphones.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/c05642410.png">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/c05661837.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/c20eb3e4bbd8b7bac5c76417de01c1dc.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/c700x420.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/camera-hd-png-photo-camera-png-image-700.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/cartoon-children-kids-watch-boys-girls-multifunction.jpg">
+      <publishTime>11/04/2018 19:02:10</publishTime>
+    </File>
+    <File Include="SubCatImages/comment_diminuer_les_depenses_liees_aux_appareils_electromenagers-750x410.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/computer-peripherals_5-11-2016-10355-500x500.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/d2601ffd-6e8a-441b-9e82-7092f53ed607.png">
+      <publishTime>01/06/2019 02:34:44</publishTime>
+    </File>
+    <File Include="SubCatImages/dairy.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/download %281%29.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/download %282%29.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/download.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/eac26c7a-a8eb-4dab-bf78-086fbe8c0ee5.png">
+      <publishTime>01/05/2019 03:22:21</publishTime>
+    </File>
+    <File Include="SubCatImages/Ecco-Biom-shoes-tcistudio.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/fc70cebd-6838-4e4e-a2bf-6aa6f6ede071.png">
+      <publishTime>01/06/2019 02:25:29</publishTime>
+    </File>
+    <File Include="SubCatImages/fd05bdab-3400-4a1f-b5db-3c10caa722bf.png">
+      <publishTime>01/10/2019 19:24:10</publishTime>
+    </File>
+    <File Include="SubCatImages/feeding.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Ferfi-ekszerek1o.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/fmcg1.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/haircare.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/HD-D20-2.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Heavengifts-E-cig-RDA-RTA-RDTA-DIY-Tool-Accessories-Kit-V3-Build-Atomizer-Vape-Coil-Jigs_600x.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/hi-fashion-women-accessories-combo-by-burdy-medium_5c569a36b38ca246ac23a5557793a6ba.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/images %281%29.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/images.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/images222.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/image_0.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/img-20170201-wa0301-500x500.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/ip111930_00.jpg">
+      <publishTime>11/04/2018 16:47:00</publishTime>
+    </File>
+    <File Include="SubCatImages/ip116894_00.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/IQ-Blox-%28pack+product+booklet%29.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/kitchen-items-kitchen-items.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/korean-summer-tide-men-039-s-casual-t-shirt.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/lead_720_405.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/learn-wearable-tech.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/Luxury-Bath-Accessories-Classic.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Luxury-premium-perfume-Stock-Photo-22.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/main-qimg-c0c29325ad122be5700eb4c6027a7bd2-c.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/maxresdefault.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/Men-s-Casual-Shoes-2018-Men-Shoes-Men-Loafers-Luxury-Brand-Spring-Sneakers-Male-Boat-Shoes.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/Most-useful-kids-luggage-sets.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/Nesquik-Choco-choco1-308x308.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/o.33712.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/original_eazo-front-zip-travel-duffle.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/polowatch-35-blackwayfarer_accery_574547378620e._lime-offers-complete-mens-gift-set-of-watch-and-accessories.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/product-image-532262969_large.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/product-image-796795277_1200x1200.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/product-image-hd-wireless-klipsch-home-theater-package_1.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/PS4_Console_Carry_Bag_1024x1024.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Regular-XXL28-4Packs-427x546.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/saglik-market-uygulamasinin-amaci-yerliligi-arttirmak.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Stylish-eyeglass-frames-Vintage-eyeglasses-frames-New.jpg_350x350.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/suitcases-for-travel.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/Summit_Brands_Laundry_Solutions.png">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/top-nursery-kids-room-trends-you-must-know-for-belivindesign_single-bedroom.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Travel-Collage-21.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/upright-vacuum-v2.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/v4ADCH3g-5654-3769.JPG">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/vivo-v7-plus-front.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubCatImages/Vocabulary-to-describe-small-kitchen-appliances-and-equipment-featured-image.jpg">
+      <publishTime>11/04/2018 16:47:01</publishTime>
+    </File>
+    <File Include="SubCatImages/Wooden-Kids-STEM-Toy-Tools-Set-Construction-For-Toddler.jpg">
+      <publishTime>11/04/2018 18:57:29</publishTime>
+    </File>
+    <File Include="SubCatImages/World-Organics-Beauty-Products.jpg">
+      <publishTime>11/04/2018 19:02:10</publishTime>
+    </File>
+    <File Include="SubCatImages/_101418320.jpg">
+      <publishTime>11/04/2018 16:47:02</publishTime>
+    </File>
+    <File Include="SubSubCategory.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="subsubCatImage.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="SubSubCatImages/080ec740-9eb9-4c2f-bb69-16470bfcba4a.png">
+      <publishTime>01/17/2019 19:33:30</publishTime>
+    </File>
+    <File Include="SubSubCatImages/0db21c15-f396-4e00-ab68-d9bc5f1cf47c.png">
+      <publishTime>01/05/2019 03:52:45</publishTime>
+    </File>
+    <File Include="SubSubCatImages/1c525c6d-a558-43c5-a950-f057b684fb72.png">
+      <publishTime>01/17/2019 19:43:44</publishTime>
+    </File>
+    <File Include="SubSubCatImages/2046b1b0-ce29-4806-a78a-e3fb20e1e0ab.png">
+      <publishTime>01/17/2019 19:24:36</publishTime>
+    </File>
+    <File Include="SubSubCatImages/20f51c4a-3975-4114-a71b-770f5a5d44ba.png">
+      <publishTime>01/17/2019 19:42:10</publishTime>
+    </File>
+    <File Include="SubSubCatImages/227b5a5a-6a26-4595-8056-f71395c720d1.png">
+      <publishTime>01/17/2019 19:38:17</publishTime>
+    </File>
+    <File Include="SubSubCatImages/3549d3c3-f4ea-4d1f-83e4-05307d5eadf4.png">
+      <publishTime>01/17/2019 19:44:52</publishTime>
+    </File>
+    <File Include="SubSubCatImages/3b165983-3654-4ba5-a85e-8767a840b161.png">
+      <publishTime>01/17/2019 19:43:23</publishTime>
+    </File>
+    <File Include="SubSubCatImages/41126a94-18fa-4db8-844b-d20a9a0863ba.png">
+      <publishTime>01/17/2019 19:32:58</publishTime>
+    </File>
+    <File Include="SubSubCatImages/47fe6b8d-3ae0-48c4-946b-87c268eb1e82.png">
+      <publishTime>01/17/2019 19:23:58</publishTime>
+    </File>
+    <File Include="SubSubCatImages/48a94d0a-2914-4252-8236-557b8d47180c.png">
+      <publishTime>01/17/2019 19:26:23</publishTime>
+    </File>
+    <File Include="SubSubCatImages/546446546ghghgh3.jpg">
+      <publishTime>01/13/2019 16:36:54</publishTime>
+    </File>
+    <File Include="SubSubCatImages/5c84b59d-a8a0-4185-b387-23a51fc9935c.png">
+      <publishTime>01/17/2019 19:28:04</publishTime>
+    </File>
+    <File Include="SubSubCatImages/9725bf45-f7d9-4d3b-b362-0a932c7ae88e.png">
+      <publishTime>01/17/2019 19:42:49</publishTime>
+    </File>
+    <File Include="SubSubCatImages/9c1a752c-e6fd-45ac-8889-1252ba7965cb.png">
+      <publishTime>01/17/2019 19:23:19</publishTime>
+    </File>
+    <File Include="SubSubCatImages/a56b6fc0-3da7-4b8d-a800-68735916bab3.png">
+      <publishTime>01/05/2019 03:47:33</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Action Camera Accessories.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Adapters&amp; Cables.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Air Conditioner.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Air Purifier.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Air Removal.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Bath &amp; Body.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Batteries.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/bcddc967-174d-43c7-844b-144bfdad4fe9.png">
+      <publishTime>01/17/2019 19:20:06</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Beauty Suppliments.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Blender, Mixer &amp; Grinder.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Blu-RayDVD Player.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Body &amp; Massage Oil.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Brushes &amp; Sets.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Brushes.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Bussiness.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/c1fa3c2a-2e7d-4785-9eb9-9dc9a63ce724.png">
+      <publishTime>01/17/2019 19:33:11</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Cables &amp; Converter.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Camera Cases Cover.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Color.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Conditioner.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Cooktop &amp; Range.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Cooler.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Curling Irons &amp; Wands.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/d2707dc3-13b4-4248-86cb-7d38606abe80.png">
+      <publishTime>01/17/2019 19:37:50</publishTime>
+    </File>
+    <File Include="SubSubCatImages/d64da8f0-6eef-45a3-9e9c-098c0d9e2185.png">
+      <publishTime>01/17/2019 19:25:36</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Derma Care.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Desktop Casing.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/DSLR.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Electric Kettle.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/External Hard Drive.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Eyes.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/f9cfcc8b-be82-4293-b793-9af6f7c5d4ad.png">
+      <publishTime>01/17/2019 19:38:30</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Facial Cleanser.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/FanHeat Sinker.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Fashion.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Fax Machines.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Fitness &amp; Activity Tracker.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Fitness &amp; Tracker Accessories.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Flash Drive.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Flat Irons.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Floor Polisher.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Foot Care.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Foundation.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Freezer.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Fryer.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Garment Steamer.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/ghgsdkf687fg8g7etrfg8efy8oghigh-bar-dress-shirts.jpg">
+      <publishTime>04/06/2019 16:22:24</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Graphic Card.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Grooming Appliance.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Hair Care.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Hair Dryer.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Hair Dryer2.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Hair Dryer3.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Hand Care.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Headphones &amp; Headsets.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Home Entertainment.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Home Entertainment.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Huawei.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Infinix.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Ink665Toners.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Instant Camera.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Internal Hard Drive.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/IP Security Camera.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Iphone.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Irons.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Keyboard.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/LED Telivision.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Lenovo.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Lenses.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Lighting &amp; Studio Equipment.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Lips.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Live Sound &amp; Stage Equipment.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Live Sound &amp; Stage Equipment.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Memory Cards.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Men Fragnence.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Mice.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Microwave.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Monitor.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Motherboard.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Motorola.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Multivitamin.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Nails.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Network Component.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Nokia.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/OLED Telivision.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Oral Care.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/OTG Drive.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Other Telivision.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Oven.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Partsand55Tools.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/PC Audio.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Phone Cases.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Play Station Audio &amp; Accessories.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Play9Station8Controller.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Point &amp; Shoot.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Portable Player.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Portable Players.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Power Banks.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Printers Ink &amp; Toners.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Processors.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Projectors.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Q Mobile.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/QLED Telivision.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/redlg.jpg">
+      <publishTime>01/13/2019 16:36:55</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Refrigrators.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Rice Cooker.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Samsung.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Serum &amp; Assence.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Sewing Machine.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Shampoo.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Smart Telivision.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Smart Watches.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Sound Bars.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Sports Nutritions.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Storage for Mac.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Sunscreen &amp; AfterSun.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Tripods &amp; Monopods.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/TV Receiver.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/v.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Vacuum Cleaner.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Virtual Reality.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Wall Chargers.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Wall Mount Protectos.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Water &amp; Heater.png">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Water Purifier.jpeg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Well Being.png">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Wireless Chargers.jpg">
+      <publishTime>11/05/2018 00:37:32</publishTime>
+    </File>
+    <File Include="SubSubCatImages/Women Fragnence.jpg">
+      <publishTime>11/05/2018 00:37:31</publishTime>
+    </File>
+    <File Include="Sub_Category.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="sysdiagram.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="timeSpendBasedAndDayBased_Result.cs">
+      <publishTime>03/09/2019 16:40:40</publishTime>
+    </File>
+    <File Include="timeSpendBased_Result.cs">
+      <publishTime>03/14/2019 17:18:43</publishTime>
+    </File>
+    <File Include="TokenType.cs">
+      <publishTime>06/21/2019 00:31:41</publishTime>
+    </File>
+    <File Include="UserBehavior.cs">
+      <publishTime>06/21/2019 00:31:41</publishTime>
+    </File>
+    <File Include="UserToken.cs">
+      <publishTime>06/21/2019 00:31:41</publishTime>
+    </File>
+    <File Include="Views/Admin/AdminLogin.cshtml">
+      <publishTime>04/07/2019 02:27:40</publishTime>
+    </File>
+    <File Include="Views/Admin/AnalyticsAdmin.cshtml">
+      <publishTime>06/22/2019 19:03:06</publishTime>
+    </File>
+    <File Include="Views/Admin/Brands.cshtml">
+      <publishTime>05/26/2019 01:42:29</publishTime>
+    </File>
+    <File Include="Views/Admin/Category.cshtml">
+      <publishTime>05/26/2019 01:54:13</publishTime>
+    </File>
+    <File Include="Views/Admin/Customer.cshtml">
+      <publishTime>05/09/2019 18:56:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ErrorPage.cshtml">
+      <publishTime>06/19/2019 21:02:18</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>05/13/2019 01:28:43</publishTime>
+    </File>
+    <File Include="Views/Admin/InsertBrandInCat.cshtml">
+      <publishTime>05/10/2019 02:58:19</publishTime>
+    </File>
+    <File Include="Views/Admin/Order.cshtml">
+      <publishTime>05/30/2019 16:00:49</publishTime>
+    </File>
+    <File Include="Views/Admin/Product.cshtml">
+      <publishTime>05/09/2019 18:48:27</publishTime>
+    </File>
+    <File Include="Views/Admin/Seller_Info.cshtml">
+      <publishTime>05/09/2019 18:55:13</publishTime>
+    </File>
+    <File Include="Views/Admin/SubCategory.cshtml">
+      <publishTime>05/26/2019 01:52:46</publishTime>
+    </File>
+    <File Include="Views/Admin/SubSubCategory.cshtml">
+      <publishTime>06/21/2019 01:51:30</publishTime>
+    </File>
+    <File Include="Views/Customers/ActivateEmail.cshtml">
+      <publishTime>06/05/2019 01:18:51</publishTime>
+    </File>
+    <File Include="Views/Customers/AddAddress.cshtml">
+      <publishTime>06/05/2019 02:35:18</publishTime>
+    </File>
+    <File Include="Views/Customers/Brands.cshtml">
+      <publishTime>06/18/2019 14:43:29</publishTime>
+    </File>
+    <File Include="Views/Customers/BuyAndCheckOut.cshtml">
+      <publishTime>08/30/2019 23:52:57</publishTime>
+    </File>
+    <File Include="Views/Customers/CatSubCat.cshtml">
+      <publishTime>06/18/2019 15:00:40</publishTime>
+    </File>
+    <File Include="Views/Customers/CustomerCart.cshtml">
+      <publishTime>08/31/2019 02:33:40</publishTime>
+    </File>
+    <File Include="Views/Customers/CustomerSignUp.cshtml">
+      <publishTime>02/11/2019 02:30:46</publishTime>
+    </File>
+    <File Include="Views/Customers/CustomerWishList.cshtml">
+      <publishTime>04/14/2019 01:08:42</publishTime>
+    </File>
+    <File Include="Views/Customers/CustOrder.cshtml">
+      <publishTime>06/16/2019 10:31:48</publishTime>
+    </File>
+    <File Include="Views/Customers/ErrorPage.cshtml">
+      <publishTime>05/31/2019 20:03:11</publishTime>
+    </File>
+    <File Include="Views/Customers/GlobalCollection.cshtml">
+      <publishTime>11/12/2018 12:53:29</publishTime>
+    </File>
+    <File Include="Views/Customers/Index.cshtml">
+      <publishTime>06/23/2019 03:01:57</publishTime>
+    </File>
+    <File Include="Views/Customers/Login.cshtml">
+      <publishTime>02/05/2019 18:24:54</publishTime>
+    </File>
+    <File Include="Views/Customers/myProfile.cshtml">
+      <publishTime>11/13/2018 19:55:57</publishTime>
+    </File>
+    <File Include="Views/Customers/OrderID.cshtml">
+      <publishTime>12/07/2018 17:15:26</publishTime>
+    </File>
+    <File Include="Views/Customers/ProductInformation.cshtml">
+      <publishTime>07/22/2019 19:10:57</publishTime>
+    </File>
+    <File Include="Views/Customers/Products.cshtml">
+      <publishTime>06/18/2019 15:27:12</publishTime>
+    </File>
+    <File Include="Views/Customers/SellersProductsView.cshtml">
+      <publishTime>06/18/2019 15:05:19</publishTime>
+    </File>
+    <File Include="Views/Customers/SubSubCat.cshtml">
+      <publishTime>06/18/2019 15:37:22</publishTime>
+    </File>
+    <File Include="Views/Customers/SubSubCatBrands.cshtml">
+      <publishTime>06/18/2019 15:26:06</publishTime>
+    </File>
+    <File Include="Views/Customers/SummaryStatus.cshtml">
+      <publishTime>01/13/2019 01:20:12</publishTime>
+    </File>
+    <File Include="Views/Customers/Tracking.cshtml">
+      <publishTime>01/31/2019 02:47:51</publishTime>
+    </File>
+    <File Include="Views/Customers/ViewOrders.cshtml">
+      <publishTime>06/21/2019 15:43:25</publishTime>
+    </File>
+    <File Include="Views/Home/AdminLogin.cshtml">
+      <publishTime>10/09/2018 15:26:39</publishTime>
+    </File>
+    <File Include="Views/Home/MasterAdminLogin.cshtml">
+      <publishTime>09/25/2018 01:44:40</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/AdminInfo.cshtml">
+      <publishTime>10/09/2018 21:49:58</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/Area.cshtml">
+      <publishTime>10/11/2018 19:36:57</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/City.cshtml">
+      <publishTime>10/11/2018 19:15:48</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/Country.cshtml">
+      <publishTime>10/10/2018 11:32:39</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/Login.cshtml">
+      <publishTime>10/13/2018 13:12:03</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/MasterAdmin.cshtml">
+      <publishTime>10/10/2018 03:16:34</publishTime>
+    </File>
+    <File Include="Views/MasterAdmin/State.cshtml">
+      <publishTime>10/11/2018 17:26:10</publishTime>
+    </File>
+    <File Include="Views/Seller/Analytics.cshtml">
+      <publishTime>06/22/2019 22:38:58</publishTime>
+    </File>
+    <File Include="Views/Seller/EditProduct.cshtml">
+      <publishTime>06/12/2019 23:45:17</publishTime>
+    </File>
+    <File Include="Views/Seller/ErrorPage.cshtml">
+      <publishTime>06/19/2019 22:11:23</publishTime>
+    </File>
+    <File Include="Views/Seller/SelfAdvertisement.cshtml">
+      <publishTime>11/26/2018 21:22:16</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_AddProduct.cshtml">
+      <publishTime>05/03/2019 13:43:22</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_Login.cshtml">
+      <publishTime>06/12/2019 23:57:00</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_Order.cshtml">
+      <publishTime>06/23/2019 03:24:17</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_Panel.cshtml">
+      <publishTime>02/11/2019 18:00:21</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_Product.cshtml">
+      <publishTime>06/08/2019 04:08:38</publishTime>
+    </File>
+    <File Include="Views/Seller/Seller_SignUp.cshtml">
+      <publishTime>06/20/2019 04:20:45</publishTime>
+    </File>
+    <File Include="Views/Shared/AdminLoginLayout.cshtml">
+      <publishTime>06/02/2019 00:32:06</publishTime>
+    </File>
+    <File Include="Views/Shared/AdminPanel.cshtml">
+      <publishTime>06/21/2019 01:48:43</publishTime>
+    </File>
+    <File Include="Views/Shared/CatMenu.cshtml">
+      <publishTime>03/19/2019 23:37:13</publishTime>
+    </File>
+    <File Include="Views/Shared/CustomerLayout.cshtml">
+      <publishTime>07/21/2019 23:06:59</publishTime>
+    </File>
+    <File Include="Views/Shared/EmptyLayout.cshtml">
+      <publishTime>02/01/2019 04:09:38</publishTime>
+    </File>
+    <File Include="Views/Shared/MasterAdminLayout.cshtml">
+      <publishTime>10/10/2018 03:18:05</publishTime>
+    </File>
+    <File Include="Views/Shared/MasterAdminLoginLayout.cshtml">
+      <publishTime>10/13/2018 12:44:43</publishTime>
+    </File>
+    <File Include="Views/Shared/SellerLayout.cshtml">
+      <publishTime>06/08/2019 03:59:53</publishTime>
+    </File>
+    <File Include="Views/Shared/SellerSignUpLayout.cshtml">
+      <publishTime>06/05/2019 00:54:28</publishTime>
+    </File>
+    <File Include="Views/Shared/ShippingClerkLayout.cshtml">
+      <publishTime>06/09/2019 03:55:47</publishTime>
+    </File>
+    <File Include="Views/Shared/ShippingClerkLoginLayout.cshtml">
+      <publishTime>06/05/2019 00:54:52</publishTime>
+    </File>
+    <File Include="Views/ShippingClerk/Index.cshtml">
+      <publishTime>06/09/2019 03:54:57</publishTime>
+    </File>
+    <File Include="Views/ShippingClerk/Login.cshtml">
+      <publishTime>05/03/2019 05:03:33</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/03/2018 17:44:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/11/2018 22:24:25</publishTime>
+    </File>
+    <File Include="WarrentyDurationType.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/06/2020 03:15:00</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>09/09/2018 23:13:15</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>09/09/2018 23:13:15</publishTime>
+    </File>
+    <File Include="WishList.cs">
+      <publishTime>05/04/2020 04:50:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

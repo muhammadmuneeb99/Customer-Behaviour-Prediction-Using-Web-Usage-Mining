@@ -1,0 +1,130 @@
+﻿@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.SubSubCatBrandsDto>
+@{
+    ViewBag.Title = "InserBrandInCat";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+
+<main>
+        <div class="container" style="width:100%; height:auto;">
+            <form action="InsertBrandInCat" method="post" id="frm">
+                <div class="input-field col s12">
+                    <select name="subsubcatId" id="ssc" title="Please Select Sub Sub Category" required >
+                        <option value="-1" disabled selected>Select Sub Sub Category</option>
+                        @foreach (var item in ViewBag.subsubcats)
+                        {
+                            <option value="@item.sscid">@item.sscName</option>
+                        }
+                    </select>
+                </div>
+                <br />
+                <div class="input-field col s12">
+                    <select name="brandId" id="brand" title="Please Select Brand" required >
+                        <option value="-1" disabled selected>Select Brand</option>
+                        @foreach (var item in ViewBag.brands)
+                        {
+                            <option value="@item.brandId">@item.brandName</option>
+                        }
+                    </select>
+                </div>
+                <center>
+                    <button style="background-color:#292929;"id="btn" class=" btn waves-effect waves-light" type="submit" name="action">
+                        Add
+                    </button>
+                </center>
+            </form>
+            @*<div class="left">
+                <input type="text" value="" placeholder="Search Brand, Sub Sub Category" id="myInput" style="border:2px solid #292929; height:35px;width:250px;border-radius:5px;padding-left:5px;" />
+            </div>*@
+        </div>
+
+        <div class="container" style="width:100%; height:auto; margin-top:2%;">
+
+                <table class="centered bordered display responsive-table" id="example">
+                    <thead>
+
+                        <tr style="text-align:center; font-weight:bolder;">
+                            <th style="font-size:12px">Id</th>
+                            <th style="font-size:12px">Sub Sub Category</th>
+                            <th style="font-size:12px">Brand</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var value in Model)
+                        {
+                            <tr>
+                                <td style="font-size:12px">@value.sscbId</td>
+                                <td style="font-size:12px">@value.sscName</td>
+                                <td style="font-size:12px">@value.BrandName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+        </div>
+</main>
+
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    //$("#imageBrowser1").change(function () {
+    //    //    var File = this.files;
+    //    //    if (File && File[0]) {
+    //    //        ReadImage(File[0])
+    //    //    }
+    //    //});
+    //    //$('.button-collapse').sideNav();
+    //    //$('.collapsible').collapsible();
+    //    //$('#ssc').material_select();
+    //    //$('#brand').material_select();
+    //});
+    //$(document).ready(function () {
+    //    $("#myInput").on("keyup", function () {
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "") {
+            }
+            else if (title === "Order Date") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function () {
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+            //fixedHeader: true
+        });
+
+        $("#frm").submit(function (event) {
+            var country = $('#ssc option:selected').val();
+            if (country === '-1') {
+                event.preventDefault();
+                toastr.warning("Please Select Sub Sub Category");
+            }
+            var country1 = $('#brand option:selected').val();
+            if (country1 === '-1') {
+                event.preventDefault();
+                toastr.warning("Please Select Brand");
+            }
+        });
+    });
+</script>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MVCEncrypt</name>
+    </assembly>
+    <members>
+        <member name="T:MVCEncrypt.EncryptDecrypt">
+            <summary>
+            default implementation class for having encrypt decrypt
+            </summary>
+        </member>
+        <member name="M:MVCEncrypt.EncryptDecrypt.#ctor(System.String)">
+            <summary>
+            encrypt constructor
+            </summary>
+            <param name="sharedSecret"></param>
+        </member>
+        <member name="M:MVCEncrypt.EncryptDecrypt.DecryptString(System.String)">
+            <summary>
+            http://stackoverflow.com/questions/202011/encrypt-and-decrypt-a-string
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCEncrypt.EncryptDecrypt.EncryptString(System.String)">
+            <summary>
+            http://stackoverflow.com/questions/202011/encrypt-and-decrypt-a-string
+            </summary>
+            <param name="value"></param>
+            <returns>base64 crypt</returns>
+        </member>
+        <member name="T:MVCEncrypt.IEncryptDecrypt">
+            <summary>
+            default interface to encrypt/decrypt data
+            </summary>
+        </member>
+        <member name="M:MVCEncrypt.IEncryptDecrypt.EncryptString(System.String)">
+            <summary>
+            encrypt string 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCEncrypt.IEncryptDecrypt.DecryptString(System.String)">
+            <summary>
+            decrypt string
+            Please return the original value if the decryption does not work
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MVCEncrypt.MVCDecryptActionFilter">
+            <summary>
+            MVC attribute to decrypt parameters- make sure that secret is the same as in
+            <see cref="M:MVCEncrypt.UrLExtensions.ActionEnc(System.Web.Mvc.UrlHelper,System.String,System.String,System.Object)" /> or    
+            </summary>
+        </member>
+        <member name="M:MVCEncrypt.MVCDecryptActionFilter.#ctor(MVCEncrypt.IEncryptDecrypt)">
+            <summary>
+            default constructor
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:MVCEncrypt.MVCDecryptActionFilter.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>
+            just override
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="M:MVCEncrypt.MVCDecryptActionFilter.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            executes and decrypts
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:MVCEncrypt.MVCDecryptFilterAttribute">
+            <summary>
+            MVC attribute to decrypt parameters- make sure that secret is the same as in
+            <see cref="M:MVCEncrypt.UrLExtensions.ActionEnc(System.Web.Mvc.UrlHelper,System.String,System.String,System.Object)" /> or    
+            </summary>
+        </member>
+        <member name="F:MVCEncrypt.MVCDecryptFilterAttribute.secret">
+            <summary>
+            the secret . Should be the same as in
+            &lt;a href='@Url.Action("TestEncrypt", new { a = 1, b = "asd" })'&gt;Test&lt;/a&gt;
+            </summary>
+        </member>
+        <member name="M:MVCEncrypt.MVCDecryptFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            executes and decrypts
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:MVCEncrypt.UrLExtensions">
+            <summary>
+            extension for having syntax like
+            <a href='@Url.ActionEnc("mySecret", "TestEncrypt", new { a = 1, b = "asd" })'>Test</a>
+            </summary>
+        </member>
+        <member name="M:MVCEncrypt.UrLExtensions.ActionEnc(System.Web.Mvc.UrlHelper,System.String,System.String,System.Object)">
+            <summary>
+            default implementation 
+            </summary>
+            <param name="helper"></param>
+            <param name="secret"></param>
+            <param name="actionName"></param>
+            <param name="routeValues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MVCEncrypt.UrLExtensions.ActionEnc(System.Web.Mvc.UrlHelper,MVCEncrypt.IEncryptDecrypt,System.String,System.Object)">
+            <summary>
+            generic implementation 
+            </summary>
+            <param name="helper"></param>
+            <param name="encDec"></param>
+            <param name="actionName"></param>
+            <param name="routeValues"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

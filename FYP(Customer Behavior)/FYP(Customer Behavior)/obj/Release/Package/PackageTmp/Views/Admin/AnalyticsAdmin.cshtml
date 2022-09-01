@@ -1,0 +1,364 @@
+﻿@{
+    ViewBag.Title = "AnalyticsAdmin";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+
+
+    <div class="row">
+        <div class="col l3 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l9 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer1" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l12 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer2" style="height:500px;max-height:1000px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l3 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer3" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l9 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer4" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l12 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer5" style="height:500px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l12 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer8" style="height:500px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l6 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer6" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="col l6 m12 s12">
+            <div class="card card-content ">
+                <div id="chartContainer7" style="height:300px; width: 100%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+<script>
+    window.onload=function () {
+        var result = @Html.Raw(ViewBag.a);
+        var dataPoint = [];
+        for (var i = 0; i < result.length; i++) {
+            dataPoint.push({ label: result[i].X4, y: result[i].Y4, exploded: true});
+        }
+        var chart = new CanvasJS.Chart("chartContainer", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Number Of Users"
+            },
+            axisX: {
+                //interval: 1,
+            },
+            axisY: {
+                //interval:1
+            },
+            data: [{
+                innerRadius: "82%",
+                radius: "100%",
+                showInLegend: false,
+                startAngle: 180,
+                type: "doughnut",
+                dataPoints: dataPoint
+            }
+            ]
+        });
+        chart.render();
+        //////////////////////////////////////////////////////
+        var result1 = @Html.Raw(ViewBag.ij);
+        var dataPoint1 = [];
+        for (var i = 0; i < result1.length; i++) {
+            dataPoint1.push({ label: result1[i].X13, y: result1[i].Y13 });
+        }
+        var chart1 = new CanvasJS.Chart("chartContainer1", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Revenue"
+            },
+            axisX: {
+                //interval: 3,
+            },
+            axisY: {
+                //interval:20000
+            },
+            toolTip: {
+                //backgroundColor: "#ffffff",
+                borderThickness: 0,
+                cornerRadius: 0,
+                //fontColor: "#424242"
+            },
+            data: [{
+                type: "spline",
+                fillOpacity: 1,
+                lineColor: "#292929",
+                lineThickness: 3,
+                markerSize: 10,
+                type: "spline",
+                dataPoints: dataPoint1
+            }
+            ]
+        });
+        chart1.render();
+        //////////////////////////////////////////////////////
+        var result2 = @Html.Raw(ViewBag.c);
+        var dataPoint2 = [];
+        for (var i = 0; i < result2.length; i++) {
+            dataPoint2.push({ label: result2[i].X6, y: result2[i].Y6 });
+        }
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Sold Items",
+                fontSize:25
+            },
+            axisX: {
+                labelFontSize: 12,
+                lineThickness: 0,
+                tickThickness: 0,
+                //interval: 2,
+            },
+            axisY: {
+                //interval:1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint2
+            }
+            ]
+        });
+        chart2.render();
+        /////////////////////////////////////////////////////////
+        var result3 = @Html.Raw(ViewBag.d);
+        var dataPoint3 = [];
+        for (var i = 0; i < result3.length; i++) {
+            dataPoint3.push({ label: result3[i].X7, y: result3[i].Y7, exploded: true });
+        }
+        var chart3 = new CanvasJS.Chart("chartContainer3", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Number Of Orders"
+            },
+            axisX: {
+                //interval: 1,
+            },
+            axisY: {
+                //interval:1
+            },
+            data: [{
+                innerRadius: "82%",
+                radius: "100%",
+                showInLegend: false,
+                startAngle: 180,
+                type: "doughnut",
+                dataPoints: dataPoint3
+            }
+            ]
+        });
+        chart3.render();
+         //////////////////////////////////////////////////////
+        var result4 = @Html.Raw(ViewBag.e);
+        var dataPoint4 = [];
+        for (var i = 0; i < result4.length; i++) {
+            dataPoint4.push({ label: result4[i].X8, y: result4[i].Y8 });
+        }
+        var chart4 = new CanvasJS.Chart("chartContainer4", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most Rated Items"
+            },
+            axisX: {
+                labelFontSize: 11,
+                lineThickness: 0,
+                tickThickness: 0,
+                //interval: 2
+            },
+            axisY: {
+                interval:1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint4
+            }
+            ]
+        });
+        chart4.render();
+         //////////////////////////////////////////////////////
+        var result5 = @Html.Raw(ViewBag.f);
+        var dataPoint5 = [];
+        for (var i = 0; i < result5.length; i++) {
+            dataPoint5.push({ label: result5[i].X9, y: result5[i].Y9 });
+        }
+        var chart5 = new CanvasJS.Chart("chartContainer5", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most View Items Based On Click",
+                fontSize: 25
+            },
+            axisX: {
+                labelFontSize: 12,
+                lineThickness: 0,
+                tickThickness: 0,
+                //interval: 3,
+            },
+            axisY: {
+                //interval: 1
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint5
+            }
+            ]
+        });
+        chart5.render();
+        //////////////////////////////////////////////////////
+        var result6 = @Html.Raw(ViewBag.g);
+        var dataPoint6 = [];
+        for (var i = 0; i < result6.length; i++) {
+            dataPoint6.push({ label: result6[i].X10, y: result6[i].Y10 });
+        }
+        var chart6 = new CanvasJS.Chart("chartContainer6", {
+            theme: "theme2",
+            animationEnabled: true,
+            backgroundColor: "transparent",
+            title: {
+                text: "Web Traffic",
+                fontSize: 25
+            },
+            toolTip: {
+                //backgroundColor: "#ffffff",
+                borderThickness: 0,
+                cornerRadius: 0
+                //fontColor: "#424242"
+            },
+            axisX: {
+                //interval: 1
+                //gridThickness: 0,
+                //lineThickness: 0,
+                //maximum: new Date("1 Dec 2015"),
+                //minimum: new Date("1 Jan 2015"),
+                //tickLength: 0,
+                //valueFormatString: " "
+            },
+            axisY: {
+                //interval: 1
+                //gridThickness: 0,
+                //lineThickness: 0,
+                //tickLength: 0,
+                //valueFormatString: " "
+            },
+            data: [{
+                color: "#292929",
+                fillOpacity: 10,
+                lineColor: "#000000",
+                lineThickness: 3,
+                markerSize: 10,
+                markerColor:"crimson",
+                type: "spline",
+                dataPoints: dataPoint6
+            }
+            ]
+        });
+        chart6.render();
+        //////////////////////////////////////////////////////
+        var result7 = @Html.Raw(ViewBag.h);
+        var dataPoint7 = [];
+        for (var i = 0; i < result7.length; i++) {
+            dataPoint7.push({ label: result7[i].X11, y: result7[i].Y11 });
+        }
+        var chart7 = new CanvasJS.Chart("chartContainer7", {
+            theme: "theme2",
+            animationEnabled: true,
+            backgroundColor: "transparent",
+            title: {
+                text: "Orders Per Day",
+                fontSize: 25
+            },
+            axisX: {
+                //interval:1
+                //gridThickness: 0,
+                //lineThickness: 0,
+                //maximum: new Date("1 Dec 2015"),
+                //minimum: new Date("1 Jan 2015"),
+                //tickLength: 0,
+                //valueFormatString: " "
+            },
+            axisY: {
+                //interval:1
+                //gridThickness: 0,
+                //lineThickness: 0,
+                //tickLength: 0,
+                //valueFormatString: " "
+            },
+            toolTip: {
+                //backgroundColor: "#ffffff",
+                borderThickness: 0,
+                cornerRadius: 0,
+                //fontColor: "#424242"
+            },
+            data: [{
+                //color: "#424242",
+                fillOpacity: 1,
+                lineColor: "#FF0000",
+                lineThickness: 3,
+                markerSize: 10,
+                type: "spline",
+                dataPoints: dataPoint7
+            }
+            ]
+        });
+        chart7.render();
+        //////////////////////////////////////////////////////
+        var result8 = @Html.Raw(ViewBag.ii);
+        var dataPoint8 = [];
+        for (var i = 0; i < result8.length; i++) {
+            dataPoint8.push({ label: result8[i].X12, y: result8[i].Y12 });
+        }
+        var chart8 = new CanvasJS.Chart("chartContainer8", {
+            theme: "theme2",
+            animationEnabled: true,
+            title: {
+                text: "Most View Items Based On Time",
+                fontSize: 25
+            },
+            axisX: {
+                labelFontSize: 12,
+                //interval: 3,
+                
+            },
+            axisY: {
+                //interval: 1,
+                minimum: 0
+            },
+            data: [{
+                type: "column",
+                dataPoints: dataPoint8
+            }
+            ]
+        });
+        chart8.render();
+    }
+</script>

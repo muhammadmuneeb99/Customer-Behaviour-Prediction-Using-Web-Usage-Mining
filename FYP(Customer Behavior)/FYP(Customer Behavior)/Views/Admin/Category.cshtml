@@ -1,0 +1,119 @@
+﻿@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.CatNameImage>
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+<main>
+        <div class="container" style="width:100%; height:auto;">
+            @using (Html.BeginForm("Category", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <form action="Category" method="post">
+                    <div class="input-field col s6">
+                        <input id="last_name" name="cName" type="text" class="validate" required>
+                        <label for="last_name">Enter Category Name</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <textarea id="textarea1" name="cDes" class="materialize-textarea" required></textarea>
+                        <label for="textarea1">Textarea</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <div class="file-field input-field">
+                            <div class="btn" style="background-color:#292929">
+                                <span style="color: white;">File</span>
+                                <input type="file" name="httpPostedFileBase" id="imageBrowse1" required />
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Your Category Image">
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <button style="background-color:#292929;" class="btn waves-effect waves-light" type="submit" name="action">
+                            Add
+                        </button>
+                    </center>
+                    
+                </form>
+            }
+            @*<div class="left">
+                <input type="text" value="" placeholder="Search Category" id="myInput" style="border:2px solid #292929; height:35px;width:250px;border-radius:5px;padding-left:5px;" />
+            </div>*@
+        </div>
+        <div style="width:100%; height:auto; margin-top:2%;" class="container">
+                <table class="center bordered responsive-table display" id="example">
+                    <thead>
+                        <tr style="font-weight:bolder;">
+                            <th style="font-size:12px">Category ID</th>
+                            <th style="font-size:12px">Category Name</th>
+                            <th style="font-size:12px">Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td style="font-size:12px">@item.id</td>
+                                    <td style="font-size:12px">@item.name</td>
+                                    <td style="font-size:12px; width:80px; height:80px;"><img src="@item.Image1" style="width:80px; height:80px; object-fit:scale-down" /></td>
+                                    @* <td><a href="#">Delete</a></td>*@
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+        </div>
+</main>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#imageBrowser1").change(function () {
+            var File = this.files;
+            if (File && File[0]) {
+                ReadImage(File[0])
+            }
+        });
+
+    });
+    //$(document).ready(function () {
+    //    $("#myInput").on("keyup", function () {
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "Image") {
+                $(this).html('<input type="hidden" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else if (title === "Order Date") {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function () {
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+            //fixedHeader: true
+        });
+    });
+</script>

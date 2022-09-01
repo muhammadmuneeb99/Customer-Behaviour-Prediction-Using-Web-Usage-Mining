@@ -1,0 +1,164 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+<style>
+    a {
+        color: crimson
+    }
+
+    h5 a:hover {
+        color: cornflowerblue
+    }
+
+    b {
+        color: crimson
+    }
+</style>
+<main>
+    <div class="row">
+        <div class="col l6 m6 s6">
+            <div style="padding: 35px;" align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b>User Management</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("Seller_Info", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">person</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Seller", "Seller_Info", "Admin")</h5></span>
+                        </div>
+                    </a>
+                    <div class="col s1">&nbsp;</div>
+                    <div class="col s1">&nbsp;</div>
+                    <a href='@Url.Action("Customer", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class="lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">people</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Customer", "Customer", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col l6 m6 s6">
+            <div style="padding: 35px;" align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b>Product Management</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("Product", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">store</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Products", "Product", "Admin")</h5></span>
+                        </div>
+                    </a>
+                    <div class="col s1">&nbsp;</div>
+                    <div class="col s1">&nbsp;</div>
+                    <a href='@Url.Action("Order", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">assignment</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Order", "Order", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div style="padding: 35px;" align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b>Category Management</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("Category", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">view_list</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Category 1", "Category", "Admin")</h5></span>
+                        </div>
+                    </a>
+                    <div class="col s1">&nbsp;</div>
+                    <div class="col s1">&nbsp;</div>
+
+                    <a href='@Url.Action("SubCategory", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">view_list</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Category 2", "SubCategory", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col l6 m6 s6">
+            <div style="padding: 35px; " align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b style="">Brand, Category Management</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("SubSubCategory", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-3 hoverable">
+                            <i class="large material-icons" style="color:white;">view_list</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Category 3", "SubSubCategory", "Admin")</h5></span>
+                        </div>
+                    </a>
+                    <div class="col s1">&nbsp;</div>
+                    <div class="col s1">&nbsp;</div>
+                    <a href='@Url.Action("Brands", "Admin")' style="color:#292929;">
+                        <div style="padding: 30px; background-color:#292929;" class="lighten-3 col l5 m5 s5 waves-effect waves-light z-depth-3 hoverable">
+                            <i class="large material-icons" style="color:white;">local_offer</i>
+                            <span class="grey-text text-darken-4"><h5>@Html.ActionLink("Add Brands", "Brands", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s6">
+            <div style="padding: 35px;" align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b>Insert Brand In Category 3</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("InsertBrandInCat", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l12 m12 s12 waves-effect waves-light z-depth-4 hoverable">
+                            <i class="large material-icons" style="color:white;">view_list</i>
+                            <span class="teal-text text-lighten-1"><h5>@Html.ActionLink("Insert Brand In Category 3", "InsertBrandInCat", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col l6 m6 s6">
+            <div style="padding: 35px; " align="center" class="card z-depth-4 hoverable">
+                <div class="row">
+                    <div class="left card-title">
+                        <b style="">Analytics</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href='@Url.Action("AnalyticsAdmin", "Admin")'>
+                        <div style="padding: 30px; background-color:#292929;" class=" lighten-3 col l12 m12 s12 waves-effect waves-light z-depth-3 hoverable">
+                            <i class="large material-icons" style="color:white;">view_list</i>
+                            <span class=""><h5 style="color:crimson">@Html.ActionLink("Analytics", "AnalyticsAdmin", "Admin")</h5></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+

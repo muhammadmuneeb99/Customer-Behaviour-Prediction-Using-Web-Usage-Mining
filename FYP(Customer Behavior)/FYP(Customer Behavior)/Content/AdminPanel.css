@@ -1,0 +1,52 @@
+﻿header,
+main,
+footer {
+    padding-left: 0px;
+}
+
+body {
+    background: #333333;
+}
+.stiky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 5;
+    background-color: white;
+    border: 0px solid white;
+}
+@media only screen and (max-width: 999px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+#credits li,
+#credits li a {
+    color: orange;
+}
+
+    #credits li a {
+        font-weight: bold;
+    }
+
+.footer-copyright .container,
+.footer-copyright .container a {
+    color: orange;
+}
+
+.fab-tip {
+    position: fixed;
+    right: 85px;
+    padding: 0px 0.5rem;
+    text-align: right;
+    background-color: #323232;
+    border-radius: 2px;
+    color: #FFF;
+    width: auto;
+}
+
+

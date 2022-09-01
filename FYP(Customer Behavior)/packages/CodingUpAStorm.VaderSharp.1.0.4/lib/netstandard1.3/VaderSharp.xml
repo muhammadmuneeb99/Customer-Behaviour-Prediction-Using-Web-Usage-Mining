@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VaderSharp</name>
+    </assembly>
+    <members>
+        <member name="M:VaderSharp.Extensions.IsUpper(System.String)">
+            <summary>
+            Determine if word is ALL CAPS
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.Extensions.RemovePunctuation(System.String)">
+            <summary>
+            Removes punctuation from word
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VaderSharp.SentimentAnalysisResults">
+            <summary>
+            A model to represent the result of analysis.
+            </summary>
+        </member>
+        <member name="P:VaderSharp.SentimentAnalysisResults.Negative">
+            <summary>
+            The proportion of words in the sentence with negative valence.
+            </summary>
+        </member>
+        <member name="P:VaderSharp.SentimentAnalysisResults.Neutral">
+            <summary>
+            The proportion of words in the sentence with no valence.
+            </summary>
+        </member>
+        <member name="P:VaderSharp.SentimentAnalysisResults.Positive">
+            <summary>
+            The proportion of words in the sentence with positive valence.
+            </summary>
+        </member>
+        <member name="P:VaderSharp.SentimentAnalysisResults.Compound">
+            <summary>
+            Normalized sentiment score between -1 and 1.
+            </summary>
+        </member>
+        <member name="T:VaderSharp.SentimentIntensityAnalyzer">
+            <summary>
+            An abstraction to represent the sentiment intensity analyzer.
+            </summary>
+        </member>
+        <member name="M:VaderSharp.SentimentIntensityAnalyzer.PolarityScores(System.String)">
+            <summary>
+            Return metrics for positive, negative and neutral sentiment based on the input text.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentimentUtils.Negated(System.Collections.Generic.IList{System.String},System.Boolean)">
+            <summary>
+            Determine if input contains negation words
+            </summary>
+            <param name="inputWords"></param>
+            <param name="includenT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentimentUtils.Normalize(System.Double,System.Double)">
+            <summary>
+            Normalizes score to be between -1 and 1
+            </summary>
+            <param name="score"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentimentUtils.AllCapDifferential(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Checks whether some but not all of words in input are ALL CAPS
+            </summary>
+            <param name="words"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentimentUtils.ScalarIncDec(System.String,System.Double,System.Boolean)">
+            <summary>
+            Check if preceding words increase, decrease or negate the valence
+            </summary>
+            <param name="word"></param>
+            <param name="valence"></param>
+            <param name="isCapDiff"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentiText.WordsPlusPunc">
+            <summary>
+            Returns mapping of the form {'cat,': 'cat'}, {',cat': 'cat'}
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VaderSharp.SentiText.GetWordsAndEmoticons">
+            <summary>
+            Removes leading and trailing punctuation. Leaves contractions and most emoticons.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

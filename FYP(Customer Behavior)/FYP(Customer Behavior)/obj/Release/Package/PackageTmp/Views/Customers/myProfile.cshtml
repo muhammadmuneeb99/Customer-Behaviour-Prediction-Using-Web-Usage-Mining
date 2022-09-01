@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "myProfile";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <div class="myProfile z-depth-5">
+        <form>
+            <div class="form-pad1 row">
+                <div class="col s4">
+                    <label for="" type='text'>Full Name</label>
+                    <input class='validate' value="Muhammad Muneeb" type='text' />
+                </div>
+
+                <div class="col s4">
+                    <label for="" type='text'>E Mail</label>
+                    <input class='validate' value="muneebnaeemsheikh99@gmail.com" type='text' />
+                </div>
+
+                <div class="col s4">
+                    <label for="" type='text'>Phone No</label>
+                    <input class='validate' value="03222457318" type='text' />
+                </div>
+
+            </div>
+
+            <div class="form-pad2 row">
+                <div class="col s4">
+                    <label for="" type='text'>Birth Date</label>
+                    <input id="date" name="date" placeholder="MM/DD/YYY" type="date" />
+                </div>
+
+                <div class="col s4">
+                    <label for="choice_1" type='text'>Gender</label><br><br>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Female</span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="form-pad2 row">
+                <div class='col s4'>
+                    <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect orange darken-4'>
+                        SAVE CHANGES
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main>
+

@@ -1,0 +1,499 @@
+﻿@model FYP_Customer_Behavior_.Models.Dtos.ProductModelDto
+@{
+    ViewBag.Title = "Seller_AddProduct";
+    Layout = "~/Views/Shared/SellerLayout.cshtml";
+}
+
+<div class="mainDiv z-depth-5 hoverable" style=" margin-top:50px;">
+    <div class="signUpDiv ">ADD YOUR PRODUCT</div>
+    <div class="fieldsDiv">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <div class="row">
+                    @if (Model != null)
+                    {
+                        using (Html.BeginForm("Seller_AddProduct", "Seller", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <form action="Seller_AddProduct" method="post" onsubmit="return false">
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxcat" name="selected_cat" required>
+                                        <option value="@Model.selectedCat">@Model.selectedCatName</option>
+                                        @foreach (var item in ViewBag.cat)
+                                        {
+                                            <option value="@item.Cat_ID">@item.Cat_Name</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxsubcat" name="selected_subCat" required>
+                                        <option value="@Model.selectedSubCat">@Model.selectedSubCatName</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxsubcatbrand" name="selected_subBrand" required>
+                                        <option value="@Model.selectedSubSubCatBrand">@Model.selectedSubSubCatBrandName</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxbrand" name="selected_brand" required>
+                                        <option value="@Model.selectedBrand">@Model.selectedBrandName</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="pname" name="pname" value="@Model.proName" type="text" class="validate" required>
+                                    <label for="pname">Enter Your Product Name</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <textarea id="pDes" name="pDes" value="" class="materialize-textarea" required>@Model.proDesc</textarea>
+                                    <label for="pDes">Enter Product Description</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="pPrice" name="pPrice" value="@Model.pPrice" type="number" class="validate" required>
+                                    <label for="pPrice">Enter Product Price</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select name="discountType" id="discountType" required>
+                                        <option value="-1" disabled selected>Choose Discount Type</option>
+                                        <option value="1">Discount in Amount</option>
+                                        <option value="2">Discount in Percent</option>
+                                        <option value="3">No Discount</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12" id="pDis">
+                                    <input id="pDiscount" name="pDiscount" value="" type="number" class="validate">
+                                    <label for="pDiscount">Discount</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="date" name="date" type="text" value="@Model.date" class="validate datepicker" required>
+                                    <label for="date">Date</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="qty" name="qty" type="number" value="@Model.pQty" class="validate" required>
+                                    <label for="qty">Quantity</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select name="warrentyDurationID" id="warrentyDurationID" required>
+                                        <option value="-1" disabled selected>Choose Warrenty Type</option>
+                                        @foreach (var item in ViewBag.wt)
+                                        {
+                                            <option value="@item.id">@item.Type</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12" id="proW">
+                                    <input id="proWarrenty" name="proWarrenty" type="number" value="" class="validate">
+                                    <label for="proWarrenty">Product Warrenty</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <label>Please Select the Following if your Product belongs to the Category of Mobile, Clothes, Shoes, Computer Accessories(Hard Disk, USB). for example Mobile,HardDisk,Usb have different storages. Clothes and Shoes are of different Colors and Sizes. Only Select those from the below tha are related to your Product. If not then leave it. </label>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="input-field col l12 m12 s12" style="margin-top:100px">
+                                    <div class="row">
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="storage[]" id="storage">
+                                                <option value="" disabled selected>Storages</option>
+                                                @foreach (var item in ViewBag.Storage)
+                                                {
+                                                    <option value="@item.id">@item.Storage1</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="color[]" id="color">
+                                                <option value="" disabled selected>Colors</option>
+                                                @foreach (var item in ViewBag.Color)
+                                                {
+                                                    <option value="@item.colorId">@item.colorName</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="size[]" id="size">
+                                                <option value="" disabled selected>Sizes</option>
+                                                @foreach (var item in ViewBag.Size)
+                                                {
+                                                    <option value="@item.sizeId">@item.sizeName</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <label for="fd_name">Add Product Features</label>
+                                </div>
+                                <div class="col l12 m12 s12">
+                                    @*dynamic textbox*@
+                                    <div class="row">
+                                        <div class="abcd">
+                                            <div class="">
+                                                @for (int i = 0; i < Model.featureName.Count(); i++)
+                                                {
+                                                    <div class="input-field col m4 l4 s4">
+                                                        <input id="fd_name" type="text" name="featureName[]" placeholder="Name" value="@Model.featureName[i]" required />
+                                                    </div>
+                                                    <div class="input-field col m5 l5 s5">
+                                                        <input id="f_name" type="text" name="featureDes[]" placeholder="Description" value="@Model.featureDes[i]" required />
+                                                    </div>
+                                                    <div class="input-field col m3 l3 s3">
+                                                        <a style="margin-top:20px;" href="javascript:void(0);" class="add_button">ADD MORE</a>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*dynamic textbox*@
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <textarea id="proWarrentyDes" name="proWarrentyDes" value="" class="materialize-textarea" required>@Model.proWarrentyDes</textarea>
+                                    <label for="proWarrentyDes">Enter Product Warrenty Description</label>
+                                </div>
+                                @* Image Upload *@
+                                <div class="input-field col l12 m12 s12">
+                                    <div class="file-field input-field">
+                                        <div class="btn" style="background-color:#292929">
+                                            <span style="color: white;">File</span>
+                                            <input type="file" name="image1" id="imageBrowse1" multiple required />
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                @* Image Upload *@
+                                <div class="mybtn">
+                                    <button style="background-color: #292929;" id="addPro" type='submit' name='submit' class='col l12 m12 s12 btn btn-large waves-effect '>
+                                        Add
+                                    </button>
+                                </div>
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("Seller_AddProduct", "Seller", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <form action="Seller_AddProduct" method="post" onsubmit="return false">
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxcat" name="selected_cat" required>
+                                        <option value="-1" disabled selected>Choose your Category</option>
+                                        @foreach (var item in ViewBag.cat)
+                                        {
+                                            <option value="@item.Cat_ID">@item.Cat_Name</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxsubcat" name="selected_subCat" required></select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxsubcatbrand" name="selected_subBrand" required></select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select id="comboboxbrand" name="selected_brand" required></select>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="pname" name="pname" value="" type="text" class="validate" required>
+                                    <label for="pname">Enter Your Product Name</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <textarea id="pDes" name="pDes" value="" class="materialize-textarea" required></textarea>
+                                    <label for="pDes">Enter Product Description</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="pPrice" name="pPrice" value="" type="number" class="validate" required>
+                                    <label for="pPrice">Enter Product Price</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select name="discountType" id="discountType" required>
+                                        <option value="-1" disabled selected>Choose Discount Type</option>
+                                        <option value="1">Discount in Amount</option>
+                                        <option value="2">Discount in Percent</option>
+                                        <option value="3">No Discount</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12" id="pDis">
+                                    <input id="pDiscount" name="pDiscount" value="" type="number" class="validate">
+                                    <label for="pDiscount">Discount</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="date" name="date" type="text" value="" class="validate datepicker" required>
+                                    <label for="date">Date</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="qty" name="qty" type="number" value="" class="validate" required>
+                                    <label for="qty">Quantity</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <select name="warrentyDurationID" id="warrentyDurationID" required>
+                                        <option value="-1" disabled selected>Choose Warrenty Type</option>
+                                        @foreach (var item in ViewBag.wt)
+                                        {
+                                            <option value="@item.id">@item.Type</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="input-field col l12 m12 s12" id="proW">
+                                    <input id="proWarrenty" name="proWarrenty" type="number" value="" class="validate">
+                                    <label for="proWarrenty">Product Warrenty</label>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <label>Please Select the Following if your Product belongs to the Category of Mobile, Clothes, Shoes, Computer Accessories(Hard Disk, USB). for example Mobile,HardDisk,Usb have different storages. Clothes and Shoes are of different Colors and Sizes. Only Select those from the below tha are related to your Product. If not then leave it. </label>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="input-field col l12 m12 s12" style="margin-top:100px">
+                                    <div class="row">
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="storage[]" id="storage">
+                                                <option value="" disabled selected>Storages</option>
+                                                @foreach (var item in ViewBag.Storage)
+                                                {
+                                                    <option value="@item.id">@item.Storage1</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="color[]" id="color">
+                                                <option value="" disabled selected>Colors</option>
+                                                @foreach (var item in ViewBag.Color)
+                                                {
+                                                    <option value="@item.colorId">@item.colorName</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m4 s4 l4">
+                                            <select multiple name="size[]" id="size">
+                                                <option value="" disabled selected>Sizes</option>
+                                                @foreach (var item in ViewBag.Size)
+                                                {
+                                                    <option value="@item.sizeId">@item.sizeName</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <label for="fd_name">Add Product Features</label>
+                                </div>
+                                <div class="col l12 m12 s12">
+                                    @*dynamic textbox*@
+                                    <div class="row">
+                                        <div class="abcd">
+                                            <div class="">
+                                                <div class="input-field col m4 l4 s4">
+                                                    <input id="fd_name" type="text" name="featureName[]" placeholder="Name" value="" required />
+                                                </div>
+                                                <div class="input-field col m5 l5 s5">
+                                                    <input id="f_name" type="text" name="featureDes[]" placeholder="Description" value="" required />
+                                                </div>
+                                                <div class="input-field col m3 l3 s3">
+                                                    <a style="margin-top:20px;" href="javascript:void(0);" class="add_button">ADD MORE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*dynamic textbox*@
+                                </div>
+                                <div class="input-field col l12 m12 s12">
+                                    <textarea id="proWarrentyDes" name="proWarrentyDes" value="" class="materialize-textarea" required></textarea>
+                                    <label for="proWarrentyDes">Enter Product Warrenty Description</label>
+                                </div>
+                                @* Image Upload *@
+                                <div class="input-field col l12 m12 s12">
+                                    <div class="file-field input-field">
+                                        <div class="btn" style="background-color:#292929">
+                                            <span style="color: white;">File</span>
+                                            <input type="file" name="image1" id="imageBrowse1" multiple required />
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                @* Image Upload *@
+                                <div class="mybtn">
+                                    <button style="background-color: #292929;" id="addPro" type='submit' name='submit' class='col l12 m12 s12 btn btn-large waves-effect '>
+                                        Add
+                                    </button>
+                                </div>
+                            </form>
+                        }
+                        ///
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (ViewBag.imagenullError != null)
+{
+    <script>
+        toastr.error('@ViewBag.imagenullError');
+    </script>
+}
+
+@if (ViewBag.successProductAdded != null)
+{
+    <script>
+        toastr.success('@ViewBag.successProductAdded');
+    </script>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        var File = null;
+        $("#imageBrowser1").change(function () {
+            File = this.files;
+            if (File && File[0]) {
+                ReadImage(File[0])
+            }
+        });
+
+        $('#warrentyDurationID').change(function () {
+            var val = $('#warrentyDurationID option:selected').val();
+            if (val === '3') {
+                $('#proW').hide();
+                $('#proWarrenty').val("0");
+            }
+            else {
+                $('#proW').show();
+            }
+        });
+
+        $('#discountType').change(function () {
+            var val = $('#discountType option:selected').val();
+            if (val === '3') {
+                $('#pDis').hide();
+                $('#pDiscount').val("0");
+            }
+            else {
+                $('#pDis').show();
+            }
+        });
+
+    });
+</script>
+<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#comboboxcat').on('change', function () {
+                var catID = $('#comboboxcat option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { catId: catID },
+                    url: '@Url.Action("LoadSubCat", "Seller")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Select a Sub Category</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].SID + '">' +
+                                result[i].Name+'</option>'
+                        }
+                        $('#comboboxsubcat').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy' 
+            });
+            $('#addPro').click(function () {
+                var country = $('#comboboxcat option:selected').val();
+                if (country === '-1') {
+                    toastr.warning("Please Select Category");
+                }
+                var country1 = $('#comboboxsubcat option:selected').val();
+                if (country1 === '-1') {
+                    toastr.warning("Please Select Sub Category");
+                }
+                var country2 = $('#comboboxsubcatbrand option:selected').val();
+                if (country2 === '-1') {
+                    toastr.warning("Please Select Sub Sub Category");
+                }
+                var country3 = $('#comboboxbrand option:selected').val();
+                if (country3 === '-1') {
+                    toastr.warning("Please Select Brand");
+                }
+                var country4 = $('#warrentyDurationID option:selected').val();
+                if (country4 === '-1') {
+                    toastr.warning("Please Select Warrenty Type");
+                }
+                var country5 = $('#discountType option:selected').val();
+                if (country5 === '-1') {
+                    toastr.warning("Please Select Discount Type");
+                }
+            });
+
+        });
+</script>
+<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#comboboxsubcat').on('change', function () {
+                var subcatID = $('#comboboxsubcat option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { subcatId: subcatID},
+                    url: '@Url.Action("LoadSubCatBrand", "Seller")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Select Sub Sub Category</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].CID + '">' +
+                                result[i].cName+'</option>'
+                        }
+                        $('#comboboxsubcatbrand').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+        });
+</script>
+<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#comboboxsubcatbrand').on('change', function () {
+                var subSubCatID = $('#comboboxsubcatbrand option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { subsubcatId: subSubCatID},
+                    url: '@Url.Action("LoadBrands", "Seller")',
+                    success: function (result)
+                    {
+                        var s = '<option Value="-1">Select Brand</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].b_id + '">' +
+                                result[i].b_name+'</option>'
+                        }
+                        $('#comboboxbrand').html(s);
+                        $('select').formSelect();
+                    }
+                });
+            });
+        });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var maxField = 10;
+        var addButton = $('.add_button');
+        var remove_button = $('.remove_button');
+        var wrapper = $('.abcd');
+        var fieldHTML = '<div class="hhh"><div class="input-field col s4"><input id="fd_name" type="text" name="featureName[]" placeholder="Name" value="" /></div><div class="input-field col s5"><input id="f_name" type="text" name="featureDes[]" placeholder="Description" value="" /></div><div class="input-field col s3"><a style="margin-top:20px;" href="javascript:void(0);" class="remove_button">Remove</a></div></div></div>'; //New input field html
+        var x = 1;
+        $(addButton).click(function () {
+            if (x < maxField) {
+                x++;
+                $(wrapper).append(fieldHTML);
+            }
+        });
+        $(wrapper).on('click', '.remove_button', function (e) {
+            e.preventDefault();
+            $(this).parents('.hhh').remove();
+            x--;
+        });
+    });
+</script>

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "SelfAdvertisement";
+    Layout = "~/Views/Shared/SellerLayout.cshtml";
+}
+
+<main>
+    <div class="z-depth-5 hoverable" style="width:400px;height:300px;margin-left:auto; margin-right:auto; margin-bottom:100px; border-radius:10px; background-color:white;">
+        <form action="SelfAdvertisement" method="post">
+            <div class="spad">
+                <p>
+                    <label>
+                        <input type="checkbox" name="self"/>
+                        <span style="color:#262626;">Personal Advertisement</span>
+                    </label>
+                </p>
+                <p style="padding-top:15px;">
+                    <label>
+                        <input type="checkbox" id="proSelection" name="product"/>
+                        <span style="color:#262626;">Product Advertisement</span>
+                    </label>
+                </p>
+                <div style="margin-right:100px; margin-left:0px;" id="showSelect">
+                    <select name="pro[]" multiple >
+                        <option value="" disabled selected>Choose your Products</option>
+                        @foreach (var item in ViewBag.sp)
+                        {
+                            <option value="@item.ProId">@item.PName</option>
+                        }
+                    </select>
+
+                </div>
+                <button style="margin-left:15px; background-color:#262626; color:whitesmoke;" class="btn waves-effect waves-light" type="submit" name="action">
+                    Submit Request
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script type="text/javascript">
+    $(function () {
+        $("#proSelection").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showSelect").show();
+                $('select').formSelect();
+            } else {
+                $("#showSelect").hide();
+            }
+        });
+    });
+</script>

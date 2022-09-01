@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "SummaryStatus";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<main>
+    <div class="container _con z-depth-5 hoverable">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <h5 class="ty">Thank You for Your Puchase</h5>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <h6 class="_ordernumber">Your Order Number and Tracking ID is @ViewBag.OrderId</h6>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col l12 m12 s12">
+
+                <p class="_ordergoods">Please have this amount ready when the goods are dilivered.
+                <br />If paid then Ignore this.</p>
+
+                <p class="_orderprice">Rs. @ViewBag.tot.ToString("#,###")</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+@if (TempData["OrderSuccess"] != null)
+{
+    <script>
+        toastr.success("@TempData["OrderSuccess"]");
+    </script>
+}
+

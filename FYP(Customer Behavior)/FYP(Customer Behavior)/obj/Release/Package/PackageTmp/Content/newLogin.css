@@ -1,0 +1,86 @@
+/*body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+    background: #fff;
+}*/
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    /* When moving the mouse over the close button */
+    .closebtn:hover {
+        color: black;
+    }
+
+
+.input-field input[type=tel]:focus + label,
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #292929 !important;
+}
+
+.input-field input[type=tel]:focus,
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #292929 !important;
+    box-shadow: none !important;
+}
+
+.input-field div input[type=tel]:focus + label,
+.input-field div input[type=date]:focus + label,
+.input-field div input[type=text]:focus + label,
+.input-field div input[type=email]:focus + label,
+.input-field div input[type=password]:focus + label {
+    color: #292929 !important;
+}
+
+.input-field div input[type=tel]:focus,
+.input-field div input[type=date]:focus,
+.input-field div input[type=text]:focus,
+.input-field div input[type=email]:focus,
+.input-field div input[type=password]:focus {
+    border-top: 0px solid #292929 !important;
+    box-shadow: none !important;
+}
+
+.input-field textarea:focus + label {
+    color: #292929 !important;
+}
+
+.input-field textarea:focus {
+    border-bottom: 1px solid #292929!important;
+    box-shadow: none !important;
+}
+.input-field .prefix.active {
+    color: #ee6e73;
+}
+

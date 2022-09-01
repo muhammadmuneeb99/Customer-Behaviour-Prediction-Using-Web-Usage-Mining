@@ -1,0 +1,25 @@
+﻿.mrq1 {
+   
+    align-items: center;
+    background-color: #fff;
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 67px;
+}
+
+.marquee1 {
+    height: 105px;
+    width: 100%;
+}
+
+    .marquee1 .marqueImage {
+        height: 100px;
+        object-fit: scale-down;
+        margin: 6px;
+    }
+
+@media screen and (max-width: 800px) {
+    .mrq1 {
+        width: 80%;
+    }
+}

@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D274FEFD-0FDB-4D0B-9105-0B83AB0FCCB6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FYP_Customer_Behavior_</RootNamespace>
+    <AssemblyName>FYP%28Customer Behavior%29</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44345</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="jose-jwt, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.2.3.0\lib\net461\jose-jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Antiforgery, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Antiforgery.1.1.3\lib\net451\Microsoft.AspNetCore.Antiforgery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.1.1.3\lib\net451\Microsoft.AspNetCore.Authorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cors, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cors.1.1.2\lib\net451\Microsoft.AspNetCore.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.1.1.3\lib\net451\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.1.1.3\lib\net451\Microsoft.AspNetCore.DataProtection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Abstractions.1.1.3\lib\net451\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics.Abstractions, Version=1.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Diagnostics.Abstractions.1.1.6\lib\netstandard1.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.1.1.3\lib\net451\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.1.1.3\lib\net451\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Html.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Html.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.AspNetCore.Html.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.1.1.2\lib\net451\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Extensions.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.JsonPatch, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.JsonPatch.1.1.2\lib\net451\Microsoft.AspNetCore.JsonPatch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Localization, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Localization.1.1.3\lib\net451\Microsoft.AspNetCore.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Abstractions.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ApiExplorer, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.ApiExplorer.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.ApiExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Core.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Cors, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Cors.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.DataAnnotations, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.DataAnnotations.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Formatters.Json, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Formatters.Json.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Formatters.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Localization, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Localization.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Razor.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor.Host, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Razor.Host.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.Razor.Host.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.TagHelpers, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.TagHelpers.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.TagHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures, Version=1.1.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.ViewFeatures.1.1.8\lib\net451\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Razor.1.1.2\lib\net451\Microsoft.AspNetCore.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor.Runtime, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Razor.Runtime.1.1.2\lib\net451\Microsoft.AspNetCore.Razor.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.ResponseCaching.Abstractions.1.1.3\lib\net451\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.1.1.2\lib\net451\Microsoft.AspNetCore.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.1.1.2\lib\net451\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.3.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.3.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=1.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.1.1.9\lib\net451\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.1.1.2\lib\net451\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.2\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.1.0.2\lib\net451\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=1.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.1.0.2\lib\net451\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.1.1.1\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=1.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.1.1.9\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Composite, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Composite.1.1.1\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.1.1.1\lib\net451\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.1.1.1\lib\net45\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Globalization.CultureInfoCache, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Globalization.CultureInfoCache.1.1.3\lib\netstandard1.1\Microsoft.Extensions.Globalization.CultureInfoCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.1.1.3\lib\net451\Microsoft.Extensions.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.Abstractions.1.1.3\lib\netstandard1.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.1.1.1\lib\net451\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.PlatformAbstractions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.PlatformAbstractions.1.1.0\lib\net451\Microsoft.Extensions.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.WebEncoders, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.WebEncoders.1.1.2\lib\netstandard1.0\Microsoft.Extensions.WebEncoders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.1.1.2\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1357.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1357.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1357.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MVCEncrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MVC5Encrypt.1.0.0\lib\net\MVCEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.0.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.0.1\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.0.1\lib\net46\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.3.1\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.0.1\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.0.1\lib\net46\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.0.1\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="VaderSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodingUpAStorm.VaderSharp.1.0.4\lib\net35\VaderSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.4.0.0\lib\net451\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.4.0.0\lib\net451\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.4.0.0\lib\net451\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Area.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AreaCityStateCountrySelect_Result.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Brand.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Brand_Images.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CanceledOrder.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryImage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CityStateCountrySelect_Result.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Color.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TrackExecution.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\ShippingClerkController.cs" />
+    <Compile Include="Controllers\SellerController.cs" />
+    <Compile Include="Country.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="customerLogin_Result.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Contact.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmartProfit.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FYP.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYP.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FYP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FYP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYP.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FYPDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FYPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hubs\MyHub.cs" />
+    <Compile Include="Log.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Analytics\AnalyticsAdminSeller.cs" />
+    <Compile Include="Models\Analytics\DataPoint.cs" />
+    <Compile Include="Models\Analytics\MostViewProducts.cs" />
+    <Compile Include="Models\DtosForMining\DayBasedRecommendation.cs" />
+    <Compile Include="Models\DtosForMining\DayNightAndTimeBasedRecommendation.cs" />
+    <Compile Include="Models\DtosForMining\HighestDiscountBasedRecommendation.cs" />
+    <Compile Include="Models\DtosForMining\LowestPriceBasedRecommendation.cs" />
+    <Compile Include="Models\DtosForMining\OrderHistoryBasedRecommendation.cs" />
+    <Compile Include="Models\DtosForMining\SementicAnalysisBasedRecommendation.cs" />
+    <Compile Include="Models\Dtos\AddressNameDto.cs" />
+    <Compile Include="Models\Dtos\AdminDto.cs" />
+    <Compile Include="Models\Dtos\AdminProductDetailDto.cs" />
+    <Compile Include="Models\Dtos\autocomplete.cs" />
+    <Compile Include="Models\Dtos\BrandDto.cs" />
+    <Compile Include="Models\Dtos\BrandsDto.cs" />
+    <Compile Include="Models\Dtos\CartDto.cs" />
+    <Compile Include="Models\Dtos\Cat.cs" />
+    <Compile Include="Models\Dtos\CountryStateCityAreaBind.cs" />
+    <Compile Include="Models\Dtos\CustomerDto.cs" />
+    <Compile Include="Models\Dtos\customerSignInDto.cs" />
+    <Compile Include="Models\Dtos\customerSignUpDto.cs" />
+    <Compile Include="Models\Dtos\CustTokenDetailsDto.cs" />
+    <Compile Include="Models\Dtos\NumberOfUsers.cs" />
+    <Compile Include="Models\Dtos\ProductDetailDto.cs" />
+    <Compile Include="Models\Dtos\ProductFeatureDes.cs" />
+    <Compile Include="Models\Dtos\ProductModelDto.cs" />
+    <Compile Include="Models\Dtos\ProductPriceImageDto.cs" />
+    <Compile Include="Models\Dtos\ProductPriceUpdateDto.cs" />
+    <Compile Include="Models\Dtos\RatingsAndReviewsDto.cs" />
+    <Compile Include="Models\Dtos\RecommentedProducts.cs" />
+    <Compile Include="Models\Dtos\RelatedProductsDto.cs" />
+    <Compile Include="Models\Dtos\SalesOrderLineDto.cs" />
+    <Compile Include="Models\Dtos\SelectedProductDto.cs" />
+    <Compile Include="Models\Dtos\SellerDto.cs" />
+    <Compile Include="Models\Dtos\SellerProductAdvertisementDto.cs" />
+    <Compile Include="Models\Dtos\SellerProductPriceImage.cs" />
+    <Compile Include="Models\Dtos\CatNameImage.cs" />
+    <Compile Include="Models\Dtos\SellerProductsDto.cs" />
+    <Compile Include="Models\Dtos\SellerProductViewToCustomerDto.cs" />
+    <Compile Include="Models\Dtos\SellerSalesOrderDto.cs" />
+    <Compile Include="Models\Dtos\ShippingClerkLogin.cs" />
+    <Compile Include="Models\Dtos\SizeColorStorageDto.cs" />
+    <Compile Include="Models\Dtos\subCatDto.cs" />
+    <Compile Include="Models\Dtos\subcatimage.cs" />
+    <Compile Include="Models\Dtos\SubSubCatBrandsDto.cs" />
+    <Compile Include="Models\Dtos\subsubcatimage.cs" />
+    <Compile Include="Models\Dtos\WishListDto.cs" />
+    <Compile Include="Models\EncryptionClass.cs" />
+    <Compile Include="Models\NotificationServices.cs" />
+    <Compile Include="Models\RecommendationClass.cs" />
+    <Compile Include="Models\ViewModels\IndexViews.cs" />
+    <Compile Include="Notification.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="payment_methods.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductColor.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPrice.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSize.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductStorage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductWarrenty.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Feature.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Image.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RatingsAndReview.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RuleAssociationMining%28FP-Growth%29\FPTree.cs" />
+    <Compile Include="RuleAssociationMining%28FP-Growth%29\Node.cs" />
+    <Compile Include="RuleAssociationMining%28FP-Growth%29\Result.cs" />
+    <Compile Include="SalesOrder.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderLine.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellerImage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellerPaymentSubscription.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellerProduct.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellerProfit.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seller_address.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seller_Contact.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shipment.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Size.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="State.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StateCountrySelect_Result.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCatBrand.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCatImage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubSubCategory.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="subsubCatImage.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sub_Category.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WarrentyDurationType.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WishList.cs">
+      <DependentUpon>FYP.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Brand_Images\1024px-Dell_Logo.png" />
+    <Content Include="Brand_Images\1213cdf454.png" />
+    <Content Include="Brand_Images\128a1ac9-85d8-4f07-80a1-1414dd8332e0.png" />
+    <Content Include="Brand_Images\15e4d4e9-992c-4981-b78c-165f012d88d2.png" />
+    <Content Include="Brand_Images\2000px-Google__G__Logo.svg.png" />
+    <Content Include="Brand_Images\3eb01292-2d24-44e3-bde7-b86bfb942f3e.png" />
+    <Content Include="Brand_Images\4654f6d54v564546.jpg" />
+    <Content Include="Brand_Images\56ds1c56xxxx5555.png" />
+    <Content Include="Brand_Images\56i5uy6556ds1c56xxxx.png" />
+    <Content Include="Brand_Images\5cf488c7-7532-4878-b5af-d8051f08a2f7.png" />
+    <Content Include="Brand_Images\654654654fffffdff.jpg" />
+    <Content Include="Brand_Images\86afa45c-e45c-427f-956a-c989e3faacbb.png" />
+    <Content Include="Brand_Images\91a460a426a552681c1ae8e2997902e5294c4795.jpg" />
+    <Content Include="Brand_Images\a0c3618f-a102-4abc-a133-ffe10e72d532.png" />
+    <Content Include="Brand_Images\a3c481d2-c37d-416c-9563-df8f399c5e6f.png" />
+    <Content Include="Brand_Images\a4-tech.jpg" />
+    <Content Include="Brand_Images\ajmal_logo.ai_.png" />
+    <Content Include="Brand_Images\al_karam_textiles-300x300.jpg" />
+    <Content Include="Brand_Images\Ammunition_Work_Beats_LogoTile-wpcf_1024x576.png" />
+    <Content Include="Brand_Images\anex.jpg" />
+    <Content Include="Brand_Images\Apple-Logo-black-copie.png" />
+    <Content Include="Brand_Images\asus_logoai_.png" />
+    <Content Include="Brand_Images\audionic-logo-250x250.jpg" />
+    <Content Include="Brand_Images\b87ba8d9-d834-4885-827e-827af4a39c48.png" />
+    <Content Include="Brand_Images\bata-big-logo.png" />
+    <Content Include="Brand_Images\bleu-de-chanel-logo-1BF2881976-seeklogo.com.png" />
+    <Content Include="Brand_Images\BO7d1qui_400x400.jpg" />
+    <Content Include="Brand_Images\bonanza-clothing-brand-logo.png" />
+    <Content Include="Brand_Images\c1f9d82b-9b3e-4865-ab11-d78b2a43bc1a.png" />
+    <Content Include="Brand_Images\c577c03a-7244-4b4b-84cf-2e36c5b0605e.png" />
+    <Content Include="Brand_Images\Casio-vector-logo.png" />
+    <Content Include="Brand_Images\ceac347d-e686-4e1c-a163-b5e7c7f40619.png" />
+    <Content Include="Brand_Images\dfd546df460.jpg" />
+    <Content Include="Brand_Images\download %281%29.jpg" />
+    <Content Include="Brand_Images\download %281%29.png" />
+    <Content Include="Brand_Images\download %282%29.png" />
+    <Content Include="Brand_Images\download %283%29.png" />
+    <Content Include="Brand_Images\download %284%29.png" />
+    <Content Include="Brand_Images\download.jpg" />
+    <Content Include="Brand_Images\download.png" />
+    <Content Include="Brand_Images\dunhill-1-logo-png-transparent.png" />
+    <Content Include="Brand_Images\EA_logo.png" />
+    <Content Include="Brand_Images\f54v546ds57f465.jpg" />
+    <Content Include="Brand_Images\fb38cadb-286b-4349-8faa-843f76633a1e.png" />
+    <Content Include="Brand_Images\Generation-300x300.jpg" />
+    <Content Include="Brand_Images\Gul-Ahmed-Clothing-723x469.jpg" />
+    <Content Include="Brand_Images\HJ-Global-Enterprises-Logo.png" />
+    <Content Include="Brand_Images\huawei_logo.jpg" />
+    <Content Include="Brand_Images\iphone_brand-300x273.jpg" />
+    <Content Include="Brand_Images\kisspng-hewlett-packard-brand-logo-product-design-hp-historique-présentation-chiffres-clés-n-5b62d46f26bbb4.8507135815332035671587.jpg" />
+    <Content Include="Brand_Images\kisspng-logo-brand-power-bank-re-max-llc-company--5b82dffa9562f0.1951510015353036746119.jpg" />
+    <Content Include="Brand_Images\KWC.jpg" />
+    <Content Include="Brand_Images\Levi_s_Authorised_Dealer_Taiwan-logo-1CEC88B276-seeklogo.com.png" />
+    <Content Include="Brand_Images\LOGO-YAZOLE.jpg" />
+    <Content Include="Brand_Images\logo.png" />
+    <Content Include="Brand_Images\maxresdefault.jpg" />
+    <Content Include="Brand_Images\msft_logo_print.png" />
+    <Content Include="Brand_Images\NikonldihisssudshiuogoBE7BD3C0F2seeklogo.png" />
+    <Content Include="Brand_Images\orient-logo-2BBED86096-seeklogo.com.jpg" />
+    <Content Include="Brand_Images\public-news-174840-Nokia--2x1--940.jpg" />
+    <Content Include="Brand_Images\p_57d256e58ea8d.jpg" />
+    <Content Include="Brand_Images\quartz-og.jpg" />
+    <Content Include="Brand_Images\Rado_logos.jpg" />
+    <Content Include="Brand_Images\razer-logo.jpg" />
+    <Content Include="Brand_Images\Samsung-Logo-353.jpg" />
+    <Content Include="Brand_Images\SCJ_logo.png" />
+    <Content Include="Brand_Images\sigma.png" />
+    <Content Include="Brand_Images\smart-logo-200x200.png" />
+    <Content Include="Brand_Images\Sony-logo-brand-tld-400x200.png" />
+    <Content Include="Brand_Images\sony-og.jpg" />
+    <Content Include="Brand_Images\Timex-logo.jpg" />
+    <Content Include="Brand_Images\tissot-watches-1-638.jpg" />
+    <Content Include="Brand_Images\unnamed.jpg" />
+    <Content Include="Cat_Images\147696_1.jpg" />
+    <Content Include="Cat_Images\23887-hd-home-theater.jpg" />
+    <Content Include="Cat_Images\accessories_bracelets_ambiance_1600x900.jpg" />
+    <Content Include="Cat_Images\dvr506-accessories-700x700.jpg" />
+    <Content Include="Cat_Images\images %281%29.jpg" />
+    <Content Include="Cat_Images\images.jpg" />
+    <Content Include="Cat_Images\img-01.png" />
+    <Content Include="Cat_Images\petfood-aisle-1506PETpackaging.jpg" />
+    <Content Include="Cat_Images\sports-HD.jpg" />
+    <Content Include="Cat_Images\Test_095d1bd5-0422-46e1-aa7a-bd0b44860168.png" />
+    <Content Include="Cat_Images\Toyota-Fortuner-Front-Grille-99708.jpg" />
+    <Content Include="Cat_Images\wedding.jpg" />
+    <Content Include="Content\custOrder.css" />
+    <Content Include="Content\fb.png" />
+    <Content Include="Content\fixedHeader.dataTables.min.css" />
+    <Content Include="Content\if_Icon-2_3064815.png" />
+    <Content Include="Content\if_Icon-3_3064816.png" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\jquery.exzoom.css" />
+    <Content Include="Content\AdminPanel.css" />
+    <Content Include="Content\LOGO4.PNG" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\manageMyAccount.css" />
+    <Content Include="Content\MaterialForAdmin.css" />
+    <Content Include="Content\materialize.css" />
+    <Content Include="Content\myProfile.css" />
+    <Content Include="Content\newCart.css" />
+    <Content Include="Content\newLogin.css" />
+    <Content Include="Content\newSellerPanel.css" />
+    <Content Include="Content\nouislider.css" />
+    <Content Include="Content\Roboto.css" />
+    <Content Include="Content\SellerImageMarquee.css" />
+    <Content Include="Content\sellerProductView.css" />
+    <Content Include="Content\sellerSignUp.css" />
+    <Content Include="Content\sideMenuNav.css" />
+    <Content Include="Content\SimpleStarRating.css" />
+    <Content Include="Content\summaryStatus.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Content\wishlist.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <Content Include="Content\IurY6Y5j_oScZZow4VOxCZZM - Copy.woff2" />
+    <Content Include="Content\Raleway-Medium.ttf" />
+    <Content Include="FYP.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FYP.edmx</DependentUpon>
+      <LastGenOutput>FYP.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FYP.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FYP.edmx</DependentUpon>
+      <LastGenOutput>FYP.cs</LastGenOutput>
+    </Content>
+    <Content Include="FYPDataSet.xsc">
+      <DependentUpon>FYPDataSet.xsd</DependentUpon>
+    </Content>
+    <EntityDeploy Include="FYP.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FYP.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="FYP.edmx.diagram">
+      <DependentUpon>FYP.edmx</DependentUpon>
+    </Content>
+    <None Include="FYPDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FYPDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="FYPDataSet.xss">
+      <DependentUpon>FYPDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Global.asax" />
+    <Content Include="paymentMethodImages\1533654621189.png" />
+    <Content Include="paymentMethodImages\Cash_on_delivery-512.png" />
+    <Content Include="Report.aspx" />
+    <Content Include="Scripts\canvasjs.min.js" />
+    <Content Include="Scripts\dataTables.fixedHeader.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.canvasjs.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.exzoom.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.4.0.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\materialize.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\nouislider.js" />
+    <Content Include="Scripts\SimpleStarRating.js" />
+    <Content Include="Scripts\slider.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Seller_Image\191bda96-8d27-49d9-b301-ef89596c5a42.png" />
+    <Content Include="Seller_Image\9be501f5-7f7b-4e14-864a-95e9d96720d5.png" />
+    <Content Include="Seller_Image\afc60f77-6ee8-4b08-b853-47c7116ce721.png" />
+    <Content Include="Seller_Image\bag-it-today-logo-7A825ABA3F-bjkdf65df465sseeklogo.com.png" />
+    <Content Include="Seller_Image\e2944411-37b4-48b6-823c-d483ad33db1f.png" />
+    <Content Include="Seller_Image\haroon.png" />
+    <Content Include="Seller_Image\Jillani.JPG" />
+    <Content Include="Seller_Image\saima.png" />
+    <Content Include="Seller_Image\sam.jpg" />
+    <Content Include="Seller_Image\watchesStore.jpg" />
+    <Content Include="Slider Images\78N_LAST_VIKING_MAINSCREEN.png" />
+    <Content Include="Slider Images\Cover-Homage-Watches-1.png" />
+    <Content Include="Slider Images\Huawei-top-global-phone-brand.jpg" />
+    <Content Include="Slider Images\levi.png" />
+    <Content Include="Slider Images\maxresdefault.jpg" />
+    <Content Include="Slider Images\o.30129.jpg" />
+    <Content Include="Slider Images\samsung-galaxy-gear-smartwatch-cover.jpg" />
+    <Content Include="Slider Images\slider-7-presentation.jpg" />
+    <Content Include="Slider Images\smartwatch-HC-10-10-218.jpg" />
+    <Content Include="Slider Images\Untitled-design-4-1-1-1.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubCatImages\%24_35.jpg" />
+    <Content Include="SubCatImages\0398620hero.jpg" />
+    <Content Include="SubCatImages\1.jpg" />
+    <Content Include="SubCatImages\2-261.jpg" />
+    <Content Include="SubCatImages\2018-new-car-stunts-climbing-models-morphing.jpg" />
+    <Content Include="SubCatImages\2018-New-Coming-Alike-Trending-Products-Dropshipping-Men-s-Watch-Military-Digital-Date-Display-Sports-Watches.jpg" />
+    <Content Include="SubCatImages\2231d85d-3089-4d85-bcdf-d12931727aac.png" />
+    <Content Include="SubCatImages\3b19a4add49551b80e17aa84b219a6b9.jpg" />
+    <Content Include="SubCatImages\4d988e63-3db9-4afa-8289-4f5ab38635c9.png" />
+    <Content Include="SubCatImages\50ab3e9a-bcdb-4c8d-9e8f-b19c46ed240b.png" />
+    <Content Include="SubCatImages\5212001_1.png" />
+    <Content Include="SubCatImages\56545547-bébé-sur-fond-blanc-avec-des-vêtements-des-articles-de-toilette-jouets-et-accessoires-de-soins-de-santé-li.jpg" />
+    <Content Include="SubCatImages\5a4e1f054c20d32bc183a106_m.jpg" />
+    <Content Include="SubCatImages\5b637709-5d27-4fac-907e-9ab18f679c10.png" />
+    <Content Include="SubCatImages\60406038-df1a-410e-8731-5cf11edb2389.png" />
+    <Content Include="SubCatImages\61rqlNBWLvL._UL1500_.jpg" />
+    <Content Include="SubCatImages\6b063c0d-a949-48dc-ad1d-460c0ea8424c._SL300__.png" />
+    <Content Include="SubCatImages\6cdcdc5d8af70b7ed0ed94c962ff9ccb.jpg" />
+    <Content Include="SubCatImages\7-in-1-mobile-accessories-in-just-rs999-.jpg" />
+    <Content Include="SubCatImages\706a4942-7c8f-4d34-b116-881b89445101.png" />
+    <Content Include="SubCatImages\71hxnEOpYaL._SY450_.jpg" />
+    <Content Include="SubCatImages\71KIkuqPz+L._UL1500_.jpg" />
+    <Content Include="SubCatImages\71rtQ+8DTQL._SX425_.jpg" />
+    <Content Include="SubCatImages\72301819b710f5ba925fe56cc0f388fe.jpg" />
+    <Content Include="SubCatImages\800px_COLOURBOX18130629.jpg" />
+    <Content Include="SubCatImages\80ffb4e4-bea5-4e14-a689-e6418b7e1e3f.png" />
+    <Content Include="SubCatImages\87906.jpg" />
+    <Content Include="SubCatImages\91ab2e7a-a20b-4156-b127-fbd527920d0e.png" />
+    <Content Include="SubCatImages\9934d1518a73a9a6eab50c4bb49d823c.jpg" />
+    <Content Include="SubCatImages\9a016ac3-0e8d-4361-ba63-5d2a7384b237.png" />
+    <Content Include="SubCatImages\a2f63c03-ba31-4866-bbcf-5ea1a40f2cdd.png" />
+    <Content Include="SubCatImages\aa-amazon-echo-best-smart-bulb.jpg" />
+    <Content Include="SubCatImages\ace84568-0ff1-4d6f-affd-8b93e99013f9.png" />
+    <Content Include="SubCatImages\acessórios-casa-decoração.jpg" />
+    <Content Include="SubCatImages\andy.jpg" />
+    <Content Include="SubCatImages\archer-vr400.jpg" />
+    <Content Include="SubCatImages\b29ff787-3629-4caf-827e-4f6ee3e8e6c2.JPG" />
+    <Content Include="SubCatImages\bbw_16.02.17.jpg" />
+    <Content Include="SubCatImages\Best-Womans-Watches-for-Daily-Wear.jpg" />
+    <Content Include="SubCatImages\bigstock-Spoon-With-Dietary-Supplements-70069831.jpg" />
+    <Content Include="SubCatImages\BNi-personal-care-appliances.png" />
+    <Content Include="SubCatImages\btn-microphones.jpg" />
+    <Content Include="SubCatImages\c05642410.png" />
+    <Content Include="SubCatImages\c05661837.png" />
+    <Content Include="SubCatImages\c20eb3e4bbd8b7bac5c76417de01c1dc.jpg" />
+    <Content Include="SubCatImages\c700x420.jpg" />
+    <Content Include="SubCatImages\camera-hd-png-photo-camera-png-image-700.png" />
+    <Content Include="SubCatImages\cartoon-children-kids-watch-boys-girls-multifunction.jpg" />
+    <Content Include="SubCatImages\comment_diminuer_les_depenses_liees_aux_appareils_electromenagers-750x410.jpg" />
+    <Content Include="SubCatImages\computer-peripherals_5-11-2016-10355-500x500.png" />
+    <Content Include="SubCatImages\d2601ffd-6e8a-441b-9e82-7092f53ed607.png" />
+    <Content Include="SubCatImages\dairy.jpg" />
+    <Content Include="SubCatImages\download %281%29.jpg" />
+    <Content Include="SubCatImages\download %282%29.jpg" />
+    <Content Include="SubCatImages\download.jpg" />
+    <Content Include="SubCatImages\Ecco-Biom-shoes-tcistudio.jpg" />
+    <Content Include="SubCatImages\fc70cebd-6838-4e4e-a2bf-6aa6f6ede071.png" />
+    <Content Include="SubCatImages\fd05bdab-3400-4a1f-b5db-3c10caa722bf.png" />
+    <Content Include="SubCatImages\feeding.jpg" />
+    <Content Include="SubCatImages\Ferfi-ekszerek1o.jpg" />
+    <Content Include="SubCatImages\fmcg1.png" />
+    <Content Include="SubCatImages\haircare.jpg" />
+    <Content Include="SubCatImages\HD-D20-2.jpg" />
+    <Content Include="SubCatImages\Heavengifts-E-cig-RDA-RTA-RDTA-DIY-Tool-Accessories-Kit-V3-Build-Atomizer-Vape-Coil-Jigs_600x.jpg" />
+    <Content Include="SubCatImages\hi-fashion-women-accessories-combo-by-burdy-medium_5c569a36b38ca246ac23a5557793a6ba.jpg" />
+    <Content Include="SubCatImages\images %281%29.jpg" />
+    <Content Include="SubCatImages\images.jpg" />
+    <Content Include="SubCatImages\images222.jpg" />
+    <Content Include="SubCatImages\image_0.jpg" />
+    <Content Include="SubCatImages\img-20170201-wa0301-500x500.jpg" />
+    <Content Include="SubCatImages\ip111930_00.jpg" />
+    <Content Include="SubCatImages\ip116894_00.jpg" />
+    <Content Include="SubCatImages\IQ-Blox-%28pack+product+booklet%29.jpg" />
+    <Content Include="SubCatImages\kitchen-items-kitchen-items.jpg" />
+    <Content Include="SubCatImages\korean-summer-tide-men-039-s-casual-t-shirt.jpg" />
+    <Content Include="SubCatImages\lead_720_405.jpg" />
+    <Content Include="SubCatImages\learn-wearable-tech.jpg" />
+    <Content Include="SubCatImages\Luxury-Bath-Accessories-Classic.jpg" />
+    <Content Include="SubCatImages\Luxury-premium-perfume-Stock-Photo-22.jpg" />
+    <Content Include="SubCatImages\main-qimg-c0c29325ad122be5700eb4c6027a7bd2-c.jpg" />
+    <Content Include="SubCatImages\maxresdefault.jpg" />
+    <Content Include="SubCatImages\Men-s-Casual-Shoes-2018-Men-Shoes-Men-Loafers-Luxury-Brand-Spring-Sneakers-Male-Boat-Shoes.jpg" />
+    <Content Include="SubCatImages\Most-useful-kids-luggage-sets.jpg" />
+    <Content Include="SubCatImages\Nesquik-Choco-choco1-308x308.png" />
+    <Content Include="SubCatImages\o.33712.jpg" />
+    <Content Include="SubCatImages\original_eazo-front-zip-travel-duffle.jpg" />
+    <Content Include="SubCatImages\polowatch-35-blackwayfarer_accery_574547378620e._lime-offers-complete-mens-gift-set-of-watch-and-accessories.jpg" />
+    <Content Include="SubCatImages\product-image-532262969_large.jpg" />
+    <Content Include="SubCatImages\product-image-796795277_1200x1200.jpg" />
+    <Content Include="SubCatImages\product-image-hd-wireless-klipsch-home-theater-package_1.jpg" />
+    <Content Include="SubCatImages\PS4_Console_Carry_Bag_1024x1024.jpg" />
+    <Content Include="SubCatImages\Regular-XXL28-4Packs-427x546.jpg" />
+    <Content Include="SubCatImages\saglik-market-uygulamasinin-amaci-yerliligi-arttirmak.png" />
+    <Content Include="SubCatImages\Stylish-eyeglass-frames-Vintage-eyeglasses-frames-New.jpg_350x350.jpg" />
+    <Content Include="SubCatImages\suitcases-for-travel.jpg" />
+    <Content Include="SubCatImages\Summit_Brands_Laundry_Solutions.png" />
+    <Content Include="SubCatImages\top-nursery-kids-room-trends-you-must-know-for-belivindesign_single-bedroom.jpg" />
+    <Content Include="SubCatImages\Travel-Collage-21.jpg" />
+    <Content Include="SubCatImages\upright-vacuum-v2.jpg" />
+    <Content Include="SubCatImages\v4ADCH3g-5654-3769.JPG" />
+    <Content Include="SubCatImages\vivo-v7-plus-front.jpg" />
+    <Content Include="SubCatImages\Vocabulary-to-describe-small-kitchen-appliances-and-equipment-featured-image.jpg" />
+    <Content Include="SubCatImages\Wooden-Kids-STEM-Toy-Tools-Set-Construction-For-Toddler.jpg" />
+    <Content Include="SubCatImages\World-Organics-Beauty-Products.jpg" />
+    <Content Include="SubCatImages\_101418320.jpg" />
+    <Content Include="SubSubCatImages\080ec740-9eb9-4c2f-bb69-16470bfcba4a.png" />
+    <Content Include="SubSubCatImages\1c525c6d-a558-43c5-a950-f057b684fb72.png" />
+    <Content Include="SubSubCatImages\2046b1b0-ce29-4806-a78a-e3fb20e1e0ab.png" />
+    <Content Include="SubSubCatImages\20f51c4a-3975-4114-a71b-770f5a5d44ba.png" />
+    <Content Include="SubSubCatImages\227b5a5a-6a26-4595-8056-f71395c720d1.png" />
+    <Content Include="SubSubCatImages\3549d3c3-f4ea-4d1f-83e4-05307d5eadf4.png" />
+    <Content Include="SubSubCatImages\3b165983-3654-4ba5-a85e-8767a840b161.png" />
+    <Content Include="SubSubCatImages\41126a94-18fa-4db8-844b-d20a9a0863ba.png" />
+    <Content Include="SubSubCatImages\47fe6b8d-3ae0-48c4-946b-87c268eb1e82.png" />
+    <Content Include="SubSubCatImages\48a94d0a-2914-4252-8236-557b8d47180c.png" />
+    <Content Include="SubSubCatImages\546446546ghghgh3.jpg" />
+    <Content Include="SubSubCatImages\5c84b59d-a8a0-4185-b387-23a51fc9935c.png" />
+    <Content Include="SubSubCatImages\9725bf45-f7d9-4d3b-b362-0a932c7ae88e.png" />
+    <Content Include="SubSubCatImages\9c1a752c-e6fd-45ac-8889-1252ba7965cb.png" />
+    <Content Include="SubSubCatImages\Action Camera Accessories.jpg" />
+    <Content Include="SubSubCatImages\Adapters&amp; Cables.jpg" />
+    <Content Include="SubSubCatImages\Air Conditioner.jpg" />
+    <Content Include="SubSubCatImages\Air Purifier.jpg" />
+    <Content Include="SubSubCatImages\Air Removal.jpg" />
+    <Content Include="SubSubCatImages\Bath &amp; Body.jpg" />
+    <Content Include="SubSubCatImages\Batteries.jpg" />
+    <Content Include="SubSubCatImages\bcddc967-174d-43c7-844b-144bfdad4fe9.png" />
+    <Content Include="SubSubCatImages\Beauty Suppliments.jpg" />
+    <Content Include="SubSubCatImages\Blender, Mixer &amp; Grinder.jpg" />
+    <Content Include="SubSubCatImages\Blu-RayDVD Player.jpg" />
+    <Content Include="SubSubCatImages\Body &amp; Massage Oil.jpg" />
+    <Content Include="SubSubCatImages\Brushes &amp; Sets.jpg" />
+    <Content Include="SubSubCatImages\Brushes.jpg" />
+    <Content Include="SubSubCatImages\Bussiness.jpg" />
+    <Content Include="SubSubCatImages\c1fa3c2a-2e7d-4785-9eb9-9dc9a63ce724.png" />
+    <Content Include="SubSubCatImages\Cables &amp; Converter.jpg" />
+    <Content Include="SubSubCatImages\Camera Cases Cover.jpg" />
+    <Content Include="SubSubCatImages\Color.png" />
+    <Content Include="SubSubCatImages\Conditioner.jpg" />
+    <Content Include="SubSubCatImages\Cooktop &amp; Range.jpg" />
+    <Content Include="SubSubCatImages\Cooler.jpg" />
+    <Content Include="SubSubCatImages\Curling Irons &amp; Wands.jpg" />
+    <Content Include="SubSubCatImages\d2707dc3-13b4-4248-86cb-7d38606abe80.png" />
+    <Content Include="SubSubCatImages\d64da8f0-6eef-45a3-9e9c-098c0d9e2185.png" />
+    <Content Include="SubSubCatImages\Derma Care.jpg" />
+    <Content Include="SubSubCatImages\Desktop Casing.jpg" />
+    <Content Include="SubSubCatImages\DSLR.jpg" />
+    <Content Include="SubSubCatImages\Electric Kettle.jpg" />
+    <Content Include="SubSubCatImages\External Hard Drive.jpg" />
+    <Content Include="SubSubCatImages\Eyes.png" />
+    <Content Include="SubSubCatImages\f9cfcc8b-be82-4293-b793-9af6f7c5d4ad.png" />
+    <Content Include="SubSubCatImages\Facial Cleanser.jpg" />
+    <Content Include="SubSubCatImages\FanHeat Sinker.jpg" />
+    <Content Include="SubSubCatImages\Fashion.jpg" />
+    <Content Include="SubSubCatImages\Fax Machines.jpg" />
+    <Content Include="SubSubCatImages\Fitness &amp; Activity Tracker.jpg" />
+    <Content Include="SubSubCatImages\Fitness &amp; Tracker Accessories.jpg" />
+    <Content Include="SubSubCatImages\Flash Drive.jpg" />
+    <Content Include="SubSubCatImages\Flat Irons.jpg" />
+    <Content Include="SubSubCatImages\Floor Polisher.jpg" />
+    <Content Include="SubSubCatImages\Foot Care.png" />
+    <Content Include="SubSubCatImages\Foundation.png" />
+    <Content Include="SubSubCatImages\Freezer.jpg" />
+    <Content Include="SubSubCatImages\Fryer.jpg" />
+    <Content Include="SubSubCatImages\Garment Steamer.jpg" />
+    <Content Include="SubSubCatImages\ghgsdkf687fg8g7etrfg8efy8oghigh-bar-dress-shirts.jpg" />
+    <Content Include="SubSubCatImages\Graphic Card.jpg" />
+    <Content Include="SubSubCatImages\Grooming Appliance.jpg" />
+    <Content Include="SubSubCatImages\Hair Care.jpg" />
+    <Content Include="SubSubCatImages\Hair Dryer.jpg" />
+    <Content Include="SubSubCatImages\Hair Dryer2.jpg" />
+    <Content Include="SubSubCatImages\Hair Dryer3.jpg" />
+    <Content Include="SubSubCatImages\Hand Care.jpg" />
+    <Content Include="SubSubCatImages\Headphones &amp; Headsets.jpg" />
+    <Content Include="SubSubCatImages\Home Entertainment.jpg" />
+    <Content Include="SubSubCatImages\Home Entertainment.png" />
+    <Content Include="SubSubCatImages\Huawei.png" />
+    <Content Include="SubSubCatImages\Infinix.png" />
+    <Content Include="SubSubCatImages\Ink665Toners.png" />
+    <Content Include="SubSubCatImages\Instant Camera.jpg" />
+    <Content Include="SubSubCatImages\Internal Hard Drive.jpg" />
+    <Content Include="SubSubCatImages\IP Security Camera.jpg" />
+    <Content Include="SubSubCatImages\Iphone.jpg" />
+    <Content Include="SubSubCatImages\Irons.jpg" />
+    <Content Include="SubSubCatImages\Keyboard.jpg" />
+    <Content Include="SubSubCatImages\LED Telivision.jpg" />
+    <Content Include="SubSubCatImages\Lenovo.png" />
+    <Content Include="SubSubCatImages\Lenses.jpg" />
+    <Content Include="SubSubCatImages\Lighting &amp; Studio Equipment.jpg" />
+    <Content Include="SubSubCatImages\Lips.jpg" />
+    <Content Include="SubSubCatImages\Live Sound &amp; Stage Equipment.jpg" />
+    <Content Include="SubSubCatImages\Live Sound &amp; Stage Equipment.png" />
+    <Content Include="SubSubCatImages\Memory Cards.jpg" />
+    <Content Include="SubSubCatImages\Men Fragnence.jpg" />
+    <Content Include="SubSubCatImages\Mice.jpg" />
+    <Content Include="SubSubCatImages\Microwave.jpg" />
+    <Content Include="SubSubCatImages\Monitor.jpg" />
+    <Content Include="SubSubCatImages\Motherboard.jpg" />
+    <Content Include="SubSubCatImages\Motorola.png" />
+    <Content Include="SubSubCatImages\Multivitamin.jpg" />
+    <Content Include="SubSubCatImages\Nails.jpg" />
+    <Content Include="SubSubCatImages\Network Component.png" />
+    <Content Include="SubSubCatImages\Nokia.jpg" />
+    <Content Include="SubSubCatImages\OLED Telivision.jpg" />
+    <Content Include="SubSubCatImages\Oral Care.jpg" />
+    <Content Include="SubSubCatImages\OTG Drive.jpg" />
+    <Content Include="SubSubCatImages\Other Telivision.jpg" />
+    <Content Include="SubSubCatImages\Oven.jpg" />
+    <Content Include="SubSubCatImages\Partsand55Tools.jpg" />
+    <Content Include="SubSubCatImages\PC Audio.jpg" />
+    <Content Include="SubSubCatImages\Phone Cases.jpg" />
+    <Content Include="SubSubCatImages\Play Station Audio &amp; Accessories.jpg" />
+    <Content Include="SubSubCatImages\Play9Station8Controller.png" />
+    <Content Include="SubSubCatImages\Point &amp; Shoot.jpg" />
+    <Content Include="SubSubCatImages\Portable Player.jpg" />
+    <Content Include="SubSubCatImages\Portable Players.jpg" />
+    <Content Include="SubSubCatImages\Power Banks.jpg" />
+    <Content Include="SubSubCatImages\Printers Ink &amp; Toners.jpg" />
+    <Content Include="SubSubCatImages\Processors.jpg" />
+    <Content Include="SubSubCatImages\Projectors.jpg" />
+    <Content Include="SubSubCatImages\Q Mobile.jpg" />
+    <Content Include="SubSubCatImages\QLED Telivision.jpg" />
+    <Content Include="SubSubCatImages\redlg.jpg" />
+    <Content Include="SubSubCatImages\Refrigrators.jpg" />
+    <Content Include="SubSubCatImages\Rice Cooker.jpg" />
+    <Content Include="SubSubCatImages\Samsung.jpg" />
+    <Content Include="SubSubCatImages\Serum &amp; Assence.jpg" />
+    <Content Include="SubSubCatImages\Sewing Machine.jpg" />
+    <Content Include="SubSubCatImages\Shampoo.jpg" />
+    <Content Include="SubSubCatImages\Smart Telivision.jpg" />
+    <Content Include="SubSubCatImages\Smart Watches.jpg" />
+    <Content Include="SubSubCatImages\Sound Bars.png" />
+    <Content Include="SubSubCatImages\Sports Nutritions.png" />
+    <Content Include="SubSubCatImages\Storage for Mac.jpg" />
+    <Content Include="SubSubCatImages\Sunscreen &amp; AfterSun.jpg" />
+    <Content Include="SubSubCatImages\Tripods &amp; Monopods.jpg" />
+    <Content Include="SubSubCatImages\TV Receiver.jpg" />
+    <Content Include="SubSubCatImages\v.jpg" />
+    <Content Include="SubSubCatImages\Vacuum Cleaner.jpg" />
+    <Content Include="SubSubCatImages\Virtual Reality.jpg" />
+    <Content Include="SubSubCatImages\Wall Chargers.jpg" />
+    <Content Include="SubSubCatImages\Wall Mount Protectos.jpg" />
+    <Content Include="SubSubCatImages\Water &amp; Heater.png" />
+    <Content Include="SubSubCatImages\Water Purifier.jpeg" />
+    <Content Include="SubSubCatImages\Well Being.png" />
+    <Content Include="SubSubCatImages\Wireless Chargers.jpg" />
+    <Content Include="SubSubCatImages\Women Fragnence.jpg" />
+    <Content Include="Views\Admin\Category.cshtml" />
+    <Content Include="Views\Admin\SubCategory.cshtml" />
+    <Content Include="Views\Admin\Product.cshtml" />
+    <Content Include="Views\Admin\Order.cshtml" />
+    <Content Include="Views\Admin\Brands.cshtml" />
+    <Content Include="Views\Home\MasterAdminLogin.cshtml" />
+    <Content Include="Views\Seller\Seller_Panel.cshtml" />
+    <Content Include="Views\Seller\Seller_Login.cshtml" />
+    <Content Include="Views\Seller\Seller_SignUp.cshtml" />
+    <Content Include="Views\Seller\Seller_AddProduct.cshtml" />
+    <Content Include="Views\Seller\Seller_Product.cshtml" />
+    <Content Include="Views\Seller\Seller_Order.cshtml" />
+    <Content Include="Views\Customers\Login.cshtml" />
+    <Content Include="Views\Customers\CustomerSignUp.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\CustomerCart.cshtml" />
+    <Content Include="Views\Customers\CustomerWishList.cshtml" />
+    <Content Include="Views\Customers\myProfile.cshtml" />
+    <Content Include="Views\Customers\ProductInformation.cshtml" />
+    <Content Include="Views\Customers\CatSubCat.cshtml" />
+    <Content Include="Views\Customers\SubSubCat.cshtml" />
+    <Content Include="Views\Customers\GlobalCollection.cshtml" />
+    <Content Include="Views\Seller\SelfAdvertisement.cshtml" />
+    <Content Include="Views\Admin\AdminLogin.cshtml" />
+    <Content Include="Views\Admin\SubSubCategory.cshtml" />
+    <Content Include="Views\Admin\Seller_Info.cshtml" />
+    <Content Include="Views\Customers\BuyAndCheckOut.cshtml" />
+    <Content Include="Views\Customers\CustOrder.cshtml" />
+    <Content Include="Views\Customers\AddAddress.cshtml" />
+    <Content Include="Views\Customers\SummaryStatus.cshtml" />
+    <Content Include="Views\Customers\Products.cshtml" />
+    <Content Include="Views\Customers\Tracking.cshtml" />
+    <Content Include="Views\Customers\OrderID.cshtml" />
+    <Content Include="Views\Customers\ActivateEmail.cshtml" />
+    <Content Include="Views\Seller\EditProduct.cshtml" />
+    <Content Include="Views\Customers\SubSubCatBrands.cshtml" />
+    <Content Include="Views\Customers\Brands.cshtml" />
+    <Content Include="Views\Customers\SellersProductsView.cshtml" />
+    <Content Include="Views\Customers\ErrorPage.cshtml" />
+    <Content Include="Views\Seller\ErrorPage.cshtml" />
+    <Content Include="Views\Seller\Analytics.cshtml" />
+    <Content Include="Views\Admin\InsertBrandInCat.cshtml" />
+    <Content Include="Views\Admin\AnalyticsAdmin.cshtml" />
+    <Content Include="Views\Admin\ErrorPage.cshtml" />
+    <Content Include="Views\Customers\ViewOrders.cshtml" />
+    <None Include="Views\Shared\AdminPanel.cshtml" />
+    <None Include="Views\Shared\AdminLoginLayout.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Customer.cshtml" />
+    <Content Include="Views\Home\AdminLogin.cshtml" />
+    <Content Include="Views\Shared\SellerLayout.cshtml" />
+    <Content Include="Views\Shared\SellerSignUpLayout.cshtml" />
+    <Content Include="Views\Shared\CustomerLayout.cshtml" />
+    <Content Include="Views\ShippingClerk\Login.cshtml" />
+    <Content Include="Views\Shared\ShippingClerkLoginLayout.cshtml" />
+    <Content Include="Views\Shared\ShippingClerkLayout.cshtml" />
+    <Content Include="Views\ShippingClerk\Index.cshtml" />
+    <Content Include="Views\Shared\EmptyLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58893</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

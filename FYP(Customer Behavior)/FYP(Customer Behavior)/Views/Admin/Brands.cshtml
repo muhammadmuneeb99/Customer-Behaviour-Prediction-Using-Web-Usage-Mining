@@ -1,0 +1,159 @@
+﻿@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.subCatDto>
+@{
+                ViewBag.Title = "Brands";
+                Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+<main>
+        <div class="container" style="width:100%; height:auto;">
+            @using (Html.BeginForm("Brands", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {<form action="Brands" method="post">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" name="bName" class="validate" required>
+                        <label for="last_name">Enter Brand Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <div class="file-field input-field">
+                            <div class="btn" style="background-color:#292929">
+                                <span style="color: white;">File</span>
+                                <input type="file" name="httpPostedFileBase" id="imageBrowse1" required />
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Your Brand Image">
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <button style="background-color:#292929;" class="btn waves-effect waves-light" type="submit" name="action">
+                            Add
+                        </button>
+                    </center>
+                    
+                </form>
+            }
+          
+        </div>
+
+        <div class="container" style="width:100%; height:auto; margin-top:2%;">
+            
+                <table class="centered bordered responsive-table display" id="example">
+                    <thead>
+                        <tr style="text-align:center; font-weight:bolder;">
+                            <th style="font-size:12px">Brand ID</th>
+                            <th style="font-size:12px">Brand</th>
+                            <th style="font-size:12px">Image</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var value in Model)
+                        {
+                            <tr>
+                                <td style="font-size:12px">@value.id</td>
+                                <td style="font-size:12px">@value.brandName</td>
+                                <td style="font-size:12px"><img src="@value.image" style="width:80px; height:80px; object-fit:scale-down" alt="not available" /></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+        </div>
+</main>
+
+@*<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#comboboxcat').on('change', function () {
+                var catID = $('#comboboxcat option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { catId: catID },
+                    url: '@Url.Action("LoadSubCat", "Admin")',
+                    success: function (result)
+                    {
+                        var s = '<option value="-1">Select Sub Category</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].SID + '">' +
+                                result[i].Name+'</option>'
+                        }
+                        $('#comboboxsubcat').html(s);
+                        $('select').material_select();
+                    }
+                });
+            });
+        });
+
+</script>
+
+<script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#comboboxsubcat').on('change', function () {
+                var subcatId = $('#comboboxsubcat option:selected').val();
+                $.ajax({
+                    type: 'POST',
+                    data: { subcatId: subcatId },
+                    url: '@Url.Action("LoadSubSubCat", "Admin")',
+                    success: function (result)
+                    {
+                        var s = '<option value="-1">Select Sub Sub Category</option>';
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].SID + '">' +
+                                result[i].Name+'</option>'
+                        }
+                        $('#comboboxsubsubcat').html(s);
+                        $('select').material_select();
+                    }
+                });
+            });
+        });
+
+</script>*@
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#imageBrowser1").change(function () {
+            var File = this.files;
+            if (File && File[0]) {
+                ReadImage(File[0])
+            }
+        });
+
+        $('.button-collapse').sideNav();
+        $('.collapsible').collapsible();
+        
+    });
+    //$(document).ready(function () {
+    //    $("#myInput").on("keyup", function () {
+    //        var value = $(this).val().toLowerCase();
+    //        $("#myTable tbody tr").filter(function () {
+    //            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    //        });
+    //    });
+    //});
+    $(document).ready(function () {
+        // Setup - add a text input to each footer cell
+        $('#example thead tr').clone(true).appendTo('#example thead');
+        $('#example thead tr:eq(1) th').each(function (i) {
+            var title = $(this).text();
+            if (title === "Image") {
+                $(this).html('<input type="hidden" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+            else {
+                $(this).html('<input type="text" style="font-size:12px;" placeholder="' + title + '" />');
+            }
+
+            $('input', this).on('change keyup ', function () {
+                if (table.column(i).search() !== this.value.toString()) {
+                    table
+                        .column(i)
+                        .search(this.value.toString())
+                        .draw();
+                }
+            });
+        });
+        var table = $('#example').DataTable({
+            responsive: true,
+            orderCellsTop: true,
+        });
+    });
+</script>

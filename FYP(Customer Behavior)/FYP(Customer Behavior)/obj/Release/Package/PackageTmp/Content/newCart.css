@@ -1,0 +1,148 @@
+tr th label span {
+    color: black;
+    font-size: 10px;
+}
+
+tr td label span {
+    color: black;
+    font-size: 10px;
+}
+
+td select{
+    width:100px;
+}
+
+tr td input[type=number]:focus {
+    color: #1a9cb7 !important;
+    border: 1px solid #292929 !important;
+}
+
+tr td input[type=number]:valid {
+    color: #1a9cb7 !important;
+    border: 1px solid #292929 !important;
+}
+
+tr td input[type=number]:invalid {
+    color: #1a9cb7 !important;
+    border: 1px solid #292929 !important;
+}
+
+tr td input[type=number] {
+    width: 40px !important;
+    height: 30px !important;
+}
+
+tr td img {
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+}
+
+.titleDiv {
+    padding-left: 30px;
+    margin: auto;
+}
+
+.tblCart1 {
+    width: auto;
+}
+
+.tblCart2 {
+    width:auto
+}
+
+.maintblCart {
+    width:1300px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.tblCart1 thead th {
+    border: 2px solid #292929;
+    font-weight:500
+}
+
+.addnewAddr {
+    float: right;
+    padding-right: 10px;
+    font-size: 11px;
+    color: #ee6e73
+}
+
+.ship input[type=text]:valid {
+    /*color: #1a9cb7 !important;*/
+    border-bottom: 1px solid white !important;
+}
+
+
+.ship input[type=text]:focus {
+    /*color: #1a9cb7 !important;*/
+    border-bottom: 1px solid white !important;
+}
+
+
+.ship input[type=text]:active {
+    /*color: #1a9cb7 !important;*/
+    border-bottom: 1px solid white !important;
+}
+
+@media only screen and (max-width: 1201px) {
+    .maintblCart{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .maintblCart {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .maintblCart {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .maintblCart {
+        width: 90%;
+    }
+}
+
+
+td input[type=text] {
+    width: 30px !important;
+    height: 26px !important;
+    text-align: center !important;
+    border: 0px solid #292929 !important;
+    margin: 0px !important;
+    padding: 0px !important
+}
+    td input[type=text]:focus {
+        box-shadow: none !important;
+    }
+
+.qtyplus {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #292929 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 50px !important ;
+    margin-left:-3px !important;
+}
+
+.qtyminus {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #292929 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius:50px !important;
+    margin-right:-3px !important;
+}

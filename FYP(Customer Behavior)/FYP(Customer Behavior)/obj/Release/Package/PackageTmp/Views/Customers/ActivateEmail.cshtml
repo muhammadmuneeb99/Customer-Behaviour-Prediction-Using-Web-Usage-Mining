@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "ActivateEmail";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+
+<main>
+
+    <div class="container OrderTextDiv">
+        <div class="row">
+            <p class="OrderDetailText black-text" style="padding-left:20px; padding-top:30px;">
+                A Verification Code has been send to your Email.
+            </p>
+        </div>
+    </div>
+
+    <div class="container trackID z-depth-5 hoverable">
+        <form class="col s12" action="ActivateEmail" method="post">
+            <div class="row" style="margin-left:auto;margin-right:auto;">
+                <div class="input-field col l8">
+                    <input id="icon_prefix" type="text" minlength="4" maxlength="4" title="please enter valid code!" pattern="[0-9]{4}" placeholder="xxxx" name="code" class="validate" required>
+                    <label for="icon_prefix">Enter Verification Code</label>
+                </div>
+                <div class="col s4">
+
+                    <button style="background-color: #292929; margin-top:30px;" type='submit' name='oCheck' class='col s12 btn btn-small waves-effect '>Verify</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container OrderTextDiv">
+        <div class="row">
+            <p class="OrderDetailText black-text" style="padding-left:20px; padding-top:10px; padding-bottom:30px;">
+
+                @if (ViewBag.IsVerified != null)
+                {
+                    <script>
+                            toastr.success("@ViewBag.IsVerified");
+                    </script>
+                }
+
+            </p>
+        </div>
+    </div>
+
+</main>
+
+
+@if (TempData["ActivationEmailError"] != null)
+{
+    <script>
+        toastr.error("@TempData["ActivationEmailError"]");
+    </script>
+}
+
+@if (TempData["NotVerified"] != null)
+{
+    <script>
+        toastr.error("@TempData["NotVerified"]");
+    </script>
+}
+

@@ -1,0 +1,62 @@
+﻿._con{
+    background-color:white;
+    width:800px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+
+.ty{
+    text-align:center;
+    color:#292929;
+    margin-top:30px;
+}
+
+._ordernumber {
+    text-align: center;
+    color: #292929;
+    padding-top:15px;
+}
+
+._ordergoods {
+    text-align: center;
+    color: #292929;
+}
+
+._orderprice {
+    text-align: center;
+    color: #ee6e73;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 992px){
+    ._con {
+        background-color: white;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    ._orderprice {
+        font-size: 35px
+    }
+
+    ._ordernumber {
+        font-size: 25px;
+    }
+
+    .ty {
+        font-size: 35px;
+    }
+
+    ._ordergoods {
+        font-size: 25px
+    }
+}
+

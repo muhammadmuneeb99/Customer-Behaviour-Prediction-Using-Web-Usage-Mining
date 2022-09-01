@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Seller_Panel";
+    Layout = "~/Views/Shared/SellerLayout.cshtml";
+}
+
+
+<div class="container" style="margin-top:30px;">
+    <main>
+        <div class="row">
+            <div class="col l6 m6 s6">
+                <div style="padding: 35px;" align="center" class="card z-depth-5 hoverable">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b style="color:#292929;">Add Product</b>
+                        </div>
+                    </div>
+                    <div class="row z-depth-2">
+                        <a href='@Url.Action("Seller_AddProduct", "Seller")'>
+                            <div style="padding: 30px;" class="grey lighten-3 col l12 m12 s12 waves-effect">
+                                <i class=" large material-icons">
+                                    playlist_add
+                                </i>
+                                <span class="">
+                                    <h5>@Html.ActionLink("Add Product", "Seller_AddProduct", "Seller")</h5>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 m6 s6">
+                <div style="padding: 35px;" align="center" class="card z-depth-5 hoverable">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b style="color:#292929;">Orders</b>
+                        </div>
+                    </div>
+                    <div class="row z-depth-2">
+                        <a href='@Url.Action("Seller_Order", "Seller")' class="notiff">
+                            <div style="padding: 30px;" class="grey lighten-3 col l12 m12 s12 waves-effect">
+                                <i class="large material-icons">assignment</i>
+                                <span class="">
+                                    <h5 class="notiff">@Html.ActionLink("Orders", "Seller_Order", "Seller")</h5>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l6 m6 s6 ">
+                <div style="padding: 35px;" align="center" class="card z-depth-5 hoverable">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b style="color:#292929;">Product</b>
+                        </div>
+                    </div>
+                    <div class="row z-depth-2">
+                        <a href='@Url.Action("Seller_Product", "Seller")'>
+                            <div style="padding: 30px;" class="grey lighten-3 col l12 m12 s12 waves-effect">
+                                <i class="large material-icons">
+                                    store
+                                </i>
+                                <span class="">
+                                    <h5>@Html.ActionLink("Product Information", "Seller_Product", "Seller")</h5>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 m6 s6 ">
+                <div style="padding: 35px;" align="center" class="card z-depth-5 hoverable">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b style="color:#292929;">Analytics</b>
+                        </div>
+                    </div>
+                    <div class="row z-depth-2">
+                        <a href='@Url.Action("Analytics", "Seller")'>
+                            <div style="padding: 30px;" class="grey lighten-3 col l12 m12 s12 waves-effect">
+                                <i class="large material-icons">
+                                    show_chart
+                                </i>
+                                <span class="">
+                                    <h5>@Html.ActionLink("Analytics", "Analytics", "Seller")</h5>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+@if (TempData["SellerSignUpSuccess"] != null)
+{
+    <script>
+        toastr.success("@TempData["SellerSignUpSuccess"]");
+    </script>
+}

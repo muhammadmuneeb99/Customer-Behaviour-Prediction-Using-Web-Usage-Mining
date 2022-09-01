@@ -1,0 +1,1421 @@
+﻿
+.mainProDetail {
+    width: 1000px;
+    height: 550px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.piSellerInfo {
+    width: 250px;
+    height: auto;
+    border-left: 1px solid lightgrey;
+    float: right;
+}
+
+.reviewCustName {
+    color: dimgray;
+    font-size: 12px;
+    padding-left: 20px;
+    font-weight: 100
+}
+
+.reviewCustProduct {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+
+
+.mainProDetail1 {
+    width: 1000px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.PIitemLeft {
+    margin-top: 10px;
+}
+
+    .PIitemLeft p {
+        text-align: left
+    }
+
+.Pi_Detail {
+    font-size: 14px;
+    color: #424242
+}
+
+.Pi_WarrentyDetail {
+    font-size: 14px;
+    color: #424242
+}
+
+.pdImage img {
+    width: 330px;
+    height: 330px;
+    background-color: aqua;
+}
+
+.pdImage {
+    width: 330px;
+    height: 330px;
+    padding-top: 11px;
+}
+
+.pdName p {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.pdBrandName p {
+    font-size: 12px;
+    color: dimgrey;
+}
+
+    .pdBrandName p a {
+        font-size: 12px;
+        color: cornflowerblue;
+    }
+
+.dai {
+    margin-bottom: 0;
+}
+
+.piba {
+    color: cornflowerblue;
+}
+
+    .piba:hover {
+        color: #ee6e73
+    }
+
+.mainbai {
+    padding-top: 0px;
+    margin-bottom: 0;
+}
+
+.dai a {
+    color: #292929;
+}
+
+    .dai a:hover {
+        color: #ee6e73;
+    }
+
+
+.pdPriceName {
+    font-size: 28px;
+    color: #ee6e73;
+    padding-top: -10px;
+}
+
+.pdQuantityName {
+    margin-top:-10px;
+}
+
+    .pdQuantityName p {
+        font-size: 13px;
+        color: dimgrey;
+        padding-top: 7px;
+    }
+
+    .pdQuantityName input[type=number]:focus {
+        border: 1px solid rgba(0, 0, 0, 0.3) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .pdQuantityName input[type=number]:valid {
+        border: 1px solid rgba(0, 0, 0, 0.3) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .pdQuantityName input[type=number]:invalid {
+        border: 1px solid rgba(0, 0, 0, 0.3) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .pdQuantityName input[type=number] {
+        width: 40px !important;
+        height: 30px !important;
+        margin-left: 30px !important;
+    }
+
+.CateName {
+    width: 900px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.ProName {
+    width: 1150px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #292929;
+}
+
+.avgRating {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.csc_a {
+    color: #292929;
+    font-size: 13px;
+}
+
+    .csc_a:hover {
+        /*color: #ee6e73*/
+        color: crimson
+    }
+
+.imgSubCateName {
+    text-align: center;
+    font-size: 14px;
+    color: #292929;
+}
+
+    .imgSubCateName:hover {
+        color: cornflowerblue;
+    }
+
+.subcatBody {
+    width: 1223px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rCat {
+    font-size: 14px;
+    color: #ee6e73;
+}
+
+.ProCardLV {
+    width: 1000px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.ProImgCardLV {
+    width: 200px;
+    height: 190px;
+    object-fit: scale-down;
+    background-color: transparent;
+    padding-left: 6px;
+}
+
+.imgProNameLV {
+    padding-top: 50px;
+    padding-left: 5px;
+}
+
+.ProImgCardLV img {
+    width: 200px;
+    height: 190px;
+    object-fit: scale-down;
+    background-color: transparent;
+    padding-left: 6px;
+}
+
+.rCname {
+    font-size: 14px;
+    color: cornflowerblue
+}
+
+.imgCateName {
+    text-align: center;
+    font-size: 13px;
+    color: #292929;
+    padding-top: 15px;
+}
+
+    .imgCateName:hover {
+        color: cornflowerblue;
+    }
+
+.imgCard {
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: white;
+}
+
+    .imgCard img {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        object-fit: scale-down;
+    }
+
+.subAndsubsubimgCard {
+    width: 120px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: white;
+}
+
+    .subAndsubsubimgCard img {
+        width: 120px;
+        height: 110px;
+        background-color: white;
+        object-fit: scale-down;
+    }
+
+.mainCatCard {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.subsubmainCatCard {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.subsubCatCard {
+    width: 159px;
+    height: 159px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.submainCatCard {
+    width: 1223px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subCatCard {
+    width: 240px;
+    height: 159px;
+}
+
+.BrandProImgCard {
+    width: 187px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+    .BrandProImgCard img {
+        width: 187px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: scale-down;
+    }
+
+.ProImgCard {
+    width: 187px;
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+    .ProImgCard img {
+        width: 187px;
+        height: 184px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: scale-down;
+    }
+
+.dPA {
+    text-align: left;
+    font-size: 11px;
+    color: darkgrey;
+    padding-left: 5px;
+    height: auto;
+    height: 10px;
+    width: 55px;
+    padding-top: 0px
+}
+
+    .dPA p {
+        padding-top: -10px;
+        height: 10px;
+        width: 55px;
+    }
+
+.dpaProPrice {
+    text-align: left;
+    font-size: 14px;
+    color: #ee6e73;
+    padding-left: 5px;
+    height: auto;
+    height: 30px;
+    width: 60px
+}
+
+.ProPrice {
+    text-align: left;
+    font-size: 16px;
+    color: #ee6e73;
+    padding-top: 0px;
+    padding-left: 5px;
+    height: 18px;
+    width: 60px
+}
+
+.imgProName {
+    text-align: center;
+    font-size: 13px;
+    color: #292929;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 5px;
+    height: 57px;
+}
+
+    .imgProName p:hover {
+        color: cornflowerblue;
+    }
+
+.mainProCard {
+    width: 1205px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BrandCard {
+    width: 187px;
+    height: 245px;
+    border: 0px solid #eff0f4;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.BrandImgCard {
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+}
+
+    .BrandImgCard img {
+        width: 75px;
+        height: 75px;
+        object-fit: scale-down;
+    }
+
+
+.ProCard {
+    width: 187px;
+    height: 326px;
+    border: 0px solid #eff0f4;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.CatCard {
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border: 0px solid;
+    margin: 3px;
+}
+
+.myCart {
+    margin-left: auto;
+    max-width: 5px;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+    .myCart a i {
+        color: #000;
+        font-size: 25px;
+    }
+
+        .myCart a i:hover {
+            color: #f36f36;
+        }
+
+.stiky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 5;
+    background-color: white;
+    border: 0px solid white;
+}
+
+.spad {
+    padding-left: 110px;
+    padding-top: 30px;
+}
+
+#gallery_01 img {
+    border: 2px solid white;
+}
+/*Change the colour*/
+.active img {
+    border: 2px solid #333 !important;
+}
+
+.OrderTextDiv {
+    margin-top: 10px;
+    width: 700px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OrderTextDiv1 {
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OrderTextDiv2 {
+    margin-top: 20px;
+    width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-meter {
+    padding: 0;
+}
+
+.progress-point {
+    margin-left: -3px;
+    margin-right: -3px;
+    border-bottom-color: silver;
+}
+
+ol.progress-meter {
+    padding-bottom: 9.5px;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+    ol.progress-meter li {
+        display: inline-block;
+        text-align: center;
+        text-indent: -19px;
+        height: 36px;
+        width: 24.99%;
+        font-size: 12px;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+    }
+
+        ol.progress-meter li:before {
+            position: relative;
+            float: left;
+            text-indent: 0;
+            left: -webkit-calc(50% - 9.5px);
+            left: -moz-calc(50% - 9.5px);
+            left: -ms-calc(50% - 9.5px);
+            left: -o-calc(50% - 9.5px);
+            left: calc(50% - 9.5px);
+        }
+
+        ol.progress-meter li.done {
+            font-size: 12px;
+        }
+
+            ol.progress-meter li.done:before {
+                content: "\2713";
+                height: 20px;
+                width: 20px;
+                line-height: 21.85px;
+                bottom: -25.175px;
+                border: none;
+                border-radius: 19px;
+            }
+
+        ol.progress-meter li.todo {
+            font-size: 15px;
+        }
+
+            ol.progress-meter li.todo:before {
+                content: "\2B24";
+                font-size: 17.1px;
+                bottom: -26.95px;
+                line-height: 18.05px;
+            }
+
+        ol.progress-meter li.done {
+            color: cornflowerblue;
+            border-bottom-color: black;
+        }
+
+            ol.progress-meter li.done:before {
+                color: white;
+                background-color: black;
+            }
+
+        ol.progress-meter li.todo {
+            color: black;
+            border-bottom-color: #f1efef;
+        }
+
+            ol.progress-meter li.todo:before {
+                color: black;
+            }
+
+.trackID {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.orderTot {
+    padding-left: 220px;
+    padding-top: 30px;
+    font-size: 18px;
+    margin-top: 6px;
+    color: #808080;
+}
+
+.trackIDNo {
+    font-size: 12px;
+    margin-top: 2px;
+    padding-top: 15px
+}
+
+.orderDateTime {
+    font-size: 12px;
+    color: #808080
+}
+
+.trackQty {
+    padding-left: 50px;
+}
+
+.trackProName {
+    padding-left: 0px;
+}
+
+.customerSignUpMainDiv {
+    width: 650px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.imgSliderResponsive {
+    height: 595px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0px solid #000;
+    max-width: 100%;
+}
+
+.csc input[type=number] {
+    width: 60px !important;
+    height: 26px !important;
+    border: 1px solid #292929 !important;
+    border-radius: 3px !important
+}
+
+    .csc input[type=number]:focus {
+        box-shadow: none !important;
+    }
+
+.mms {
+    margin-left:15px;
+    color: crimson;
+    background-color:transparent;
+    border:0px;
+}
+.mms:focus{
+    background-color:transparent
+}
+.mms:hover{
+    color:cornflowerblue
+}
+
+.acw {
+}
+
+    .acw a {
+        color: darkgray;
+        }
+    .acw .aTw{
+        padding-left:25px
+    }
+    .acw .rTw {
+        padding-left: 25px
+    }
+    .acw .aTc {
+        padding-right:5px;
+    }
+        .acw a:hover {
+            color: crimson
+        }
+
+.cscName {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.qtyBtn {
+    margin-top: 13px
+}
+
+.pdQuantityName input[type=text] {
+    width: 30px !important;
+    height: 26px !important;
+    text-align: center !important;
+    border: 0px solid #292929 !important;
+    margin: 0px !important;
+    padding: 0px !important
+}
+
+    .pdQuantityName input[type=text]:focus {
+        box-shadow: none !important;
+    }
+
+.addAddress {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px
+}
+
+.getShipAddr {
+    width: 200px;
+    background-color: #292929;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .getShipAddr button {
+        background-color: #292929;
+    }
+
+        .getShipAddr button:hover {
+            background-color: #292929;
+        }
+
+@media only screen and (max-width: 1201px) {
+
+    .ProCardLV {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCardLV {
+        width: 130px;
+        height: 120px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .imgProNameLV {
+        font-size: 10px;
+    }
+
+    .ProImgCardLV img {
+        width: 130px;
+        height: 120px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+
+    .mainProDetail {
+        width: 90%;
+        height: 100%;
+    }
+
+    .mainProDetail1 {
+        width: 90%;
+        height: 100%;
+    }
+
+    .imgSliderResponsive {
+        height: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 0px solid #000;
+        max-width: 100%
+    }
+
+    .mainProCard {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .submainCatCard {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainCatCard {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .ProCardLV {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCardLV {
+        width: 150px;
+        height: 140px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .imgProNameLV {
+        font-size: 10px;
+    }
+
+    .ProImgCardLV img {
+        width: 150px;
+        height: 140px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .mainProCard {
+        width: 90%;
+    }
+
+    .submainCatCard {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ProCard {
+        width: 160px;
+        height: 300px;
+        border: 0px solid #eff0f4;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCard {
+        width: 160px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        background-color: transparent;
+    }
+
+        .ProImgCard img {
+            width: 160px;
+            height: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: scale-down;
+        }
+
+    .mainCatCard {
+        width: 90%;
+    }
+
+    .CateName {
+        width: 90%;
+    }
+
+    .ProName {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .ProCardLV {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCardLV {
+        width: 100px;
+        height: 90px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .imgProNameLV {
+        font-size: 10px;
+    }
+
+    .ProImgCardLV img {
+        width: 100px;
+        height: 90px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .imgSliderResponsive {
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 0px solid #000;
+        max-width: 100%
+    }
+
+    .trackID {
+        width: 100%;
+    }
+
+    .OrderTextDiv1 {
+        width: 100%;
+    }
+
+    .orderTot {
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+
+    .orderDateTime {
+        padding-top: 5px;
+    }
+
+    .OrderTextDiv2 {
+        width: 100%;
+    }
+
+    .trackQty {
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .trackProName {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .trackSellerName {
+        font-size: 12px;
+    }
+
+    .CateName {
+        width: 100%;
+    }
+
+    .mainProCard {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .submainCatCard {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ProCard {
+        width: 160px;
+        height: 300px;
+        border: 0px solid #eff0f4;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCard {
+        width: 160px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        background-color: transparent;
+    }
+
+        .ProImgCard img {
+            width: 160px;
+            height: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: scale-down;
+        }
+
+    .mainCatCard {
+        width: 100%;
+    }
+
+    .ProName {
+        width: 90%
+    }
+
+    .mainProDetail {
+        width: 90%;
+        height: 100%;
+    }
+
+    .mainProDetail1 {
+        width: 90%;
+        height: 100%;
+    }
+
+    .customerSignUpMainDiv {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ProCardLV {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .ProImgCardLV {
+        width: 80px;
+        height: 70px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .imgProNameLV {
+        font-size: 10px;
+    }
+
+    .ProImgCardLV img {
+        width: 80px;
+        height: 70px;
+        object-fit: scale-down;
+        background-color: transparent;
+        padding-left: 6px;
+    }
+
+    .addAddress {
+        width: 100%
+    }
+
+    .mainProCard {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .submainCatCard {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainProDetail {
+        width: 90%;
+        height: 100%;
+    }
+
+    .mainProDetail1 {
+        width: 90%;
+        height: 100%;
+    }
+
+    .customerSignUpMainDiv {
+        width: 100%;
+    }
+
+    .imgSliderResponsive {
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 0px solid #000;
+        max-width: 100%
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .addAddress {
+        width: 100%
+    }
+
+    .mainProCard {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .submainCatCard {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainProDetail {
+        width: auto;
+        height: 100%;
+    }
+
+    .mainProDetail1 {
+        width: auto;
+        height: 100%;
+    }
+
+    .customerSignUpMainDiv {
+        width: 100%;
+    }
+
+    .imgSliderResponsive {
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 0px solid #000;
+        max-width: 100%
+    }
+}
+
+/*Menu*/
+.nav-wrapper ul li a {
+    color: #292929;
+}
+
+.ul {
+    list-style: none;
+    background-color: whitesmoke ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:5px;
+    z-index: 5;
+}
+
+    .ul .li {
+        display: block;
+        position: relative;
+        float: left;
+        line-height: 25px;
+        height: 25px
+    }
+
+.li .ul {
+    display: none;
+}
+
+.ul .li a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #292929;
+    font-size:0.8em;
+}
+
+    .ul .li a:hover {
+        /*background: rgba(0, 0, 0, 0.20);*/
+    }
+
+.li:hover > .ul {
+    display: block;
+    position: absolute;
+}
+
+.li:hover .li {
+    float: none;
+}
+
+.li .ul .li {
+    border-top: 0;
+}
+
+.li:hover a {
+    /*background: #292929;*/
+    color: #292929
+}
+
+.li:hover .li a:hover {
+    background:whitesmoke;
+    color: crimson;
+}
+
+.ul .ul {
+    left: 100%;
+    top: 0%;
+}
+
+.ul:after {
+    clear: both;
+}
+/*Menu*/
+
+.moretext {
+    display: none;
+}
+
+.lView {
+    display: none
+}
+
+.cLabel {
+    margin-left: 4px;
+    margin-top: 4px;
+    float: left;
+}
+
+._r1 {
+    width: 42px;
+    height: 20px;
+    border: 1px solid cornflowerblue;
+    padding-left: 2px;
+    border-radius: 2px;
+    background-color: cornflowerblue;
+}
+
+._r2 {
+    width: 42px;
+    height: 20px;
+    border: 1px solid cornflowerblue;
+    padding-left: 2px;
+    border-radius: 2px;
+    background-color: cornflowerblue;
+}
+
+.highlight {
+    border-radius: 4px;
+    border: 2px solid crimson;
+}
+
+.highlightCircle {
+    border-radius: 50%;
+    border:2px solid crimson;
+}
+
+
+
+
+
+
+.container11 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom:50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    filter: url('#goo');
+    /*animation: rotate-move 3s ease-in-out infinite;*/
+}
+
+/*.dot {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dot-3 {
+    background-color: #242424;
+    animation: dot-3-move 2s ease infinite, index 6s ease infinite;
+}
+
+.dot-2 {
+    background-color: #373737;
+    animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
+}
+
+.dot-1 {
+    background-color: #5c5c5c;
+    animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
+}
+
+@keyframes dot-3-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translateY(-18px) scale(.45)
+    }
+
+    60% {
+        transform: translateY(-90px) scale(.45)
+    }
+
+    80% {
+        transform: translateY(-90px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes dot-2-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translate(-16px, 12px) scale(.45)
+    }
+
+    60% {
+        transform: translate(-80px, 60px) scale(.45)
+    }
+
+    80% {
+        transform: translate(-80px, 60px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes dot-1-move {
+    20% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: translate(16px, 12px) scale(.45)
+    }
+
+    60% {
+        transform: translate(80px, 60px) scale(.45)
+    }
+
+    80% {
+        transform: translate(80px, 60px) scale(.45)
+    }
+
+    100% {
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes rotate-move {
+    55% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+@keyframes index {
+    0%, 100% {
+        z-index: 3
+    }
+
+    33.3% {
+        z-index: 2
+    }
+
+    66.6% {
+        z-index: 1
+    }
+}*/
+
+
+.spinner {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #292929;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}

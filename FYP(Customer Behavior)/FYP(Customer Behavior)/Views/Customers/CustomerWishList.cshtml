@@ -1,0 +1,151 @@
+﻿@using MVCEncrypt;
+@model IEnumerable<FYP_Customer_Behavior_.Models.Dtos.WishListDto>
+    @{
+        ViewBag.Title = "CustomerWishList";
+        Layout = "~/Views/Shared/CustomerLayout.cshtml";
+    }
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="tblWish col l12 m12 s12">
+                    <p style="font-size:20px; color:#292929;" class="center">My WishList</p>
+                    <table style="margin-top:25px; margin-bottom:25px;" class="z-depth-5 responsive-table hoverable">
+                        <thead style="background-color:#292929;">
+                            <tr>
+                                <th style="font-size:14px; padding-left:20px; width:120px; color:white;">
+                                    Products
+                                    @*<label for="filled-in-box">
+                                        <input type="checkbox" class="filled-in1" id="filled-in-box" />
+                                        <span style="font-size:12px; color:white;">SELECT ALL ITEMS</span>
+                                    </label>*@
+                                </th>
+                                <th class="sellerPriceth0" style="font-size:12px; color:white;">SELLER NAME</th>
+                                <th style="font-size:14px; width:120px; color:white;">Color</th>
+                                <th style="font-size:14px; width:120px; color:white;">Storage</th>
+                                <th style="font-size:14px; width:120px; color:white;">Size</th>
+                                <th class="sellerPriceth2" style="font-size:12px; color:white;">PRICE</th>
+                                <th class="sellerPriceth1" style="font-size:12px; color:white;"></th>
+                                <th class="sellerPriceth1" style="font-size:12px; color:white;"></th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color:white; margin-top:10px;">
+                            @{ int count = 0;}
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <label for="@count.ToString()filled">
+                                            <input type="hidden" class="filled-in1" id="@count.ToString()filled" checked="checked" />
+                                            <span><img src="@item.Image" alt="Not Available"></span>
+                                        </label>
+                                        <p class="flow-text" style="width:150px;font-size:14px;">
+                                            <a href="@Url.ActionEnc("mySecret","ProductInformation",new { __proID = item.ProductId })">@item.ProductName</a> 
+                                        </p>
+                                    </td>
+                                    <td>@item.SellerName</td>
+                                    @if (item.colorName != null)
+                                    {
+                                        <td>@item.colorName</td>
+                                    }
+                                    else
+                                    {
+                                        <td>-</td>
+                                    }
+                                    @if (item.storageName != null)
+                                    {
+                                        <td>@item.storageName</td>
+                                    }
+                                    else
+                                    {
+                                        <td>-</td>
+                                    }
+                                    @if (item.sizeName != null)
+                                    {
+                                        <td>@item.sizeName</td>
+                                    }
+                                    else
+                                    {
+                                        <td>-</td>
+                                    }
+                                    <td>@item.Price.ToString("#,###")</td>
+                                    <td>
+                                        <a class="tooltipped grey-text small material-icons aTc" data-position="bottom" data-tooltip="Add to Cart" href="javascript:void(0);" id="aTc">add_shopping_cart</a>
+                                        @if (item.colorid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.colorid" class='color' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value='undefined' class='color' />}
+                                        @if (item.storageid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.storageid" class='storage' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='storage' />}
+                                        @if (item.sizeid != null)
+                                        {<input id="@count.ToString()filled" type='hidden' value="@item.sizeid" class='size' />}
+                                        else
+                                        {<input id="@count.ToString()filled" type='hidden' value="undefined" class='size' />}
+                                        <input id="@count.ToString()filled" type='hidden' value="@item.ProductId" class='pid' />
+                                    </td>
+                                    <td>
+                                        <a class="tooltipped grey-text small material-icons" data-position="bottom" data-tooltip="Delete from Wishlist" href="@Url.ActionEnc("mySecret","RemoveFromWishList", new { wishlistID = item.Id})">delete</a>
+                                    </td>
+                                </tr>
+                                count++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @if (TempData["ItemAddedWishlist"] != null)
+    {
+        <script>
+        toastr.success("@TempData["ItemAddedWishlist"]");
+        </script>
+    }
+    <script>
+    $("#filled-in-box").change(function () {
+        $(".filled-in").prop('checked', $(this).prop("checked"));
+    });
+    $('.filled-in').change(function () {
+        if (false == $(this).prop("checked")) {
+            $("#filled-in-box").prop('checked', false);
+        }
+        if ($('.filled-in:checked').length == $('.filled-in').length) {
+            $("#filled-in-box").prop('checked', true);
+        }
+    });
+    $(document).ready(function () {
+        $('.aTc').click(function () {
+            var itemtoadd = [];
+            var id = $(this).next().next().next().next().val();
+            var p = (id).toString() + "|" + 1 + "|" + $(this).next().val() + "|" + $(this).next().next().val() + "|" + $(this).next().next().next().val();
+            itemtoadd.push(p);
+            $('#eLoader').show();
+            $.ajax({
+                type: "POST",
+                data: { "itemToAdd": itemtoadd },
+                url: "@Url.Action("addtoCartByPiWi", "Customers")",
+                success: function (result) {
+                    var r = result.split("+");
+                    if (r[0] === "Item Added to the Cart Succesfully!") {
+                        $('#ntcnt').html(r[1]);
+                        toastr.success(r[0]);
+                        window.location = window.location.href;
+                        $('#eLoader').hide();
+                    }
+                    else if (r[0] === "Item already exist in the Cart!") {
+                        toastr.info(r[0]);
+                    }
+                    else if (r[0] === "Please Login to Add Item in Your Cart!") {
+                        toastr.info(r[0]);
+                    }
+                    else {
+                        toastr.success(r[0]);
+                    }
+                }
+            });
+        });
+    });
+    </script>
